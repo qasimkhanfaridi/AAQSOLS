@@ -6,13 +6,16 @@
   <meta name="description" content="AAQSOLS Private Limited — FinTech, travel, healthcare, and enterprise software development in Islamabad, Pakistan.">
   <title>AAQSOLS Private Limited | Software Development Company</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%2306b6d4' font-family='Arial' font-weight='700' font-size='12'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="#home" class="logo">AAQ<span>SOLS</span></a>
+      <a href="#home" class="logo" aria-label="AAQSOLS home">
+        <img class="logo-img logo-img-dark" src="assets/logo-dark-bg.svg" alt="AAQSOLS" width="180" height="48">
+        <img class="logo-img logo-img-light" src="assets/logo-light-bg.svg" alt="" width="180" height="48" aria-hidden="true">
+      </a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" type="button">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -341,8 +344,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <h4>AAQSOLS Private Limited</h4>
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" aria-label="AAQSOLS home">
+          <img src="assets/logo-dark-bg.svg" alt="AAQSOLS" width="170" height="46">
+        </a>
         <p>Software development for FinTech, travel, healthcare, and enterprise .NET solutions.</p>
       </div>
       <div>
