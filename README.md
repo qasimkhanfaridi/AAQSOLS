@@ -1,5 +1,7 @@
 # AAQSOLS — Company Assets
 
+**GitHub:** [github.com/AAQSOLS-Private/aaqsols](https://github.com/AAQSOLS-Private/aaqsols)
+
 Everything you need to start getting clients.
 
 ## Folder Contents
@@ -11,29 +13,38 @@ Everything you need to start getting clients.
 | `website/` | One-page company website (Projects, Services, About, Contact) |
 | `proposals/Proposal-Templates.md` | 6 proposal templates + anti-AI rejection guide |
 
-## Website — How to Deploy
+## Website — Deploy (Netlify + GitHub)
 
-**Contact on site:** HR@aaqsols.com (no phone number)
+**Repo:** https://github.com/AAQSOLS-Private/aaqsols  
+**Contact on site:** HR@aaqsols.com
 
-### GitHub Pages (recommended)
+### A — Connect Netlify to GitHub (recommended)
 
-1. Create repo: [github.com/new](https://github.com/new) → name it `aaqsols-website`
-2. Push from PowerShell:
+1. [app.netlify.com](https://app.netlify.com) → **Add new project** → **Import from Git**
+2. Choose **GitHub** → authorize → select repo **`AAQSOLS-Private/aaqsols`**
+3. Build settings:
+   - **Branch:** `main`
+   - **Base directory:** *(leave empty)*
+   - **Publish directory:** `website`
+   - **Build command:** *(leave empty)*
+4. Click **Deploy** — site goes live in ~1 minute
+5. **Domain management** → add `aaqsols.com` → update GoDaddy DNS with Netlify records
+
+Every `git push` to `main` will auto-redeploy the site.
+
+### B — Push code to GitHub (one time)
+
+If the repo is empty or push failed, run in PowerShell:
 
 ```powershell
 cd D:\AAQSOLS
-git init
-git add .
-git commit -m "AAQSOLS company website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/aaqsols-website.git
 git push -u origin main
 ```
 
-3. Repo → **Settings → Pages → Source: GitHub Actions**
-4. Point GoDaddy DNS to GitHub (see `website/DEPLOY.md`)
+If GitHub asks you to sign in, use a **Personal Access Token** as the password:
+[github.com/settings/tokens](https://github.com/settings/tokens) → Generate token → check **repo** scope.
 
-Full guide: **`website/DEPLOY.md`**
+Full guides: `website/NETLIFY-DEPLOY.md` | `website/DEPLOY.md`
 
 ## Proposals — How to Use
 
