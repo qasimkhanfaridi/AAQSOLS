@@ -6,15 +6,15 @@
   <meta name="description" content="AAQSOLS Private Limited — FinTech, travel, healthcare, and enterprise software development in Islamabad, Pakistan.">
   <title>AAQSOLS Private Limited | Software Development Company</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo-dark-bg.png" type="image/png">
 </head>
 <body>
 
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="#home" class="logo" aria-label="AAQSOLS home">
-        <img class="logo-img logo-img-dark" src="assets/logo-dark-bg.svg" alt="AAQSOLS" width="180" height="48">
-        <img class="logo-img logo-img-light" src="assets/logo-light-bg.svg" alt="" width="180" height="48" aria-hidden="true">
+        <img class="logo-img logo-img-dark" src="assets/logo-dark-bg.png" alt="AAQSOLS" width="160" height="48">
+        <img class="logo-img logo-img-light" src="assets/logo-light-bg.png" alt="" width="160" height="48" aria-hidden="true">
       </a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" type="button">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -346,7 +346,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#home" class="footer-logo" aria-label="AAQSOLS home">
-          <img src="assets/logo-dark-bg.svg" alt="AAQSOLS" width="170" height="46">
+          <img src="assets/logo-dark-bg.png" alt="AAQSOLS" width="150" height="44">
         </a>
         <p>Software development for FinTech, travel, healthcare, and enterprise .NET solutions.</p>
       </div>
@@ -382,6 +382,7 @@
     menuToggle.addEventListener('click', function () {
       const open = navLinks.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
@@ -392,6 +393,7 @@
         target.scrollIntoView({ behavior: 'smooth' });
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
       });
     });
 
