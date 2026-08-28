@@ -434,6 +434,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   height: 200px;
   overflow: hidden;
+  background: linear-gradient(135deg, #0c1222 0%, #155e75 100%);
 }
 
 .project-card.wide .project-media { height: 260px; }
