@@ -3,790 +3,301 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AAQSOLS Private Limited — Software development company in Pakistan. FinTech, travel, healthcare, and enterprise .NET solutions.">
+  <meta name="description" content="AAQSOLS Private Limited — FinTech, travel, healthcare, and enterprise software development in Islamabad, Pakistan.">
   <title>AAQSOLS Private Limited | Software Development Company</title>
-  <link rel="stylesheet" href="/styles.css">
-  <style>
-/* AAQSOLS - Corporate website styles */
-:root {
-  --navy: #0c2340;
-  --navy-light: #1a3a5c;
-  --teal: #00838f;
-  --teal-dark: #006064;
-  --gray-100: #f4f6f8;
-  --gray-200: #e8ecf0;
-  --gray-600: #5a6570;
-  --gray-800: #2d3439;
-  --white: #ffffff;
-  --max-width: 1100px;
-}
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  color: var(--gray-800);
-  line-height: 1.6;
-  background: var(--white);
-}
-
-a { color: var(--teal); text-decoration: none; }
-a:hover { color: var(--teal-dark); }
-
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* Header */
-.site-header {
-  background: var(--navy);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,.15);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: 1px;
-}
-
-.logo span { color: #4dd0e1; }
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: rgba(255,255,255,.85);
-  font-size: .95rem;
-  font-weight: 500;
-}
-
-.nav-links a:hover,
-.nav-links a.active { color: var(--white); }
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-  color: var(--white);
-  padding: 80px 24px 90px;
-  text-align: center;
-}
-
-.hero-badge {
-  display: inline-block;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.25);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: .82rem;
-  letter-spacing: .5px;
-  margin-bottom: 20px;
-  opacity: .9;
-}
-
-.hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 700;
-  margin-bottom: 16px;
-  line-height: 1.25;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 640px;
-  margin: 0 auto 32px;
-  opacity: .9;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: .95rem;
-  transition: background .2s, transform .15s;
-}
-
-.btn-primary {
-  background: var(--teal);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background: var(--teal-dark);
-  color: var(--white);
-  transform: translateY(-1px);
-}
-
-.btn-outline {
-  border: 2px solid rgba(255,255,255,.6);
-  color: var(--white);
-}
-
-.btn-outline:hover {
-  background: rgba(255,255,255,.1);
-  color: var(--white);
-}
-
-/* Stats bar */
-.stats-bar {
-  background: var(--gray-100);
-  padding: 40px 24px;
-  border-bottom: 1px solid var(--gray-200);
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  text-align: center;
-}
-
-.stat-item strong {
-  display: block;
-  font-size: 1.8rem;
-  color: var(--teal);
-  font-weight: 700;
-}
-
-.stat-item span {
-  font-size: .9rem;
-  color: var(--gray-600);
-}
-
-/* Sections */
-.section {
-  padding: 72px 24px;
-}
-
-.section-alt { background: var(--gray-100); }
-
-.section-title {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.section-title h2 {
-  font-size: 1.75rem;
-  color: var(--navy);
-  margin-bottom: 8px;
-}
-
-.section-title p {
-  color: var(--gray-600);
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-/* Cards */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.card {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 6px;
-  padding: 28px;
-  transition: box-shadow .2s;
-}
-
-.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
-
-.card h3 {
-  color: var(--navy);
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: .92rem;
-  color: var(--gray-600);
-}
-
-.card-icon {
-  width: 44px;
-  height: 44px;
-  background: var(--teal);
-  color: var(--white);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: .85rem;
-  margin-bottom: 16px;
-}
-
-/* Project cards */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.project-card {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 8px;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow .2s, transform .15s;
-}
-
-.project-card:hover {
-  box-shadow: 0 6px 24px rgba(0,0,0,.08);
-  transform: translateY(-2px);
-}
-
-.project-card-highlight {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-  color: var(--white);
-  border: none;
-}
-
-.project-card-highlight h3,
-.project-card-highlight p { color: var(--white); }
-
-.project-card-highlight .project-tag {
-  background: rgba(255,255,255,.15);
-  color: #4dd0e1;
-}
-
-.project-card-highlight .btn-primary { margin-top: auto; align-self: flex-start; }
-
-.project-tag {
-  display: inline-block;
-  background: rgba(0,131,143,.1);
-  color: var(--teal);
-  font-size: .75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  padding: 4px 10px;
-  border-radius: 4px;
-  margin-bottom: 12px;
-  align-self: flex-start;
-}
-
-.project-card h3 {
-  color: var(--navy);
-  font-size: 1.15rem;
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  font-size: .92rem;
-  color: var(--gray-600);
-  margin-bottom: 14px;
-  flex: 1;
-}
-
-.project-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px;
-}
-
-.project-features li {
-  font-size: .88rem;
-  color: var(--gray-600);
-  padding: 4px 0 4px 18px;
-  position: relative;
-}
-
-.project-features li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: var(--teal);
-  font-weight: 700;
-}
-
-.project-stack {
-  font-size: .78rem;
-  color: var(--gray-600);
-  background: var(--gray-100);
-  padding: 6px 10px;
-  border-radius: 4px;
-  margin-top: auto;
-}
-
-.project-card-highlight .project-stack {
-  background: rgba(255,255,255,.1);
-  color: rgba(255,255,255,.75);
-}
-
-.contact-form-static {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 6px;
-  padding: 28px;
-}
-
-/* Tech tags */
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.tech-tag {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: .85rem;
-  color: var(--gray-800);
-}
-
-/* CTA */
-.cta-section {
-  background: var(--navy);
-  color: var(--white);
-  text-align: center;
-  padding: 64px 24px;
-}
-
-.cta-section h2 { margin-bottom: 12px; font-size: 1.6rem; }
-.cta-section p { opacity: .85; margin-bottom: 28px; }
-
-/* Page header (inner pages) */
-.page-header {
-  background: var(--navy);
-  color: var(--white);
-  padding: 48px 24px;
-  text-align: center;
-}
-
-.page-header h1 { font-size: 2rem; margin-bottom: 8px; }
-.page-header p { opacity: .85; }
-
-/* About / content blocks */
-.content-block {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 48px 24px;
-}
-
-.content-block h2 {
-  color: var(--navy);
-  font-size: 1.4rem;
-  margin: 32px 0 12px;
-}
-
-.content-block h2:first-child { margin-top: 0; }
-
-.content-block p, .content-block li {
-  color: var(--gray-600);
-  margin-bottom: 12px;
-}
-
-.content-block ul {
-  padding-left: 20px;
-  margin-bottom: 16px;
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-.profile-box {
-  background: var(--gray-100);
-  border-left: 4px solid var(--teal);
-  padding: 24px;
-  border-radius: 0 6px 6px 0;
-}
-
-.profile-box h3 { color: var(--navy); margin-bottom: 8px; }
-
-/* Contact form */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 48px 24px;
-}
-
-.contact-info h3 {
-  color: var(--navy);
-  margin-bottom: 16px;
-}
-
-.contact-detail {
-  margin-bottom: 16px;
-  font-size: .95rem;
-}
-
-.contact-detail strong {
-  display: block;
-  color: var(--navy);
-  font-size: .8rem;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  margin-bottom: 2px;
-}
-
-.contact-form label {
-  display: block;
-  font-size: .85rem;
-  font-weight: 600;
-  color: var(--gray-800);
-  margin-bottom: 4px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid var(--gray-200);
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: .95rem;
-  margin-bottom: 16px;
-}
-
-.contact-form textarea { min-height: 120px; resize: vertical; }
-
-/* Footer */
-.site-footer {
-  background: var(--navy);
-  color: rgba(255,255,255,.7);
-  padding: 40px 24px 24px;
-  font-size: .88rem;
-}
-
-.footer-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 32px;
-}
-
-.footer-inner h4 {
-  color: var(--white);
-  margin-bottom: 12px;
-  font-size: .95rem;
-}
-
-.footer-inner ul { list-style: none; }
-.footer-inner li { margin-bottom: 6px; }
-.footer-inner a { color: rgba(255,255,255,.7); }
-.footer-inner a:hover { color: var(--white); }
-
-.footer-bottom {
-  max-width: var(--max-width);
-  margin: 32px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,.15);
-  text-align: center;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-toggle { display: block; }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--navy-light);
-    flex-direction: column;
-    padding: 16px 24px;
-    gap: 12px;
-  }
-
-  .nav-links.open { display: flex; }
-
-  .two-col, .contact-grid, .footer-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero { padding: 56px 24px 64px; }
-}
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%2306b6d4' font-family='Arial' font-weight='700' font-size='12'%3EA%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
+  <header class="site-header" id="header">
+    <div class="container header-inner">
       <a href="#home" class="logo">AAQ<span>SOLS</span></a>
-      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <section id="home" class="hero">
-    <div class="container">
-      <p class="hero-badge">Private Limited Company · Pakistan</p>
-      <h1>Software That Ships — FinTech, Travel, Healthcare & Enterprise</h1>
-      <p>AAQSOLS Private Limited builds production-ready systems with a 10-person engineering team experienced in digital wallets, payment flows, travel platforms, and hospital management.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Contact Us</a>
-        <a href="#projects" class="btn btn-outline">View Our Projects</a>
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <div class="hero-copy reveal">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Private Limited · Islamabad, Pakistan
+        </div>
+        <h1>Build software that handles <span class="gradient">real scale</span></h1>
+        <p class="hero-lead">AAQSOLS Private Limited delivers production-ready FinTech, travel, healthcare, and enterprise systems with a dedicated .NET engineering team.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="#projects" class="btn btn-outline">Explore Work</a>
+        </div>
       </div>
+      <aside class="hero-panel reveal" aria-label="Company highlights">
+        <div class="hero-metrics">
+          <div class="metric-card accent">
+            <strong>100K+</strong>
+            <span>Daily transactions supported</span>
+          </div>
+          <div class="metric-card">
+            <strong>587</strong>
+            <span>Production API endpoints</span>
+          </div>
+          <div class="metric-card">
+            <strong>30+</strong>
+            <span>Bank & partner integrations</span>
+          </div>
+          <div class="metric-card accent">
+            <strong>10</strong>
+            <span>Engineers on team</span>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <section class="stats-bar">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <strong>10</strong>
-        <span>Engineers on Team</span>
-      </div>
-      <div class="stat-item">
-        <strong>30+</strong>
-        <span>Bank & API Integrations</span>
-      </div>
-      <div class="stat-item">
-        <strong>100K+</strong>
-        <span>Daily Transactions Handled</span>
-      </div>
-      <div class="stat-item">
-        <strong>587</strong>
-        <span>Production API Endpoints Built</span>
-      </div>
+  <section class="stats-bar" aria-label="Key metrics">
+    <div class="container stats-grid reveal">
+      <div class="stat-item"><strong>10</strong><span>Engineers</span></div>
+      <div class="stat-item"><strong>30+</strong><span>Integrations</span></div>
+      <div class="stat-item"><strong>100K+</strong><span>Daily Transactions</span></div>
+      <div class="stat-item"><strong>587</strong><span>API Endpoints</span></div>
     </div>
   </section>
 
   <section id="projects" class="section">
-    <div class="section-title">
-      <h2>Our Projects</h2>
-      <p>Selected work across fintech, travel, healthcare, and enterprise — built by our in-house team.</p>
-    </div>
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-tag">FinTech</div>
-        <h3>Pixel Flow Technology</h3>
-        <p>Payment flow and digital wallet platform replica — transaction processing, account management, KYC workflows, and admin dashboards built on .NET microservices architecture.</p>
-        <ul class="project-features">
-          <li>Real-time payment flows (RAAST, IBFT, QR)</li>
-          <li>587+ REST API endpoints</li>
-          <li>30+ bank & third-party integrations</li>
-        </ul>
-        <span class="project-stack">.NET Core · React · SQL Server · Azure</span>
-      </article>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Projects built for production</h2>
+        <p>Selected work across fintech, travel, healthcare, and enterprise — engineered by our in-house team.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card wide reveal">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <span class="project-tag">FinTech</span>
+          </div>
+          <h3>Pixel Flow Technology</h3>
+          <p>Digital wallet and payment flow platform — transaction processing, KYC workflows, admin dashboards, and high-volume .NET microservices.</p>
+          <ul class="project-features">
+            <li>Real-time payment flows: RAAST, IBFT, QR</li>
+            <li>587+ REST API endpoints in production</li>
+            <li>30+ bank and third-party integrations</li>
+          </ul>
+          <span class="project-stack">.NET Core · React · SQL Server · Azure</span>
+        </article>
 
-      <article class="project-card">
-        <div class="project-tag">Travel</div>
-        <h3>Travel Agent Platform</h3>
-        <p>End-to-end travel agency management system — flight and hotel booking, itinerary management, agent commissions, customer CRM, and reporting for travel businesses.</p>
-        <ul class="project-features">
-          <li>Multi-supplier booking engine</li>
-          <li>Agent portal & commission tracking</li>
-          <li>Customer booking history & invoices</li>
-        </ul>
-        <span class="project-stack">.NET Core · Web API · SQL Server</span>
-      </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 8h12M6 16h8"/><path d="M18 6l3 3-3 3"/><path d="M21 9H9"/></svg>
+            </div>
+            <span class="project-tag">Travel</span>
+          </div>
+          <h3>Travel Agent Platform</h3>
+          <p>Booking engine, agent commissions, CRM, and reporting for travel businesses.</p>
+          <ul class="project-features">
+            <li>Multi-supplier booking</li>
+            <li>Agent portal & commissions</li>
+          </ul>
+          <span class="project-stack">.NET Core · Web API · SQL Server</span>
+        </article>
 
-      <article class="project-card">
-        <div class="project-tag">Healthcare</div>
-        <h3>Hospital Management System</h3>
-        <p>Comprehensive HMS covering patient registration, appointments, doctor schedules, billing, pharmacy, lab reports, and admin dashboards for hospital operations.</p>
-        <ul class="project-features">
-          <li>Patient & doctor management</li>
-          <li>OPD / IPD billing & pharmacy</li>
-          <li>Lab reports & appointment scheduling</li>
-        </ul>
-        <span class="project-stack">.NET Core · ASP.NET · SQL Server</span>
-      </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 10v4M10 12h4"/><rect x="4" y="4" width="16" height="16" rx="4"/></svg>
+            </div>
+            <span class="project-tag">Healthcare</span>
+          </div>
+          <h3>Hospital Management System</h3>
+          <p>Patient registration, appointments, billing, pharmacy, and lab workflows.</p>
+          <ul class="project-features">
+            <li>OPD / IPD billing modules</li>
+            <li>Doctor & pharmacy management</li>
+          </ul>
+          <span class="project-stack">.NET Core · ASP.NET · SQL Server</span>
+        </article>
 
-      <article class="project-card">
-        <div class="project-tag">Enterprise</div>
-        <h3>Bank & Payment Integrations</h3>
-        <p>Production integration layer connecting financial platforms to banks, telcos, identity providers, and card processors using SOAP and REST protocols.</p>
-        <ul class="project-features">
-          <li>SOAP & REST bank core integrations</li>
-          <li>High-volume transaction processing</li>
-          <li>86+ optimized stored procedures</li>
-        </ul>
-        <span class="project-stack">C# · Microservices · Hangfire · Azure</span>
-      </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4z"/><path d="M8 11h8M8 15h5"/></svg>
+            </div>
+            <span class="project-tag">Enterprise</span>
+          </div>
+          <h3>Bank & Payment Integrations</h3>
+          <p>SOAP and REST integration layer for banks, telcos, and card processors.</p>
+          <span class="project-stack">C# · Microservices · Hangfire · Azure</span>
+        </article>
 
-      <article class="project-card">
-        <div class="project-tag">Operations</div>
-        <h3>Logistics & Bulk Operations</h3>
-        <p>Enterprise tools for bulk notifications, operational dashboards, and workflow automation — supporting high-volume business operations.</p>
-        <ul class="project-features">
-          <li>Bulk notification & messaging</li>
-          <li>Admin dashboards & reporting</li>
-          <li>CI/CD and Azure deployment pipelines</li>
-        </ul>
-        <span class="project-stack">.NET · Azure Functions · React</span>
-      </article>
-
-      <article class="project-card project-card-highlight">
-        <div class="project-tag">Your Project</div>
-        <h3>Let's Build Yours</h3>
-        <p>Need a dedicated team for fintech, travel, healthcare, or custom enterprise software? We deliver fixed-scope projects or monthly retainer teams.</p>
-        <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
-      </article>
+        <article class="project-card project-card-highlight reveal">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </div>
+            <span class="project-tag">Your Project</span>
+          </div>
+          <h3>Let's build yours</h3>
+          <p>Fixed-scope delivery or a dedicated monthly team for fintech, travel, healthcare, or custom enterprise software.</p>
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+        </article>
+      </div>
     </div>
   </section>
 
   <section id="services" class="section section-alt">
-    <div class="section-title">
-      <h2>What We Do</h2>
-      <p>Focused services where we have proven delivery experience.</p>
-    </div>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">FT</div>
-        <h3>FinTech & Digital Wallets</h3>
-        <p>Payment backends, wallet accounts, transaction processing, KYC flows, and admin dashboards for financial products.</p>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>What we deliver</h2>
+        <p>Focused capabilities where we have proven production experience.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">API</div>
-        <h3>Bank & Third-Party Integrations</h3>
-        <p>SOAP and REST integrations with banks, telcos, identity providers, SMS gateways, and card processors.</p>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v10H3z"/><path d="M7 11h4"/></svg>
+          </div>
+          <h3>FinTech & Wallets</h3>
+          <p>Payment backends, KYC flows, wallet accounts, and admin dashboards.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+          </div>
+          <h3>Bank Integrations</h3>
+          <p>SOAP and REST connections with banks, telcos, and identity providers.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4h8v4H8z"/><path d="M6 8h12v12H6z"/></svg>
+          </div>
+          <h3>.NET Microservices</h3>
+          <p>Clean Architecture, CQRS, SQL Server, and Azure-native backends.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M20 19V5M4 12h16"/></svg>
+          </div>
+          <h3>Dedicated Teams</h3>
+          <p>Developers, QA, PM, and DevOps on monthly retainer for your roadmap.</p>
+        </article>
       </div>
-      <div class="card">
-        <div class="card-icon">.NET</div>
-        <h3>.NET Core & Microservices</h3>
-        <p>Scalable APIs and backend systems using Clean Architecture, CQRS, SQL Server, and Azure cloud services.</p>
+      <div class="tech-tags reveal">
+        <span class="tech-tag">C# / .NET Core</span>
+        <span class="tech-tag">ASP.NET Web API</span>
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">SQL Server</span>
+        <span class="tech-tag">Microservices</span>
+        <span class="tech-tag">Clean Architecture</span>
+        <span class="tech-tag">Azure</span>
+        <span class="tech-tag">CI/CD</span>
       </div>
-      <div class="card">
-        <div class="card-icon">TM</div>
-        <h3>Dedicated Development Teams</h3>
-        <p>Full team on monthly retainer — developers, QA, PM, and DevOps working exclusively on your product roadmap.</p>
-      </div>
-    </div>
-    <div class="tech-tags" style="margin-top:48px;">
-      <span class="tech-tag">C# / .NET Core</span>
-      <span class="tech-tag">ASP.NET Web API</span>
-      <span class="tech-tag">React.js</span>
-      <span class="tech-tag">SQL Server</span>
-      <span class="tech-tag">Microservices</span>
-      <span class="tech-tag">Clean Architecture</span>
-      <span class="tech-tag">CQRS</span>
-      <span class="tech-tag">REST & SOAP</span>
-      <span class="tech-tag">Microsoft Azure</span>
-      <span class="tech-tag">CI/CD</span>
     </div>
   </section>
 
   <section id="about" class="section">
-    <div class="section-title">
-      <h2>About AAQSOLS</h2>
-      <p>A Pakistan-based software development company built by engineers who ship production systems.</p>
-    </div>
-    <div class="content-block" style="padding-top:0;">
-      <div style="max-width:720px;margin:0 auto;">
-        <p>AAQSOLS Private Limited is a Pakistan-based software development company focused on .NET, microservices, and financial technology. We are a 10-person team in Islamabad — backend developers, full-stack engineers, QA, DevOps, and project management.</p>
-        <p>Our team has production experience on major digital wallet and payment platforms — building and maintaining hundreds of API endpoints, integrating 30+ bank and third-party services, and supporting systems that process over 100,000 transactions per day.</p>
-        <ul>
-          <li><strong>Agile delivery</strong> — 2-week sprints with demos</li>
-          <li><strong>Weekly reports</strong> — progress, plan, and blockers every Friday</li>
-          <li><strong>Code reviews</strong> — every pull request reviewed before merge</li>
-          <li><strong>Timezone overlap</strong> — UAE, KSA, UK, and US hours available</li>
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow">About</span>
+        <h2>Engineers who ship production systems</h2>
+        <p>AAQSOLS Private Limited is a Pakistan-based software company focused on .NET, microservices, and financial technology.</p>
+        <p>Our 10-person team in Islamabad builds and maintains platforms with hundreds of API endpoints, 30+ integrations, and systems processing over 100,000 transactions per day.</p>
+        <ul class="about-list">
+          <li><span class="check-icon">✓</span><span><strong>Agile delivery</strong> — 2-week sprints with demos</span></li>
+          <li><span class="check-icon">✓</span><span><strong>Weekly reports</strong> — progress, plan, and blockers</span></li>
+          <li><span class="check-icon">✓</span><span><strong>Code reviews</strong> — every pull request reviewed</span></li>
+          <li><span class="check-icon">✓</span><span><strong>Timezone overlap</strong> — UAE, KSA, UK, US hours</span></li>
         </ul>
       </div>
+      <aside class="about-panel reveal">
+        <h3>Built for serious products</h3>
+        <p>We work with startups and enterprises that need reliable engineering — not prototypes that never ship.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <strong>Production FinTech experience</strong>
+            <span>Live wallet and payment systems at scale.</span>
+          </div>
+          <div class="about-point">
+            <strong>Full team delivery</strong>
+            <span>Developers, QA, PM, and DevOps under one roof.</span>
+          </div>
+          <div class="about-point">
+            <strong>Enterprise-grade quality</strong>
+            <span>Architecture, security, and maintainable code.</span>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
   <section id="contact" class="section section-alt">
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Tell us about your project. We respond within 24 hours.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <p style="margin-bottom:24px;color:var(--gray-600);">Whether you need a full team, a fixed project, or want to explore options — reach out and we will give you an honest answer about fit and timeline.</p>
-
-        <div class="contact-detail">
-          <strong>Email</strong>
-          <a href="mailto:HR@aaqsols.com">HR@aaqsols.com</a>
-        </div>
-        <div class="contact-detail">
-          <strong>Office Address</strong>
-          Shop No. 10, 11, 18, 19 &amp; 20, Lower Ground Floor<br>
-          Tower-81, Business Square, Plot No. 72-74<br>
-          Gulberg Greens, Islamabad, Pakistan
-        </div>
-        <div class="contact-detail">
-          <strong>Business Hours</strong>
-          Mon – Fri, 9:00 AM – 6:00 PM (PKT)<br>
-          Overlap available for UAE, KSA, UK time zones
-        </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk about your project</h2>
+        <p>We respond within one business day.</p>
       </div>
-
-      <div class="contact-form contact-form-static">
-        <p><strong>Send us an email at:</strong></p>
-        <a href="mailto:HR@aaqsols.com?subject=Project%20Inquiry%20-%20AAQSOLS" class="btn btn-primary" style="margin-top:12px;">HR@aaqsols.com</a>
-        <p style="margin-top:24px;font-size:.92rem;color:var(--gray-600);">Include your name, company, project type (FinTech, Travel, Healthcare, etc.), and a brief description of what you need. We will reply within one business day.</p>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Get in touch</h3>
+          <p>Whether you need a dedicated team or a fixed-scope build, we'll give you an honest assessment of fit and timeline.</p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:HR@aaqsols.com">HR@aaqsols.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <div>
+              <strong>Office</strong>
+              Shop 10–11 &amp; 18–20, Lower Ground Floor<br>
+              Tower-81, Business Square, Plot 72-74<br>
+              Gulberg Greens, Islamabad, Pakistan
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              Mon – Fri, 9:00 AM – 6:00 PM (PKT)
+            </div>
+          </div>
+        </div>
+        <div class="contact-action reveal">
+          <h3>Ready to start?</h3>
+          <a href="mailto:HR@aaqsols.com?subject=Project%20Inquiry%20-%20AAQSOLS" class="btn btn-primary">Email HR@aaqsols.com</a>
+          <p>Include your name, company, project type, and a short description of what you need.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="container footer-inner">
       <div>
         <h4>AAQSOLS Private Limited</h4>
-        <p>Software development company specializing in FinTech, travel, healthcare, and enterprise .NET solutions. Office in Gulberg Greens, Islamabad, Pakistan.</p>
+        <p>Software development for FinTech, travel, healthcare, and enterprise .NET solutions.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -801,27 +312,47 @@ a:hover { color: var(--teal-dark); }
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:HR@aaqsols.com">HR@aaqsols.com</a></li>
-          <li>Business Square, Gulberg Greens<br>Islamabad, Pakistan</li>
+          <li>Gulberg Greens, Islamabad</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2026 AAQSOLS Private Limited. All rights reserved.
-    </div>
+    <div class="container footer-bottom">&copy; 2026 AAQSOLS Private Limited. All rights reserved.</div>
   </footer>
 
   <script>
-    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        var target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-          document.querySelector('.nav-links').classList.remove('open');
-        }
+    const header = document.getElementById('header');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
+
+    menuToggle.addEventListener('click', function () {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
-  </script>
 
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
