@@ -4,7 +4,7 @@
 ---
 
 **Founded:** 2025  
-**Head Office:** Shop No. 10, 11, 18, 19 & 20, Lower Ground Floor, Tower-81, Business Square, Plot No. 72-74, Gulberg Greens, Islamabad, Pakistan  
+**Head Office:** Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pakistan  
 **Email:** info@aaqsols.com | sales@aaqsols.com  
 **Phone:** +92 304 0200070  
 **Web:** www.aaqsols.com  
@@ -139,7 +139,7 @@ Ready to discuss your project?
 Founder, AAQSOLS  
 Email: qasim119119@gmail.com | sales@aaqsols.com  
 Phone: +92 304 0200070  
-Location: Shop No. 10, 11, 18, 19 & 20, Lower Ground Floor, Tower-81, Business Square, Plot No. 72-74, Gulberg Greens, Islamabad, Pakistan  
+Location: Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pakistan  
 
 We respond within 24 hours. Initial consultation is free.
 
