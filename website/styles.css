@@ -837,6 +837,180 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Portfolio page (client-facing live projects) */
+.portfolio-page { background: var(--bg); }
+
+.portfolio-hero {
+  padding: calc(var(--header) + 48px) 0 32px;
+  background: linear-gradient(180deg, var(--bg-blue) 0%, var(--bg) 100%);
+  text-align: center;
+}
+
+.portfolio-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+
+.portfolio-hero .lead {
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+.portfolio-hero .hero-stats {
+  justify-content: center;
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: var(--blue-light);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.portfolio-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio-card-top {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.portfolio-card-top--ecom { background: linear-gradient(135deg, #DBEAFE, #BFDBFE); }
+.portfolio-card-top--gaming { background: linear-gradient(135deg, #E0E7FF, #C7D2FE); }
+.portfolio-card-top--tech { background: linear-gradient(135deg, #E0F2FE, #BAE6FD); }
+.portfolio-card-top--furniture { background: linear-gradient(135deg, #FEF3C7, #FDE68A); }
+.portfolio-card-top--travel { background: linear-gradient(135deg, #CCFBF1, #99F6E4); }
+.portfolio-card-top--auto { background: linear-gradient(135deg, #FEE2E2, #FECACA); }
+.portfolio-card-top--lifestyle { background: linear-gradient(135deg, #F3E8FF, #E9D5FF); }
+
+.portfolio-card-body {
+  padding: 24px;
+}
+
+.portfolio-card-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-card-body p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.portfolio-tags span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--navy);
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.portfolio-link:hover { color: var(--blue-dark); }
+
+.portfolio-cta .contact-box {
+  display: block;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.portfolio-cta h2 { color: #fff; margin-bottom: 12px; }
+.portfolio-cta p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+
+.portfolio-banner {
+  margin-top: 40px;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-blue);
+  border: 1px solid var(--blue-light);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.portfolio-banner h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.portfolio-banner p {
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.nav a.active {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .portfolio-banner { flex-direction: column; align-items: flex-start; }
+  .portfolio-banner .btn { width: 100%; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
