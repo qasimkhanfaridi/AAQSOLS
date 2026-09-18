@@ -13,24 +13,21 @@ Everything you need to start getting clients.
 | `website/` | One-page company website (Projects, Services, About, Contact) |
 | `proposals/Proposal-Templates.md` | 6 proposal templates + anti-AI rejection guide |
 
-## Website — Deploy (Netlify + GitHub)
+## Website — Deploy (Cloudflare Pages)
 
 **Repo:** https://github.com/AAQSOLS-Private/aaqsols  
+**Live site:** https://aaqsols.com  
 **Contact on site:** HR@aaqsols.com
 
-### A — Connect Netlify to GitHub (recommended)
+**Full setup:** see [`website/CLOUDFLARE-PAGES.md`](website/CLOUDFLARE-PAGES.md)
 
-1. [app.netlify.com](https://app.netlify.com) → **Add new project** → **Import from Git**
-2. Choose **GitHub** → authorize → select repo **`AAQSOLS-Private/aaqsols`**
-3. Build settings:
-   - **Branch:** `main`
-   - **Base directory:** *(leave empty)*
-   - **Publish directory:** `website`
-   - **Build command:** *(leave empty)*
-4. Click **Deploy** — site goes live in ~1 minute
-5. **Domain management** → add `aaqsols.com` → update GoDaddy DNS with Netlify records
+1. Add `aaqsols.com` to Cloudflare (Free) and point GoDaddy nameservers to Cloudflare  
+2. **Workers & Pages** → Connect Git → repo **`AAQSOLS-Private/aaqsols`**  
+3. Build output directory: **`website`** (no build command)  
+4. Add custom domains `aaqsols.com` and `www.aaqsols.com`  
+5. Disconnect Netlify and disable GitHub Pages for this repo  
 
-Every `git push` to `main` will auto-redeploy the site.
+Every `git push` to `main` auto-redeploys on Cloudflare Pages.
 
 ### B — Push code to GitHub (one time)
 

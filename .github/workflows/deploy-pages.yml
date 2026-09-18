@@ -1,8 +1,8 @@
+# Disabled: production uses Cloudflare Pages (see website/CLOUDFLARE-PAGES.md).
+# Re-enable only if you switch off Cloudflare and use GitHub Pages instead.
 name: Deploy website to GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
