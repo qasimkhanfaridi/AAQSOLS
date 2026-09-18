@@ -1012,7 +1012,21 @@ h1, h2, h3, h4 {
 }
 
 /* Careers page */
+.breadcrumb {
+  padding-top: calc(var(--header) + 16px);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.breadcrumb a { color: var(--blue); font-weight: 600; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { margin: 0 8px; }
+
 .careers-page { background: var(--bg); }
+
+.careers-page .careers-hero {
+  padding: 24px 0 40px;
+}
 
 .careers-hero {
   padding: calc(var(--header) + 48px) 0 40px;

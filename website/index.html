@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AAQSOLS | Software Development Company in Islamabad, Pakistan</title>
-  <meta name="description" content="AAQSOLS Private Limited builds healthcare, travel, and e-commerce software in Islamabad — .NET, React, and Next.js apps for enterprises in Pakistan and abroad.">
-  <meta name="keywords" content="AAQSOLS, software development Islamabad, .NET development Pakistan, healthcare software, pharmacy B2B platform, travel agent software, hospital management system, e-commerce development, enterprise software Islamabad">
+  <meta name="description" content="AAQSOLS Private Limited builds healthcare, travel, and e-commerce software in Islamabad — .NET, React, and Next.js for enterprises. Now hiring .NET developers and software interns. Contact HR@aaqsols.com.">
+  <meta name="keywords" content="AAQSOLS, software development Islamabad, .NET development Pakistan, healthcare software, travel agent software, e-commerce development, AAQSOLS careers, .NET jobs Islamabad, software intern Pakistan">
   <meta name="author" content="AAQSOLS Private Limited">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="googlebot" content="index, follow">
@@ -38,17 +38,33 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "ProfessionalService"],
         "@id": "https://aaqsols.com/#organization",
         "name": "AAQSOLS Private Limited",
+        "alternateName": "AAQSOLS",
         "url": "https://aaqsols.com/",
-        "logo": "https://aaqsols.com/assets/logo-light-bg.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://aaqsols.com/assets/logo-light-bg.png"
+        },
+        "image": "https://aaqsols.com/assets/images/hero-team.jpg",
+        "description": "Software development company in Islamabad specializing in .NET, React, healthcare, travel, and e-commerce systems.",
         "email": "HR@aaqsols.com",
+        "areaServed": { "@type": "Country", "name": "Pakistan" },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens",
           "addressLocality": "Islamabad",
+          "addressRegion": "Islamabad Capital Territory",
+          "postalCode": "44000",
           "addressCountry": "PK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "HR@aaqsols.com",
+          "areaServed": "PK",
+          "availableLanguage": ["English", "Urdu"]
         }
       },
       {
@@ -56,7 +72,17 @@
         "@id": "https://aaqsols.com/#website",
         "url": "https://aaqsols.com/",
         "name": "AAQSOLS",
+        "inLanguage": "en-PK",
         "publisher": { "@id": "https://aaqsols.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aaqsols.com/#webpage",
+        "url": "https://aaqsols.com/",
+        "name": "AAQSOLS | Software Development Company in Islamabad, Pakistan",
+        "description": "Healthcare, travel, and e-commerce software development in Islamabad, Pakistan.",
+        "isPartOf": { "@id": "https://aaqsols.com/#website" },
+        "about": { "@id": "https://aaqsols.com/#organization" }
       }
     ]
   }
@@ -225,6 +251,19 @@
             <li>Timezone overlap with UAE, KSA, UK & US</li>
             <li>Office in Gulberg Greens, Islamabad</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers" class="section section-soft" aria-labelledby="careers-cta-heading">
+      <div class="wrap">
+        <div class="portfolio-banner reveal">
+          <div>
+            <p class="tag">Careers</p>
+            <h2 id="careers-cta-heading">We are hiring in Islamabad</h2>
+            <p>Open roles: <strong>.NET Developer</strong> (3-4 years) and <strong>Software Development Intern</strong>. ASP.NET Core, C#, SQL Server, and production project experience.</p>
+          </div>
+          <a href="careers.html" class="btn btn-primary">View open positions</a>
         </div>
       </div>
     </section>
