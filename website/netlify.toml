@@ -1,7 +1,6 @@
-# Netlify — publish the website folder from repo root
+# Netlify settings for AAQSOLS website
 [build]
-  publish = "website"
-  command = ""
+  publish = "."
 
 [[headers]]
   for = "/*"

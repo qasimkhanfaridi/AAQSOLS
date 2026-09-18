@@ -1031,9 +1031,7 @@ h1, h2, h3, h4 {
   margin: 0 auto 28px;
 }
 
-.careers-hero .hero-stats {
-  justify-content: center;
-}
+.careers-hero .hero-stats { justify-content: center; }
 
 .job-list {
   display: grid;
@@ -1061,15 +1059,8 @@ h1, h2, h3, h4 {
   transform: translateY(-2px);
 }
 
-.job-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 6px;
-}
-
-.job-card p {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
+.job-card h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.job-card p { font-size: 0.9rem; color: var(--muted); }
 
 .job-card-meta {
   font-family: 'Poppins', sans-serif;
@@ -1082,13 +1073,8 @@ h1, h2, h3, h4 {
   white-space: nowrap;
 }
 
-.job-detail-inner {
-  max-width: 920px;
-}
-
-.job-detail-header {
-  margin-bottom: 40px;
-}
+.job-detail-inner { max-width: 920px; }
+.job-detail-header { margin-bottom: 40px; }
 
 .job-detail-header h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -1119,10 +1105,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border);
 }
 
-.job-meta li {
-  font-size: 0.88rem;
-  color: var(--muted);
-}
+.job-meta li { font-size: 0.88rem; color: var(--muted); }
 
 .job-meta strong {
   display: block;
@@ -1142,16 +1125,7 @@ h1, h2, h3, h4 {
   margin-bottom: 40px;
 }
 
-.job-block h3 {
-  font-size: 1.1rem;
-  margin-bottom: 16px;
-}
-
-.job-block-lead {
-  font-size: 0.92rem;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
+.job-block h3 { font-size: 1.1rem; margin-bottom: 16px; }
 
 .offer-grid {
   display: grid;
@@ -1169,9 +1143,7 @@ h1, h2, h3, h4 {
   color: var(--navy);
 }
 
-.job-offer {
-  margin-bottom: 40px;
-}
+.job-offer { margin-bottom: 40px; }
 
 .job-apply {
   padding: 32px;
@@ -1181,17 +1153,8 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-lg);
 }
 
-.job-apply h3 {
-  color: #fff;
-  font-size: 1.25rem;
-  margin-bottom: 12px;
-}
-
-.job-apply p {
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-}
+.job-apply h3 { color: #fff; font-size: 1.25rem; margin-bottom: 12px; }
+.job-apply p { color: rgba(255, 255, 255, 0.9); margin-bottom: 20px; font-size: 0.95rem; }
 
 .job-apply .btn-primary {
   background: #fff;
@@ -1199,9 +1162,7 @@ h1, h2, h3, h4 {
   box-shadow: none;
 }
 
-.job-apply .btn-primary:hover {
-  background: var(--bg-blue);
-}
+.job-apply .btn-primary:hover { background: var(--bg-blue); }
 
 .job-apply-note {
   margin-bottom: 0 !important;
