@@ -30,21 +30,21 @@
   },
   "summary": {
     "total_revenue_collected": 42000,
-    "total_office_capex_spent": 387200,
+    "total_office_capex_spent": 388170,
     "total_admin_supplies_spent": 82160,
     "total_domains_opex_spent": 20500,
-    "total_expenses_spent": 489860,
-    "net_operating_cash_deficit": -447860,
+    "total_expenses_spent": 490830,
+    "net_operating_cash_deficit": -448830,
     "pending_receivables_known": 35000,
     "pending_agent_commissions": 17500,
     "net_pending_income_known": 17500
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 274040,
+      "total_spent": 275010,
       "total_received": 42000,
-      "net_out_of_pocket_balance": -232040,
-      "status": "Company owes Qasim PKR 232,040 (Net unrecovered out-of-pocket)"
+      "net_out_of_pocket_balance": -233010,
+      "status": "Company owes Qasim PKR 233,010 (Net unrecovered out-of-pocket)"
     },
     "asghar": {
       "total_spent": 215820,
@@ -517,6 +517,16 @@
       "category": "Legal & Corporate Registration",
       "title": "Company Registration Charges (SECP / Legal / Tax Filing)",
       "amount": 12000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-033",
+      "category": "Office Setup / Electrical",
+      "title": "Electrical Work / Electrician Labor",
+      "amount": 970,
       "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,
