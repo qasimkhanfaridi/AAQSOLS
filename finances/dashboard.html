@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAQSOLS Finance & Project Dashboard</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased p-4 md:p-6 min-h-screen">
+  <div class="max-w-6xl mx-auto space-y-6">
+
+    <!-- Header Section -->
+    <header class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[var(--border)] pb-5">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow">
+            AAQ
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold tracking-tight text-[var(--foreground)]">AAQSOLS Financial & Project Portal</h1>
+            <p class="text-sm text-[var(--muted-foreground)]">Real-time ledger, partner investments, advances & project pipeline</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Currency: PKR
+        </span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium bg-[var(--card)] border border-[var(--border)] text-[var(--muted-foreground)]">
+          Partners: Qasim (You) • Asghar • Ali
+        </span>
+      </div>
+    </header>
+
+    <!-- Top KPI Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Client Revenue Collected</span>
+        <div class="text-2xl font-bold text-emerald-500 mt-1">Rs. 42,000</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Held by Qasim (ARS 30k, Bin Irfan 6k, ApniChhat 6k)</p>
+      </div>
+
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Office Setup & Capex</span>
+        <div class="text-2xl font-bold text-amber-500 mt-1">Rs. 383,700</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Advance (100k), Furniture (127k), Dispenser (49.5k), Chairs (50k), Electric (20k)</p>
+      </div>
+
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Kharcha Incurred</span>
+        <div class="text-2xl font-bold text-rose-500 mt-1">Rs. 471,560</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Qasim (255.7k) + Asghar (215.8k)</p>
+      </div>
+
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Partner Debt</span>
+        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 429,560</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (213.7k) + Asghar (215.8k)</p>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex border-b border-[var(--border)] gap-2">
+      <button onclick="switchTab('partners')" id="tab-partners" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-emerald-500 text-emerald-500">
+        Partner Settlement Ledger
+      </button>
+      <button onclick="switchTab('projects')" id="tab-projects" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        Projects & Contracts (7)
+      </button>
+      <button onclick="switchTab('expenses')" id="tab-expenses" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        Expenses Ledger (29 items)
+      </button>
+      <button onclick="switchTab('repos')" id="tab-repos" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        GitHub Repos Status
+      </button>
+    </div>
+
+    <!-- TAB 1: Partner Settlement Ledger -->
+    <section id="pane-partners" class="tab-pane space-y-5">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
+        <h2 class="text-lg font-bold text-[var(--foreground)] mb-1">Partner Equity & Net Out-of-Pocket Balance</h2>
+        <p class="text-sm text-[var(--muted-foreground)] mb-4">
+          Tracks actual out-of-pocket payments made, client advances held, and reimbursement owed by AAQSOLS.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Qasim Card -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/50 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">Qasim Faridi (You)</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500 font-medium">Lead Partner</span>
+            </div>
+            <div class="space-y-1 text-sm">
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Total Spent (Out-of-Pocket):</span>
+                <span class="font-semibold text-[var(--foreground)]">Rs. 255,740</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Client Advances Held:</span>
+                <span class="font-semibold text-emerald-500">Rs. 42,000</span>
+              </div>
+              <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
+                <span>Company Reimbursement Due:</span>
+                <span class="text-amber-500 text-base">Rs. 213,740</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Paid furniture advance (79k), tables balance (48k), dispenser/kettle (49.5k), electricity (20k), mats/plates (12.5k), whiteboard (11.5k), frost paper (8k), internet (6.7k), water (2.5k), stationery (11k). Company owes Qasim Rs. 213,740.
+            </p>
+          </div>
+
+          <!-- Asghar Card -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/50 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">Asghar</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500 font-medium">Partner</span>
+            </div>
+            <div class="space-y-1 text-sm">
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Total Spent (Khata):</span>
+                <span class="font-semibold text-[var(--foreground)]">Rs. 215,820</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Client Advances Held:</span>
+                <span class="font-semibold text-emerald-500">Rs. 0</span>
+              </div>
+              <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
+                <span>Company Reimbursement Due:</span>
+                <span class="text-amber-500 text-base">Rs. 215,820</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Paid office advance (100k), chairs (50k), domains (20.5k), grocery (12.3k), visiting cards (8k), pizza 1 & 2 (6.9k), table transport (3.6k), cups (3.4k), extensions (3.4k), hardware (2.7k), SIM (2k), legal (2k), board (1k).
+            </p>
+          </div>
+
+          <!-- Ali Card -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/50 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">Ali</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-purple-500/10 text-purple-500 font-medium">Partner</span>
+            </div>
+            <div class="space-y-1 text-sm">
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Total Spent:</span>
+                <span class="font-semibold text-[var(--muted-foreground)]">Pending Info</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Client Advances Held:</span>
+                <span class="font-semibold text-[var(--muted-foreground)]">Rs. 0</span>
+              </div>
+              <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
+                <span>Company Reimbursement Due:</span>
+                <span class="text-[var(--muted-foreground)] text-base">Rs. 0</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Ali's khata will be integrated into the ledger as soon as shared.
+            </p>
+          </div>
+        </div>
+
+        <!-- Settlement Action Plan Box -->
+        <div class="mt-5 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+          <div>
+            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Seed Investment by Partners: Rs. 471,560</h3>
+            <p class="text-xs text-[var(--muted-foreground)]">
+              Total unrecovered partner cash: Rs. 429,560. All incoming client payments directly pay down these partner balances.
+            </p>
+          </div>
+          <div class="text-xs font-mono bg-[var(--card)] px-3 py-1.5 rounded-lg border border-[var(--border)]">
+            Exact Reconciliation: 213,740 (Qasim) + 215,820 (Asghar) = Rs. 429,560
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: Projects & Contracts Matrix -->
+    <section id="pane-projects" class="tab-pane hidden space-y-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
+        <h2 class="text-lg font-bold text-[var(--foreground)] mb-1">Active Projects Portfolio</h2>
+        <p class="text-sm text-[var(--muted-foreground)] mb-4">Complete deal terms, cash collected, domains, accounts, and deliverables.</p>
+
+        <div class="space-y-4">
+          <!-- ARS Chemicals -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40 hover:border-emerald-500/50 transition">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-[var(--border)] pb-3">
+              <div>
+                <span class="text-xs font-mono uppercase text-emerald-500 font-semibold tracking-wider">Project 01</span>
+                <h3 class="text-base font-bold text-[var(--foreground)]">ARS Chemicals (A. Rehman & Sons)</h3>
+                <span class="text-xs text-[var(--muted-foreground)]">Repo: <code class="bg-[var(--card)] px-1.5 py-0.5 rounded border border-[var(--border)]">qasimkhanfaridi/a-rehman-sons-website</code></span>
+              </div>
+              <div class="flex flex-wrap gap-2 items-center">
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Live / Near Complete</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-sky-500/10 text-sky-500 border border-sky-500/20">Renew: 10/09/2027</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3 text-sm">
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Total Deal</span>
+                <span class="font-bold text-[var(--foreground)]">Rs. 65,000</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Advance Received</span>
+                <span class="font-bold text-emerald-500">Rs. 30,000 (Qasim)</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Pending Balance</span>
+                <span class="font-bold text-amber-500">Rs. 35,000</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Agent Commission</span>
+                <span class="font-bold text-rose-500">Rs. 17,500</span>
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-[var(--border)] flex flex-wrap gap-4 text-xs text-[var(--muted-foreground)]">
+              <span><strong>Domain Cost:</strong> Rs. 4,100 (Paid by Asghar in 8.2k batch)</span>
+              <span><strong>Email:</strong> arschemicals1@gmail.com</span>
+              <span><strong>Net Projected Firm Profit:</strong> <strong class="text-emerald-500">Rs. 43,400</strong></span>
+            </div>
+          </div>
+
+          <!-- Bin Irfan Fragrances -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40 hover:border-emerald-500/50 transition">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-[var(--border)] pb-3">
+              <div>
+                <span class="text-xs font-mono uppercase text-sky-500 font-semibold tracking-wider">Project 02</span>
+                <h3 class="text-base font-bold text-[var(--foreground)]">Bin Irfan Fragrances</h3>
+                <span class="text-xs text-[var(--muted-foreground)]">Repo: <code class="bg-[var(--card)] px-1.5 py-0.5 rounded border border-[var(--border)]">AAQSOLS/Bin-Irfan</code> & <code class="bg-[var(--card)] px-1.5 py-0.5 rounded border border-[var(--border)]">bin-irfan-fragrances</code></span>
+              </div>
+              <div class="flex flex-wrap gap-2 items-center">
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Live Storefront</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-purple-500/10 text-purple-500 border border-purple-500/20">Retainer Target: ~Rs. 5k/mo</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3 text-sm">
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Model</span>
+                <span class="font-bold text-[var(--foreground)]">E-Comm + Retainer</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Payment Received</span>
+                <span class="font-bold text-emerald-500">Rs. 6,000 (Qasim)</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Domain Cost</span>
+                <span class="font-bold text-sky-500">Rs. 4,100 (Asghar)</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Current Cash Margin</span>
+                <span class="font-bold text-emerald-500">Rs. 1,900</span>
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-[var(--border)] flex flex-wrap gap-4 text-xs text-[var(--muted-foreground)]">
+              <span><strong>Accounts:</strong> binirfanfragrances1@gmail.com</span>
+              <span><strong>Social Channels:</strong> Instagram, TikTok, Facebook (all registered)</span>
+            </div>
+          </div>
+
+          <!-- ApniChhat.com -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40 hover:border-emerald-500/50 transition">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-[var(--border)] pb-3">
+              <div>
+                <span class="text-xs font-mono uppercase text-indigo-500 font-semibold tracking-wider">Project 03</span>
+                <h3 class="text-base font-bold text-[var(--foreground)]">ApniChhat.com</h3>
+                <span class="text-xs text-[var(--muted-foreground)]">Domain: <code class="bg-[var(--card)] px-1.5 py-0.5 rounded border border-[var(--border)]">ApniChhat.com</code></span>
+              </div>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-amber-500/10 text-amber-500 border border-amber-500/20">In Setup</span>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3 text-sm">
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Advance Received</span>
+                <span class="font-bold text-emerald-500">Rs. 6,000 (Qasim)</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Domain Cost</span>
+                <span class="font-bold text-sky-500">Rs. 4,100 (Asghar)</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Net Margin to Date</span>
+                <span class="font-bold text-emerald-500">Rs. 1,900</span>
+              </div>
+              <div>
+                <span class="text-xs text-[var(--muted-foreground)] block">Contract Balance</span>
+                <span class="font-bold text-[var(--muted-foreground)]">TBD on scoping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pipeline Projects -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+            <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/30">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Hasnain Auto Accessories</h4>
+                <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500 font-medium">Almost Completed</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1">Repo: <code>qasimkhanfaridi/hasnainauto</code></p>
+              <p class="text-xs text-[var(--foreground)] mt-2">Luxury showroom, seat cover configurator, admin product catalog complete. Ready for pricing & invoicing.</p>
+              <span class="inline-block mt-2 text-xs font-semibold text-amber-500">Payment: Rs. 0 received (Action: Send Demo & Bill)</span>
+            </div>
+
+            <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/30">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Rehman Travels</h4>
+                <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500 font-medium">Almost Completed</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1">Status: Delivery near completion</p>
+              <p class="text-xs text-[var(--foreground)] mt-2">Core development wrapped up. Final client review pending.</p>
+              <span class="inline-block mt-2 text-xs font-semibold text-amber-500">Payment: Rs. 0 received (Action: Issue Invoice)</span>
+            </div>
+
+            <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/30">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-[var(--foreground)]">PulseCore Heart Clinic HMS</h4>
+                <span class="px-2 py-0.5 text-xs rounded bg-indigo-500/10 text-indigo-500 font-medium">In Process</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1">Repos: <code>AAQSOLS-HeartClinic-HMS</code> & <code>Modular-HMS-Platform</code></p>
+              <p class="text-xs text-[var(--foreground)] mt-2">Enterprise .NET 10 + React clinical management platform (LOOM replica). Flagship product.</p>
+              <span class="inline-block mt-2 text-xs font-semibold text-indigo-500">Tier: Enterprise Product</span>
+            </div>
+
+            <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/30">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-[var(--foreground)]">MediPro</h4>
+                <span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500 font-medium">Pilot Active</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1">Repo: <code>qasimkhanfaridi/MediPro</code></p>
+              <p class="text-xs text-[var(--foreground)] mt-2">B2B pharmacy ordering and distributor operations for Pakistan market pilot.</p>
+              <span class="inline-block mt-2 text-xs font-semibold text-sky-500">Tier: SaaS Pilot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: Expenses Ledger -->
+    <section id="pane-expenses" class="tab-pane hidden space-y-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
+        <h2 class="text-lg font-bold text-[var(--foreground)] mb-1">Itemized Expenses Ledger (29 Records)</h2>
+        <p class="text-sm text-[var(--muted-foreground)] mb-4">Complete breakdown of all out-of-pocket investments made by Qasim and Asghar.</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-[var(--border)] text-xs text-[var(--muted-foreground)] uppercase">
+                <th class="py-2 px-3">Description</th>
+                <th class="py-2 px-3">Category</th>
+                <th class="py-2 px-3">Amount</th>
+                <th class="py-2 px-3">Paid By</th>
+                <th class="py-2 px-3">Allocation</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[var(--border)]">
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Rent / Security Advance</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Advance</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 100,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Al-Basit Furniture (Advance)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 79,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Chairs</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Furniture</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 50,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Water Dispenser & Tea Kettle</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Equipment</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 49,500</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Appliances</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Tables (Remaining Payment)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Furniture</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 48,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Furniture</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Electricity Samaan (Wiring, Lights, Sockets)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 20,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Electrical</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Mats, Dustbin, Plates & Supplies</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 12,540</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Essentials & Pantry</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Grocery Supplies</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Kitchen / Grocery</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 12,300</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Kitchen & Pantry</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office White Board</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Equipment</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 11,500</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Domains etc. AAQSOLS</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Corporate Web</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 8,200</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Corporate Infrastructure</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Domains (Bin Irfan & ARS)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Project Domains</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 8,200</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">ARS & Bin Irfan</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Visiting Cards / Business Cards</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Branding</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 8,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Corporate Identity</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Frosted Glass Paper (Partitions)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 8,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Decor / Partitions</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Card Payment (Furniture Delivery)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 7,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Internet Connection</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Utilities</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 6,700</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Connectivity</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Writing Pads / Letterheads</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 5,600</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Domain ApniChhat</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Project Domains</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 4,100</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">ApniChhat.com</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Pizza / Team Lunch 1</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Refreshment</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 4,100</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Team Refreshment</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Table Transport & Delivery</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 3,600</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Logistics</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Cups & Kitchenware</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Kitchen / Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 3,420</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Kitchen & Pantry</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Power Extensions</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Electrical</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 3,400</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Pizza / Team Lunch 2</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Refreshment</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,800</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Team Refreshment</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Akhtar Stationery</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,800</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Office Hardware & Fixtures</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,700</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Stationery Purchase</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,600</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Water Bottles (Dispenser)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,500</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Kitchen / Supplies</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Stamp Paper, Agreement & Letterhead</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Legal / Admin</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Legal & Admin</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Company SIM Card</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Communications</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Telecom</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Board / Accessories</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Equipment</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 1,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Asghar</span></td>
+                <td class="py-2 px-3">Office Setup</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="border-t-2 border-[var(--border)] font-bold">
+                <td colspan="2" class="py-3 px-3">TOTAL EXPENDITURE</td>
+                <td class="py-3 px-3 text-rose-500">Rs. 471,560</td>
+                <td colspan="2" class="py-3 px-3 text-[var(--muted-foreground)] text-xs">Qasim: Rs. 255.7k | Asghar: Rs. 215.8k</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: GitHub Repositories Status -->
+    <section id="pane-repos" class="tab-pane hidden space-y-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
+        <h2 class="text-lg font-bold text-[var(--foreground)] mb-1">Verified GitHub Repositories (Last Month Activity)</h2>
+        <p class="text-sm text-[var(--muted-foreground)] mb-4">Inspection results from <code>github.com/qasimkhanfaridi</code> & <code>AAQSOLS</code> organization.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">a-rehman-sons-website</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Updated Today</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">A. Rehman & Sons B2B chemical supplier website</p>
+            <div class="mt-3 text-xs space-y-1 bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+              <div><strong>Latest Commit:</strong> Update Certs to Certifications and remove fixed prices site-wide</div>
+              <div class="text-[var(--muted-foreground)]"><strong>SEO Overhaul:</strong> 29 static pages, Schema.org, WhatsApp quote flow</div>
+            </div>
+          </div>
+
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">bin-irfan-fragrances</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Updated Sep 20-21</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">Luxury perfume catalogue with direct WhatsApp ordering</p>
+            <div class="mt-3 text-xs space-y-1 bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+              <div><strong>Remote:</strong> <code>AAQSOLS/Bin-Irfan.git</code> & <code>qasimkhanfaridi/bin-irfan-fragrances.git</code></div>
+              <div class="text-[var(--muted-foreground)]"><strong>Accounts:</strong> binirfanfragrances1@gmail.com (IG, TikTok, FB)</div>
+            </div>
+          </div>
+
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">hasnainauto</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Updated Today</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">Automotive accessories showroom & configurator</p>
+            <div class="mt-3 text-xs space-y-1 bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+              <div><strong>Latest:</strong> Luxury showroom with 10 JSON products, seat cover configurator, Performance Red theme</div>
+              <div class="text-[var(--muted-foreground)]"><strong>Status:</strong> Code complete; awaiting commercial payment agreement.</div>
+            </div>
+          </div>
+
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/40">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-base text-[var(--foreground)]">AAQSOLS-HeartClinic-HMS</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-500/10 text-sky-500">Pushed Sep 08</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">PulseCore Heart Clinic HMS — LOOM replica (.NET 10 + React)</p>
+            <div class="mt-3 text-xs space-y-1 bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+              <div><strong>Features:</strong> Challan Vault, Clinical Workflows, High-throughput API</div>
+              <div class="text-[var(--muted-foreground)]"><strong>Associated Repo:</strong> <code>Modular-HMS-Platform</code> (M0-M8 complete)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('border-emerald-500', 'text-emerald-500');
+        el.classList.add('border-transparent', 'text-[var(--muted-foreground)]');
+      });
+
+      const pane = document.getElementById('pane-' + tabId);
+      const btn = document.getElementById('tab-' + tabId);
+      if (pane) pane.classList.remove('hidden');
+      if (btn) {
+        btn.classList.add('border-emerald-500', 'text-emerald-500');
+        btn.classList.remove('border-transparent', 'text-[var(--muted-foreground)]');
+      }
+    }
+  </script>
+</body>
+</html>

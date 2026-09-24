@@ -1,0 +1,522 @@
+{
+  "company": {
+    "name": "AAQSOLS",
+    "description": "Software Development & Dedicated Engineering Teams",
+    "currency": "PKR",
+    "founded": 2025,
+    "head_office": "Gulberg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pakistan",
+    "email": "info@aaqsols.com",
+    "website": "www.aaqsols.com",
+    "partners": [
+      {
+        "id": "qasim",
+        "name": "Qasim Faridi",
+        "role": "Partner / Engineering Lead",
+        "status": "Active"
+      },
+      {
+        "id": "asghar",
+        "name": "Asghar",
+        "role": "Partner",
+        "status": "Active"
+      },
+      {
+        "id": "ali",
+        "name": "Ali",
+        "role": "Partner",
+        "status": "Active"
+      }
+    ]
+  },
+  "summary": {
+    "total_revenue_collected": 42000,
+    "total_office_capex_spent": 383700,
+    "total_admin_supplies_spent": 67360,
+    "total_domains_opex_spent": 20500,
+    "total_expenses_spent": 471560,
+    "net_operating_cash_deficit": -429560,
+    "pending_receivables_known": 35000,
+    "pending_agent_commissions": 17500,
+    "net_pending_income_known": 17500
+  },
+  "partner_balances": {
+    "qasim": {
+      "total_spent": 255740,
+      "total_received": 42000,
+      "net_out_of_pocket_balance": -213740,
+      "status": "Company owes Qasim PKR 213,740 (Net unrecovered out-of-pocket)"
+    },
+    "asghar": {
+      "total_spent": 215820,
+      "total_received": 0,
+      "net_out_of_pocket_balance": -215820,
+      "status": "Company owes Asghar PKR 215,820 for domain investments"
+    },
+    "ali": {
+      "total_spent": 0,
+      "total_received": 0,
+      "net_out_of_pocket_balance": 0,
+      "status": "Pending partner records"
+    }
+  },
+  "projects": [
+    {
+      "id": "arschemicals",
+      "name": "ARS Chemicals (A. Rehman & Sons)",
+      "repo": "qasimkhanfaridi/a-rehman-sons-website",
+      "status": "Live / Near Complete (SEO & Catalog updated)",
+      "contract_value": 65000,
+      "advance_received": 30000,
+      "payment_received_by": "qasim",
+      "pending_balance": 35000,
+      "agent_commission": 17500,
+      "agent_commission_terms": "Payable from remaining 35k once collected",
+      "domain": {
+        "name": "arschemicals (domain registered)",
+        "cost": 4100,
+        "paid_by": "asghar",
+        "renewal_date": "2027-09-10"
+      },
+      "account": {
+        "email": "arschemicals1@gmail.com",
+        "services": [
+          "Domain Registrar",
+          "Website Admin / Hosting"
+        ]
+      },
+      "net_projected_profit": 43400,
+      "net_cash_current": 25900
+    },
+    {
+      "id": "binirfanfragrances",
+      "name": "Bin Irfan Fragrances",
+      "repo": "AAQSOLS/Bin-Irfan & qasimkhanfaridi/bin-irfan-fragrances",
+      "status": "Live / Retainer Onboarding",
+      "contract_value": null,
+      "contract_note": "Expected ~Rs. 5,000/month recurring maintenance/retainer",
+      "advance_received": 6000,
+      "payment_received_by": "qasim",
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "binirfanfragrances (domain registered)",
+        "cost": 4100,
+        "paid_by": "asghar",
+        "renewal_date": null
+      },
+      "account": {
+        "email": "binirfanfragrances1@gmail.com",
+        "services": [
+          "Instagram",
+          "TikTok",
+          "Facebook",
+          "Domain/Hosting"
+        ]
+      },
+      "net_cash_current": 1900
+    },
+    {
+      "id": "apnichhat",
+      "name": "ApniChhat.com",
+      "repo": null,
+      "status": "In Setup / Development",
+      "contract_value": null,
+      "contract_note": "Initial advance received, final scope TBD",
+      "advance_received": 6000,
+      "payment_received_by": "qasim",
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "ApniChhat.com",
+        "cost": 4100,
+        "paid_by": "asghar",
+        "renewal_date": null
+      },
+      "account": {
+        "email": null,
+        "services": [
+          "Domain Registered"
+        ]
+      },
+      "net_cash_current": 1900
+    },
+    {
+      "id": "aaqsols_internal",
+      "name": "AAQSOLS Corporate Infrastructure",
+      "repo": "AAQSOLS-Private/aaqsols",
+      "status": "Active / Corporate",
+      "contract_value": 0,
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "aaqsols.com & related digital setup",
+        "cost": 8200,
+        "paid_by": "asghar",
+        "renewal_date": null
+      },
+      "account": {
+        "email": "info@aaqsols.com",
+        "services": [
+          "Company Domains",
+          "Hosting",
+          "Email Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "rehman_travels",
+      "name": "Rehman Travels",
+      "repo": null,
+      "status": "Almost Completed",
+      "contract_value": null,
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "notes": "No payment received yet; project delivery near completion"
+    },
+    {
+      "id": "hasnainauto",
+      "name": "Hasnain Auto Accessories",
+      "repo": "qasimkhanfaridi/hasnainauto",
+      "status": "Almost Completed",
+      "contract_value": null,
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "notes": "Luxury showroom, 10 JSON products, seat cover configurator, admin portal done. Payment pending negotiation."
+    },
+    {
+      "id": "hsm",
+      "name": "PulseCore Heart Clinic HMS / Modular HMS",
+      "repo": "qasimkhanfaridi/AAQSOLS-HeartClinic-HMS & Modular-HMS-Platform",
+      "status": "In Process",
+      "contract_value": null,
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "notes": "Enterprise .NET 10 + React clinical management system; LOOM replica."
+    },
+    {
+      "id": "medipro",
+      "name": "MediPro",
+      "repo": "qasimkhanfaridi/MediPro",
+      "status": "Pilot / Developed",
+      "contract_value": null,
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "notes": "B2B pharmacy ordering & distributor ops (Pakistan pilot)"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "EXP-001",
+      "category": "Office Setup / Furniture",
+      "title": "Al-Basit Furniture (Advance)",
+      "amount": 79000,
+      "paid_by": "qasim",
+      "payment_method": "Advance / Cash / Transfer",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-002",
+      "category": "Office Setup / Furniture",
+      "title": "Card Payment (Furniture / Delivery)",
+      "amount": 7000,
+      "paid_by": "qasim",
+      "payment_method": "Card",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-003",
+      "category": "Office Supplies",
+      "title": "Stationery Purchase",
+      "amount": 2600,
+      "paid_by": "qasim",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-004",
+      "category": "Office Supplies",
+      "title": "Pads (Writing / Letterhead)",
+      "amount": 5600,
+      "paid_by": "qasim",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-005",
+      "category": "Office Equipment",
+      "title": "White Board for Office",
+      "amount": 11500,
+      "paid_by": "qasim",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-006",
+      "category": "Office Supplies",
+      "title": "Akhtar Stationery",
+      "amount": 2800,
+      "paid_by": "qasim",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-007",
+      "category": "Office Setup / Advance",
+      "title": "Office Rent / Security Advance",
+      "amount": 100000,
+      "paid_by": "asghar",
+      "payment_method": "Advance / Transfer",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-008",
+      "category": "Legal / Admin",
+      "title": "Stamp Paper, Agreement & Letterhead",
+      "amount": 2000,
+      "paid_by": "asghar",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-009",
+      "category": "Corporate Domains",
+      "title": "Domains etc. AAQSOLS",
+      "amount": 8200,
+      "paid_by": "asghar",
+      "payment_method": "Card / Online",
+      "project_id": "aaqsols_internal",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-010",
+      "category": "Office Communications",
+      "title": "Company SIM Card",
+      "amount": 2000,
+      "paid_by": "asghar",
+      "payment_method": "Cash / Online",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-011",
+      "category": "Project Domains",
+      "title": "Domains (Bin Irfan & ARS Chemicals)",
+      "amount": 8200,
+      "paid_by": "asghar",
+      "payment_method": "Card / Online",
+      "project_id": "arschemicals",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-012",
+      "category": "Office Furniture",
+      "title": "Office Chairs (50,000)",
+      "amount": 50000,
+      "paid_by": "asghar",
+      "payment_method": "Transfer / Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-013",
+      "category": "Project Domains",
+      "title": "Domain ApniChhat",
+      "amount": 4100,
+      "paid_by": "asghar",
+      "payment_method": "Card / Online",
+      "project_id": "apnichhat",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-014",
+      "category": "Branding / Marketing",
+      "title": "Visiting Cards / Business Cards",
+      "amount": 8000,
+      "paid_by": "asghar",
+      "payment_method": "Cash / Transfer",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-015",
+      "category": "Office Electrical",
+      "title": "Power Extensions",
+      "amount": 3400,
+      "paid_by": "asghar",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-016",
+      "category": "Office Equipment",
+      "title": "Board / Accessories",
+      "amount": 1000,
+      "paid_by": "asghar",
+      "payment_method": "Cash",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-017",
+      "category": "Office Utilities",
+      "title": "Office Internet Connection",
+      "amount": 6700,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-018",
+      "category": "Office Equipment",
+      "title": "Water Dispenser & Tea Kettle",
+      "amount": 49500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-019",
+      "category": "Office Supplies",
+      "title": "Water Bottles (Dispenser)",
+      "amount": 2500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-020",
+      "category": "Office Setup / Decor",
+      "title": "Frosted Glass Paper (Partitions)",
+      "amount": 8000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-021",
+      "category": "Office Supplies / Grocery",
+      "title": "Office Grocery Supplies",
+      "amount": 12300,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-022",
+      "category": "Refreshment / Food",
+      "title": "Office Pizza / Team Lunch",
+      "amount": 4100,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-023",
+      "category": "Office Supplies / Essentials",
+      "title": "Mats, Dustbin, Plates & Supplies",
+      "amount": 12540,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-024",
+      "category": "Office Setup / Logistics",
+      "title": "Table Transport & Delivery",
+      "amount": 3600,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-025",
+      "category": "Refreshment / Food",
+      "title": "Office Pizza / Team Lunch",
+      "amount": 2800,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-026",
+      "category": "Office Setup / Hardware",
+      "title": "Office Hardware & Fixtures",
+      "amount": 2700,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-027",
+      "category": "Office Supplies / Kitchen",
+      "title": "Office Cups & Kitchenware",
+      "amount": 3420,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-028",
+      "category": "Office Furniture",
+      "title": "Office Tables (Remaining Payment)",
+      "amount": 48000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-029",
+      "category": "Office Setup / Electrical",
+      "title": "Electricity Samaan (Wiring, Lights, Sockets)",
+      "amount": 20000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    }
+  ],
+  "inflows": [
+    {
+      "id": "REV-001",
+      "project_id": "arschemicals",
+      "title": "ARS Chemicals - Advance Payment",
+      "amount": 30000,
+      "received_by": "qasim",
+      "date": "2026-09"
+    },
+    {
+      "id": "REV-002",
+      "project_id": "binirfanfragrances",
+      "title": "Bin Irfan Fragrances - Initial Setup / Advance",
+      "amount": 6000,
+      "received_by": "qasim",
+      "date": "2026-09"
+    },
+    {
+      "id": "REV-003",
+      "project_id": "apnichhat",
+      "title": "ApniChhat.com - Project Advance",
+      "amount": 6000,
+      "received_by": "qasim",
+      "date": "2026-09"
+    }
+  ]
+}
