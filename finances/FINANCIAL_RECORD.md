@@ -1,6 +1,6 @@
 # AAQSOLS — Financial Ledger & Project Portfolio Record
 
-**Document Version:** 1.7 (Updated with Electricity Samaan by Qasim)  
+**Document Version:** 1.8 (Updated with Chairs Transport, Stationery & Company Registration by Qasim)  
 **Currency:** PKR (Pakistani Rupee)  
 **Partners:** Qasim Faridi (Engineering Lead), Asghar, Ali  
 **Last Updated:** September 24, 2026  
@@ -12,11 +12,11 @@
 | Metric | Amount (PKR) | Notes |
 | :--- | :--- | :--- |
 | **Total Client Revenue Received** | **Rs. 42,000** | Cash collected & held by Qasim (ARS 30k + Bin Irfan 6k + ApniChhat 6k) |
-| **Office Advance, Furniture & Capex** | **Rs. 383,700** | Advance (100k), Furniture Adv (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Electricity Samaan (20k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table Transport (3.6k), Extensions (3.4k), Hardware (2.7k), Board (1k) |
-| **Admin, Legal, Kitchen, Meals & Supplies** | **Rs. 67,360** | Mats/Dustbin/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Team Pizza 1 (4.1k), Cups (3.4k), Team Pizza 2 (2.8k), Akhtar Stat. (2.8k), Stat. (2.6k), Water Bottles (2.5k), Stamp/Legal (2k), SIM (2k), Writing Pads (5.6k) |
+| **Office Advance, Furniture & Capex** | **Rs. 387,200** | Advance (100k), Furniture Adv (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Electricity Samaan (20k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Chairs Transport (3.5k), Table Transport (3.6k), Extensions (3.4k), Hardware (2.7k), Board (1k) |
+| **Admin, Legal, Kitchen, Meals & Supplies** | **Rs. 82,160** | Company Registration (12k), Mats/Dustbin/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Writing Pads (5.6k), Team Pizza 1 (4.1k), Cups (3.4k), Stationery & Files (2.8k), Team Pizza 2 (2.8k), Akhtar Stat. (2.8k), Stat. (2.6k), Water Bottles (2.5k), Stamp/Legal (2k), SIM (2k) |
 | **Domains & Digital Infrastructure** | **Rs. 20,500** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), ApniChhat (4.1k) |
-| **Total Company Expenses Incurred (Kharcha)** | **Rs. 471,560** | Total startup seed capital spent out-of-pocket across 29 entries |
-| **Current Net Startup Deficit** | **-Rs. 429,560** | Net unrecovered partner investment (Rs. 42,000 - Rs. 471,560) |
+| **Total Company Expenses Incurred (Kharcha)** | **Rs. 489,860** | Total startup seed capital spent out-of-pocket across 32 entries |
+| **Current Net Startup Deficit** | **-Rs. 447,860** | Net unrecovered partner investment (Rs. 42,000 - Rs. 489,860) |
 | **Known Pending Receivables** | **Rs. 35,000** | ARS Chemicals pending balance |
 | **Committed Liabilities (Agent Commission)** | **-Rs. 17,500** | Payable from remaining ARS 35k upon recovery |
 | **Net Expected Inflow from ARS Remaining** | **+Rs. 17,500** | Rs. 35,000 - Rs. 17,500 |
@@ -29,32 +29,35 @@
 +----------------------------------------------------------------------------------------------------+
 | Partner | Total Spent Out-of-Pocket | Client Cash Collected & Held | Net Position / Company Due     |
 +---------+---------------------------+------------------------------+--------------------------------+
-| QASIM   | Rs. 255,740 (Office Setup)| Rs. 42,000 (3 Client Advances| Company owes QASIM: Rs. 213,740|
+| QASIM   | Rs. 274,040 (Office Setup)| Rs. 42,000 (3 Client Advances| Company owes QASIM: Rs. 232,040|
 | ASGHAR  | Rs. 215,820 (Office + Web)| Rs. 0                        | Company owes ASGHAR:Rs. 215,820|
 | ALI     | Rs. 0       (Pending info)| Rs. 0                        | Balanced / Awaiting records    |
 +---------+---------------------------+------------------------------+--------------------------------+
-| TOTAL   | Rs. 471,560               | Rs. 42,000                   | Total Partner Debt: Rs. 429,560|
+| TOTAL   | Rs. 489,860               | Rs. 42,000                   | Total Partner Debt: Rs. 447,860|
 +----------------------------------------------------------------------------------------------------+
 ```
 
 ### A. Qasim Faridi (You)
-* **Total Spent Out-of-Pocket:** Rs. 255,740
+* **Total Spent Out-of-Pocket:** Rs. 274,040
 * **Client Cash Received & Held:** Rs. 42,000
-* **Net Out-of-Pocket Remaining:** **Rs. 213,740** (Company owes Qasim)
-* *Itemized Payments by Qasim (13 records):*
+* **Net Out-of-Pocket Remaining:** **Rs. 232,040** (Company owes Qasim)
+* *Itemized Payments by Qasim (16 records):*
   1. Al-Basit Furniture (Advance): Rs. 79,000
   2. Water Dispenser & Tea Kettle: Rs. 49,500
   3. Office Tables (Remaining Payment): Rs. 48,000
-  4. **Electricity Samaan (Wiring, Lights, Sockets):** **Rs. 20,000** *(New)*
+  4. Electricity Samaan (Wiring, Lights, Sockets): Rs. 20,000
   5. Mats, Dustbin, Plates & Supplies: Rs. 12,540
-  6. Office White Board: Rs. 11,500
-  7. Frosted Glass Paper (Partitions): Rs. 8,000
-  8. Card payment (furniture delivery): Rs. 7,000
-  9. Office Internet Connection: Rs. 6,700
-  10. Writing pads / letterheads: Rs. 5,600
-  11. Akhtar stationery: Rs. 2,800
-  12. Stationery purchase: Rs. 2,600
-  13. Water Bottles (Dispenser): Rs. 2,500
+  6. **Company Registration Charges (SECP / Legal / Tax Filing):** **Rs. 12,000** *(New)*
+  7. Office White Board: Rs. 11,500
+  8. Frosted Glass Paper (Partitions): Rs. 8,000
+  9. Card payment (furniture delivery): Rs. 7,000
+  10. Office Internet Connection: Rs. 6,700
+  11. Writing pads / letterheads: Rs. 5,600
+  12. **Chairs Transport Charges:** **Rs. 3,500** *(New)*
+  13. Akhtar stationery: Rs. 2,800
+  14. **Stationery, Stapler, Files & Office Folders:** **Rs. 2,800** *(New)*
+  15. Stationery purchase: Rs. 2,600
+  16. Water Bottles (Dispenser): Rs. 2,500
 
 ### B. Asghar
 * **Total Spent Out-of-Pocket:** Rs. 215,820
@@ -85,11 +88,11 @@
 
 > [!NOTE]
 > **Exact Reconciliation Check:**  
-> Company owes Qasim (Rs. 213,740) + Company owes Asghar (Rs. 215,820) = **Rs. 429,560**, which exactly equals the current company startup deficit.
+> Company owes Qasim (Rs. 232,040) + Company owes Asghar (Rs. 215,820) = **Rs. 447,860**, which exactly equals the current company startup deficit.
 
 ---
 
-## 3. Detailed Expense Ledger (Company Kharcha - 29 Records)
+## 3. Detailed Expense Ledger (Company Kharcha - 32 Records)
 
 | ID | Date | Category | Description | Amount (PKR) | Paid By | Method | Project / Allocation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -122,7 +125,10 @@
 | `EXP-027` | Sep 2026 | Kitchen / Supplies| Office Cups & Kitchenware | Rs. 3,420 | Asghar | Direct | Kitchen & Pantry |
 | `EXP-028` | Sep 2026 | Office Furniture | Office Tables (Remaining Payment) | Rs. 48,000 | Qasim | Direct | Office Furniture |
 | `EXP-029` | Sep 2026 | Office Setup | Electricity Samaan (Wiring, Lights, Sockets) | Rs. 20,000 | Qasim | Direct | Office Electrical |
-| **TOTAL** | | | | **Rs. 471,560** | | | |
+| `EXP-030` | Sep 2026 | Office Setup | Chairs Transport Charges | Rs. 3,500 | Qasim | Direct | Office Logistics |
+| `EXP-031` | Sep 2026 | Office Supplies | Stationery, Stapler, Files & Office Folders | Rs. 2,800 | Qasim | Direct | Office Stationery |
+| `EXP-032` | Sep 2026 | Legal & Registration | Company Registration Charges (SECP / Tax) | Rs. 12,000 | Qasim | Direct | Corporate Legal |
+| **TOTAL** | | | | **Rs. 489,860** | | | |
 
 ---
 

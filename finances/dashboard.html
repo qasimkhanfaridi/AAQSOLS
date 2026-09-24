@@ -43,20 +43,20 @@
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Office Setup & Capex</span>
-        <div class="text-2xl font-bold text-amber-500 mt-1">Rs. 383,700</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Advance (100k), Furniture (127k), Dispenser (49.5k), Chairs (50k), Electric (20k)</p>
+        <div class="text-2xl font-bold text-amber-500 mt-1">Rs. 387,200</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Advance (100k), Furniture (127k), Dispenser (49.5k), Chairs (50k), Electric (20k), Transport (7.1k)</p>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Kharcha Incurred</span>
-        <div class="text-2xl font-bold text-rose-500 mt-1">Rs. 471,560</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Qasim (255.7k) + Asghar (215.8k)</p>
+        <div class="text-2xl font-bold text-rose-500 mt-1">Rs. 489,860</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Qasim (274.0k) + Asghar (215.8k)</p>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Partner Debt</span>
-        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 429,560</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (213.7k) + Asghar (215.8k)</p>
+        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 447,860</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (232.0k) + Asghar (215.8k)</p>
       </div>
     </div>
 
@@ -69,7 +69,7 @@
         Projects & Contracts (7)
       </button>
       <button onclick="switchTab('expenses')" id="tab-expenses" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
-        Expenses Ledger (29 items)
+        Expenses Ledger (32 items)
       </button>
       <button onclick="switchTab('repos')" id="tab-repos" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
         GitHub Repos Status
@@ -94,7 +94,7 @@
             <div class="space-y-1 text-sm">
               <div class="flex justify-between text-[var(--muted-foreground)]">
                 <span>Total Spent (Out-of-Pocket):</span>
-                <span class="font-semibold text-[var(--foreground)]">Rs. 255,740</span>
+                <span class="font-semibold text-[var(--foreground)]">Rs. 274,040</span>
               </div>
               <div class="flex justify-between text-[var(--muted-foreground)]">
                 <span>Client Advances Held:</span>
@@ -102,11 +102,11 @@
               </div>
               <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
                 <span>Company Reimbursement Due:</span>
-                <span class="text-amber-500 text-base">Rs. 213,740</span>
+                <span class="text-amber-500 text-base">Rs. 232,040</span>
               </div>
             </div>
             <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-              Paid furniture advance (79k), tables balance (48k), dispenser/kettle (49.5k), electricity (20k), mats/plates (12.5k), whiteboard (11.5k), frost paper (8k), internet (6.7k), water (2.5k), stationery (11k). Company owes Qasim Rs. 213,740.
+              Paid furniture advance (79k), tables balance (48k), dispenser/kettle (49.5k), electricity (20k), SECP registration (12k), mats/plates (12.5k), whiteboard (11.5k), frost paper (8k), card fee (7k), internet (6.7k), chairs transport (3.5k), stationery & files (13.8k), water (2.5k). Company owes Qasim Rs. 232,040.
             </p>
           </div>
 
@@ -164,13 +164,13 @@
         <!-- Settlement Action Plan Box -->
         <div class="mt-5 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <div>
-            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Seed Investment by Partners: Rs. 471,560</h3>
+            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Seed Investment by Partners: Rs. 489,860</h3>
             <p class="text-xs text-[var(--muted-foreground)]">
-              Total unrecovered partner cash: Rs. 429,560. All incoming client payments directly pay down these partner balances.
+              Total unrecovered partner cash: Rs. 447,860. All incoming client payments directly pay down these partner balances.
             </p>
           </div>
           <div class="text-xs font-mono bg-[var(--card)] px-3 py-1.5 rounded-lg border border-[var(--border)]">
-            Exact Reconciliation: 213,740 (Qasim) + 215,820 (Asghar) = Rs. 429,560
+            Exact Reconciliation: 232,040 (Qasim) + 215,820 (Asghar) = Rs. 447,860
           </div>
         </div>
       </div>
@@ -409,6 +409,13 @@
                 <td class="py-2 px-3">Kitchen & Pantry</td>
               </tr>
               <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Company Registration Charges (SECP / Tax)</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Legal & Registration</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 12,000</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Corporate Legal</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
                 <td class="py-2 px-3 font-medium">Office White Board</td>
                 <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Equipment</td>
                 <td class="py-2 px-3 font-bold text-rose-500">Rs. 11,500</td>
@@ -486,6 +493,13 @@
                 <td class="py-2 px-3">Office Logistics</td>
               </tr>
               <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Chairs Transport Charges</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Setup</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 3,500</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Logistics</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
                 <td class="py-2 px-3 font-medium">Office Cups & Kitchenware</td>
                 <td class="py-2 px-3 text-[var(--muted-foreground)]">Kitchen / Supplies</td>
                 <td class="py-2 px-3 font-bold text-rose-500">Rs. 3,420</td>
@@ -512,6 +526,13 @@
                 <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,800</td>
                 <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
                 <td class="py-2 px-3">Office Setup</td>
+              </tr>
+              <tr class="hover:bg-[var(--card)]/50">
+                <td class="py-2 px-3 font-medium">Stationery, Stapler, Files & Folders</td>
+                <td class="py-2 px-3 text-[var(--muted-foreground)]">Office Supplies</td>
+                <td class="py-2 px-3 font-bold text-rose-500">Rs. 2,800</td>
+                <td class="py-2 px-3"><span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500">Qasim</span></td>
+                <td class="py-2 px-3">Office Stationery</td>
               </tr>
               <tr class="hover:bg-[var(--card)]/50">
                 <td class="py-2 px-3 font-medium">Office Hardware & Fixtures</td>
@@ -559,8 +580,8 @@
             <tfoot>
               <tr class="border-t-2 border-[var(--border)] font-bold">
                 <td colspan="2" class="py-3 px-3">TOTAL EXPENDITURE</td>
-                <td class="py-3 px-3 text-rose-500">Rs. 471,560</td>
-                <td colspan="2" class="py-3 px-3 text-[var(--muted-foreground)] text-xs">Qasim: Rs. 255.7k | Asghar: Rs. 215.8k</td>
+                <td class="py-3 px-3 text-rose-500">Rs. 489,860</td>
+                <td colspan="2" class="py-3 px-3 text-[var(--muted-foreground)] text-xs">Qasim: Rs. 274.0k | Asghar: Rs. 215.8k</td>
               </tr>
             </tfoot>
           </table>
