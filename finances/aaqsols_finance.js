@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * AAQSOLS Financial & Project Management CLI
- * Tracks investments, expenses (kharcha), advances, partner balances, and projects.
+ * Tracks investments, capital injections, expenses (kharcha), advances, partner balances, and projects.
  */
 
 const fs = require('fs');
@@ -18,7 +18,6 @@ function loadLedger() {
 }
 
 function saveLedger(data) {
-  // Recompute summaries and partner balances
   recalculateLedger(data);
   fs.writeFileSync(LEDGER_PATH, JSON.stringify(data, null, 2), 'utf8');
 }
@@ -36,6 +35,8 @@ function recalculateLedger(data) {
 
   const partnerSpent = { qasim: 0, asghar: 0, ali: 0 };
   const partnerReceived = { qasim: 0, asghar: 0, ali: 0 };
+  const partnerCapital = { qasim: 0, asghar: 0, ali: 0 };
+  let totalCapitalInjected = 0;
 
   data.expenses.forEach(exp => {
     const amt = exp.amount || 0;
@@ -43,7 +44,7 @@ function recalculateLedger(data) {
     const cat = (exp.category || '').toLowerCase();
     if (cat.includes('domain')) {
       domainsOpex += amt;
-    } else if (cat.includes('supplies') || cat.includes('legal') || cat.includes('cards') || cat.includes('branding') || cat.includes('comm') || cat.includes('util') || cat.includes('internet') || cat.includes('grocery') || cat.includes('food') || cat.includes('refreshment') || cat.includes('kitchen') || cat.includes('meal')) {
+    } else if (cat.includes('supplies') || cat.includes('legal') || cat.includes('cards') || cat.includes('branding') || cat.includes('comm') || cat.includes('util') || cat.includes('internet') || cat.includes('grocery') || cat.includes('food') || cat.includes('refreshment') || cat.includes('kitchen') || cat.includes('meal') || cat.includes('commission') || cat.includes('payout')) {
       adminSupplies += amt;
     } else {
       officeCapex += amt;
@@ -66,6 +67,19 @@ function recalculateLedger(data) {
     }
   });
 
+  if (data.capital_contributions) {
+    data.capital_contributions.forEach(cap => {
+      const p = (cap.partner_id || '').toLowerCase();
+      const amt = cap.amount || 0;
+      totalCapitalInjected += amt;
+      if (partnerCapital[p] !== undefined) {
+        partnerCapital[p] += amt;
+      } else {
+        partnerCapital[p] = amt;
+      }
+    });
+  }
+
   let pendingReceivables = 0;
   let pendingCommissions = 0;
   if (data.projects) {
@@ -84,31 +98,35 @@ function recalculateLedger(data) {
     total_domains_opex_spent: domainsOpex,
     total_expenses_spent: totalExpenses,
     net_operating_cash_deficit: totalRevenue - totalExpenses,
+    total_capital_injected: totalCapitalInjected,
+    company_bank_balance: totalCapitalInjected,
+    total_liquid_cash: totalRevenue + totalCapitalInjected,
     pending_receivables_known: pendingReceivables,
     pending_agent_commissions: pendingCommissions,
     net_pending_income_known: pendingReceivables - pendingCommissions
   };
 
-  data.partner_balances = {
-    qasim: {
-      total_spent: partnerSpent.qasim || 0,
-      total_received: partnerReceived.qasim || 0,
-      net_out_of_pocket_balance: (partnerReceived.qasim || 0) - (partnerSpent.qasim || 0),
-      status: `Company owes Qasim PKR ${((partnerSpent.qasim || 0) - (partnerReceived.qasim || 0)).toLocaleString()} (Net unrecovered out-of-pocket)`
-    },
-    asghar: {
-      total_spent: partnerSpent.asghar || 0,
-      total_received: partnerReceived.asghar || 0,
-      net_out_of_pocket_balance: (partnerReceived.asghar || 0) - (partnerSpent.asghar || 0),
-      status: `Company owes Asghar PKR ${((partnerSpent.asghar || 0) - (partnerReceived.asghar || 0)).toLocaleString()} for domain investments`
-    },
-    ali: {
-      total_spent: partnerSpent.ali || 0,
-      total_received: partnerReceived.ali || 0,
-      net_out_of_pocket_balance: (partnerReceived.ali || 0) - (partnerSpent.ali || 0),
-      status: (partnerSpent.ali === 0 && partnerReceived.ali === 0) ? "Pending partner records" : "Active balance"
-    }
-  };
+  data.partner_balances = {};
+  for (const partner of ['qasim', 'asghar', 'ali']) {
+    const spent = partnerSpent[partner] || 0;
+    const capital = partnerCapital[partner] || 0;
+    const totalProvided = spent + capital;
+    const received = partnerReceived[partner] || 0;
+    const netDue = totalProvided - received;
+
+    data.partner_balances[partner] = {
+      total_spent: spent,
+      capital_injected: capital,
+      total_funds_provided: totalProvided,
+      total_received: received,
+      net_out_of_pocket_balance: -netDue,
+      status: netDue > 0
+        ? `Company owes ${partner.toUpperCase()} PKR ${netDue.toLocaleString()}`
+        : (netDue < 0
+          ? `${partner.toUpperCase()} holds company surplus PKR ${Math.abs(netDue).toLocaleString()}`
+          : 'Balanced / No record')
+    };
+  }
 }
 
 function printHeader(title) {
@@ -122,14 +140,20 @@ function showSummary() {
   recalculateLedger(data);
   printHeader('FINANCIAL OVERVIEW (PKR)');
 
-  console.log('\n[+] CASH FLOW & EXPENDITURE BREAKDOWN');
-  console.log(`  Total Client Revenue Collected: PKR ${data.summary.total_revenue_collected.toLocaleString().padStart(9)} (Held by Qasim)`);
-  console.log(`  Office Advance, Furniture, Capex: PKR ${data.summary.total_office_capex_spent.toLocaleString().padStart(9)}`);
-  console.log(`  Admin, Legal, Cards & Supplies:   PKR ${data.summary.total_admin_supplies_spent.toLocaleString().padStart(9)}`);
-  console.log(`  Domains & Digital Infrastructure: PKR ${data.summary.total_domains_opex_spent.toLocaleString().padStart(9)}`);
+  console.log('\n[+] LIQUID ASSETS & BANK POSITION');
+  console.log(`  Company Bank Account Balance: PKR ${data.summary.company_bank_balance.toLocaleString().padStart(9)} (Seed capital)`);
+  console.log(`  Client Revenue Held (Qasim):  PKR ${data.summary.total_revenue_collected.toLocaleString().padStart(9)}`);
   console.log(`  ------------------------------------------------------------`);
-  console.log(`  Total Company Kharcha (Spent):    PKR ${data.summary.total_expenses_spent.toLocaleString().padStart(9)}`);
-  console.log(`  Net Startup Seed Deficit:         PKR ${data.summary.net_operating_cash_deficit.toLocaleString().padStart(9)}`);
+  console.log(`  Total Liquid Company Cash:    PKR ${data.summary.total_liquid_cash.toLocaleString().padStart(9)}`);
+
+  console.log('\n[+] CASH FLOW & EXPENDITURE BREAKDOWN');
+  console.log(`  Total Client Revenue:         PKR ${data.summary.total_revenue_collected.toLocaleString().padStart(9)}`);
+  console.log(`  Office Advance, Capex & Furn: PKR ${data.summary.total_office_capex_spent.toLocaleString().padStart(9)}`);
+  console.log(`  Admin, Legal, Comm. & Meals:  PKR ${data.summary.total_admin_supplies_spent.toLocaleString().padStart(9)}`);
+  console.log(`  Domains & Digital Infra:      PKR ${data.summary.total_domains_opex_spent.toLocaleString().padStart(9)}`);
+  console.log(`  ------------------------------------------------------------`);
+  console.log(`  Total Company Kharcha (Spent):PKR ${data.summary.total_expenses_spent.toLocaleString().padStart(9)}`);
+  console.log(`  Startup Operational Deficit:  PKR ${data.summary.net_operating_cash_deficit.toLocaleString().padStart(9)}`);
 
   console.log('\n[+] PENDING RECEIVABLES & COMMISSIONS');
   console.log(`  Pending Client Inflows:       PKR ${data.summary.pending_receivables_known.toLocaleString().padStart(9)}`);
@@ -138,19 +162,30 @@ function showSummary() {
   console.log(`  Net Pending Inflow to Firm:   PKR ${data.summary.net_pending_income_known.toLocaleString().padStart(9)}`);
 
   printHeader('PARTNER CAPITAL & SETTLEMENT LEDGER');
+  let totalPartnerDebt = 0;
   for (const [key, p] of Object.entries(data.partner_balances)) {
     console.log(`\n* ${key.toUpperCase()}:`);
-    console.log(`  - Out-of-pocket Spent: PKR ${p.total_spent.toLocaleString()}`);
-    console.log(`  - Client Money Held:   PKR ${p.total_received.toLocaleString()}`);
-    const net = p.total_spent - p.total_received;
+    console.log(`  - Expenses Paid (Kharcha): PKR ${p.total_spent.toLocaleString()}`);
+    if (p.capital_injected > 0) {
+      console.log(`  - Bank Capital Deposit:    PKR ${p.capital_injected.toLocaleString()}`);
+    }
+    console.log(`  - Total Capital Provided:  PKR ${p.total_funds_provided.toLocaleString()}`);
+    console.log(`  - Client Money Held:       PKR ${p.total_received.toLocaleString()}`);
+    const net = p.total_funds_provided - p.total_received;
     if (net > 0) {
-      console.log(`  - Settlement Position: Company owes ${key.toUpperCase()} PKR ${net.toLocaleString()}`);
+      totalPartnerDebt += net;
+      console.log(`  - Settlement Position:     Company owes ${key.toUpperCase()} PKR ${net.toLocaleString()}`);
     } else if (net < 0) {
-      console.log(`  - Settlement Position: ${key.toUpperCase()} holds company surplus PKR ${Math.abs(net).toLocaleString()}`);
+      console.log(`  - Settlement Position:     ${key.toUpperCase()} holds company surplus PKR ${Math.abs(net).toLocaleString()}`);
     } else {
-      console.log(`  - Settlement Position: Balanced / No record`);
+      console.log(`  - Settlement Position:     Balanced / No record`);
     }
   }
+
+  console.log(`\n[=] RECONCILIATION SUMMARY:`);
+  console.log(`  Total Partner Debt Owed:      PKR ${totalPartnerDebt.toLocaleString()}`);
+  console.log(`  Less Company Bank Balance:   -PKR ${data.summary.company_bank_balance.toLocaleString()}`);
+  console.log(`  Net Unrecovered Seed Deficit: PKR ${(totalPartnerDebt - data.summary.company_bank_balance).toLocaleString()} (Matches Net Expenses Deficit)`);
   console.log('\n' + '='.repeat(68) + '\n');
 }
 
@@ -212,7 +247,6 @@ function addInflow(projectId, title, amount, receivedBy) {
   };
   data.inflows.push(newInf);
 
-  // Update project advance_received if project exists
   const p = data.projects.find(x => x.id === projectId);
   if (p) {
     p.advance_received = (p.advance_received || 0) + parseFloat(amount);
@@ -223,6 +257,26 @@ function addInflow(projectId, title, amount, receivedBy) {
 
   saveLedger(data);
   console.log(`\n[OK] Added Inflow ${id}: "${title}" of PKR ${amount} received by ${receivedBy}`);
+  showSummary();
+}
+
+function addCapital(partnerId, amount, destination, notes) {
+  const data = loadLedger();
+  if (!data.capital_contributions) {
+    data.capital_contributions = [];
+  }
+  const id = 'CAP-' + String(data.capital_contributions.length + 1).padStart(3, '0');
+  const newCap = {
+    id,
+    partner_id: partnerId.toLowerCase(),
+    amount: parseFloat(amount),
+    destination: destination || "Company Bank Account",
+    notes: notes || "Working capital / initial account deposit",
+    date: new Date().toISOString().substring(0, 10)
+  };
+  data.capital_contributions.push(newCap);
+  saveLedger(data);
+  console.log(`\n[OK] Added Capital Contribution ${id}: PKR ${amount} by ${partnerId} into ${newCap.destination}`);
   showSummary();
 }
 
@@ -251,7 +305,14 @@ switch (command) {
     }
     addInflow(args[1], args[2], args[3], args[4]);
     break;
+  case 'add-capital':
+    if (args.length < 3) {
+      console.log('Usage: node aaqsols_finance.js add-capital <partner_id> <amount> [destination] [notes]');
+      process.exit(1);
+    }
+    addCapital(args[1], args[2], args[3], args[4]);
+    break;
   default:
     console.log(`Unknown command: ${command}`);
-    console.log('Available commands: summary, projects, add-expense, add-inflow');
+    console.log('Available commands: summary, projects, add-expense, add-inflow, add-capital');
 }

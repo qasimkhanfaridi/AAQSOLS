@@ -35,6 +35,9 @@
     "total_domains_opex_spent": 20500,
     "total_expenses_spent": 522130,
     "net_operating_cash_deficit": -445130,
+    "total_capital_injected": 10000,
+    "company_bank_balance": 10000,
+    "total_liquid_cash": 87000,
     "pending_receivables_known": 0,
     "pending_agent_commissions": 0,
     "net_pending_income_known": 0
@@ -42,21 +45,27 @@
   "partner_balances": {
     "qasim": {
       "total_spent": 306310,
+      "capital_injected": 10000,
+      "total_funds_provided": 316310,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -229310,
-      "status": "Company owes Qasim PKR 229,310 (Net unrecovered out-of-pocket)"
+      "net_out_of_pocket_balance": -239310,
+      "status": "Company owes QASIM PKR 239,310"
     },
     "asghar": {
       "total_spent": 215820,
+      "capital_injected": 0,
+      "total_funds_provided": 215820,
       "total_received": 0,
       "net_out_of_pocket_balance": -215820,
-      "status": "Company owes Asghar PKR 215,820 for domain investments"
+      "status": "Company owes ASGHAR PKR 215,820"
     },
     "ali": {
       "total_spent": 0,
+      "capital_injected": 0,
+      "total_funds_provided": 0,
       "total_received": 0,
       "net_out_of_pocket_balance": 0,
-      "status": "Pending partner records"
+      "status": "Balanced / No record"
     }
   },
   "projects": [
@@ -605,6 +614,16 @@
       "amount": 35000,
       "received_by": "qasim",
       "date": "2026-09"
+    }
+  ],
+  "capital_contributions": [
+    {
+      "id": "CAP-001",
+      "partner_id": "qasim",
+      "amount": 10000,
+      "destination": "Company Bank Account",
+      "notes": "Initial bank account deposit / working capital",
+      "date": "2026-09-25"
     }
   ]
 }

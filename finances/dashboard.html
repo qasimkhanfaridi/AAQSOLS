@@ -36,9 +36,9 @@
     <!-- Top KPI Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
-        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Client Revenue Collected</span>
-        <div class="text-2xl font-bold text-emerald-500 mt-1">Rs. 77,000</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Held by Qasim (ARS 65k, Bin Irfan 6k, ApniChhat 6k)</p>
+        <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Liquid Cash</span>
+        <div class="text-2xl font-bold text-emerald-500 mt-1">Rs. 87,000</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Bank: Rs. 10k | Client Cash with Qasim: Rs. 77k</p>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
@@ -50,13 +50,13 @@
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Kharcha Incurred</span>
         <div class="text-2xl font-bold text-rose-500 mt-1">Rs. 522,130</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Qasim (306.3k) + Asghar (215.8k)</p>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">37 expenses: Qasim (306.3k) + Asghar (215.8k)</p>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Partner Debt</span>
-        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 445,130</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (229.3k) + Asghar (215.8k)</p>
+        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 455,130</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (239.3k) + Asghar (215.8k)</p>
       </div>
     </div>
 
@@ -81,7 +81,7 @@
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
         <h2 class="text-lg font-bold text-[var(--foreground)] mb-1">Partner Equity & Net Out-of-Pocket Balance</h2>
         <p class="text-sm text-[var(--muted-foreground)] mb-4">
-          Tracks actual out-of-pocket payments made, client advances held, and reimbursement owed by AAQSOLS.
+          Tracks actual out-of-pocket payments made, capital injected into the company bank account, client advances held, and reimbursement owed by AAQSOLS.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -93,20 +93,28 @@
             </div>
             <div class="space-y-1 text-sm">
               <div class="flex justify-between text-[var(--muted-foreground)]">
-                <span>Total Spent (Out-of-Pocket):</span>
+                <span>Expenses Paid (Kharcha):</span>
                 <span class="font-semibold text-[var(--foreground)]">Rs. 306,310</span>
               </div>
               <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Bank Capital Injection:</span>
+                <span class="font-semibold text-emerald-500">+Rs. 10,000</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>Total Capital Provided:</span>
+                <span class="font-bold text-[var(--foreground)]">Rs. 316,310</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
                 <span>Client Advances Held:</span>
-                <span class="font-semibold text-emerald-500">Rs. 77,000</span>
+                <span class="font-semibold text-amber-500">Rs. 77,000</span>
               </div>
               <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
                 <span>Company Reimbursement Due:</span>
-                <span class="text-amber-500 text-base">Rs. 229,310</span>
+                <span class="text-indigo-400 text-base">Rs. 239,310</span>
               </div>
             </div>
             <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-              Paid furniture advance (79k), tables balance (48k), dispenser/kettle (49.5k), electricity & labor (22k), ARS agent commission (17.5k), Daraz cupboards (12.5k), SECP registration (12k), mats/plates (12.5k), whiteboard (11.5k), frost paper (8k), card fee (7k), internet (6.7k), chairs transport (3.5k), stationery & files (13.8k), water (2.5k), biscuits (300). Company owes Qasim Rs. 229,310.
+              Paid 21 office expenses (306.3k) + deposited Rs. 10,000 seed working capital in company bank account. Holds Rs. 77,000 client advance pool. Net company debt to Qasim is Rs. 239,310.
             </p>
           </div>
 
@@ -164,13 +172,13 @@
         <!-- Settlement Action Plan Box -->
         <div class="mt-5 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <div>
-            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Seed Investment by Partners: Rs. 522,130</h3>
+            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Partner Funds Provided: Rs. 532,130 | Liquid Company Cash: Rs. 87,000</h3>
             <p class="text-xs text-[var(--muted-foreground)]">
-              Total unrecovered partner cash: Rs. 445,130 (Reduced by Rs. 3,700 surplus). All incoming client payments directly pay down these partner balances.
+              Total partner debt owed by firm: Rs. 455,130. Subtracting Rs. 10,000 company bank balance leaves Rs. 445,130 exact net startup operational deficit.
             </p>
           </div>
           <div class="text-xs font-mono bg-[var(--card)] px-3 py-1.5 rounded-lg border border-[var(--border)]">
-            Exact Reconciliation: 229,310 (Qasim) + 215,820 (Asghar) = Rs. 445,130
+            Exact Reconciliation: 239,310 (Qasim) + 215,820 (Asghar) = Rs. 455,130
           </div>
         </div>
       </div>
