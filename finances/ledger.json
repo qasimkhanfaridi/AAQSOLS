@@ -30,11 +30,11 @@
   },
   "summary": {
     "total_revenue_collected": 77000,
-    "total_office_capex_spent": 401670,
+    "total_office_capex_spent": 403670,
     "total_admin_supplies_spent": 99960,
     "total_domains_opex_spent": 20500,
-    "total_expenses_spent": 522130,
-    "net_operating_cash_deficit": -445130,
+    "total_expenses_spent": 524130,
+    "net_operating_cash_deficit": -447130,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 87000,
@@ -52,12 +52,12 @@
       "status": "Company owes QASIM PKR 239,310"
     },
     "asghar": {
-      "total_spent": 215820,
+      "total_spent": 217820,
       "capital_injected": 0,
-      "total_funds_provided": 215820,
+      "total_funds_provided": 217820,
       "total_received": 0,
-      "net_out_of_pocket_balance": -215820,
-      "status": "Company owes ASGHAR PKR 215,820"
+      "net_out_of_pocket_balance": -217820,
+      "status": "Company owes ASGHAR PKR 217,820"
     },
     "ali": {
       "total_spent": 0,
@@ -577,6 +577,16 @@
       "title": "Office Biscuits & Refreshments",
       "amount": 300,
       "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-038",
+      "category": "Office Setup / Electrical",
+      "title": "Electrician Labor / Electrical Work",
+      "amount": 2000,
+      "paid_by": "asghar",
       "payment_method": "Direct",
       "project_id": null,
       "date": "2026-09"
