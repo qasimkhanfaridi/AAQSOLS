@@ -66,6 +66,17 @@ function recalculateLedger(data) {
     }
   });
 
+  let pendingReceivables = 0;
+  let pendingCommissions = 0;
+  if (data.projects) {
+    data.projects.forEach(p => {
+      pendingReceivables += (p.pending_balance || 0);
+      if (p.pending_balance > 0 && p.agent_commission) {
+        pendingCommissions += p.agent_commission;
+      }
+    });
+  }
+
   data.summary = {
     total_revenue_collected: totalRevenue,
     total_office_capex_spent: officeCapex,
@@ -73,9 +84,9 @@ function recalculateLedger(data) {
     total_domains_opex_spent: domainsOpex,
     total_expenses_spent: totalExpenses,
     net_operating_cash_deficit: totalRevenue - totalExpenses,
-    pending_receivables_known: 35000,
-    pending_agent_commissions: 17500,
-    net_pending_income_known: 17500
+    pending_receivables_known: pendingReceivables,
+    pending_agent_commissions: pendingCommissions,
+    net_pending_income_known: pendingReceivables - pendingCommissions
   };
 
   data.partner_balances = {
@@ -121,10 +132,10 @@ function showSummary() {
   console.log(`  Net Startup Seed Deficit:         PKR ${data.summary.net_operating_cash_deficit.toLocaleString().padStart(9)}`);
 
   console.log('\n[+] PENDING RECEIVABLES & COMMISSIONS');
-  console.log(`  ARS Chemicals Remaining:      PKR 35,000`);
-  console.log(`  Agent Commission Liability:  -PKR 17,500 (Payable upon ARS 35k collection)`);
+  console.log(`  Pending Client Inflows:       PKR ${data.summary.pending_receivables_known.toLocaleString().padStart(9)}`);
+  console.log(`  Agent Commission Liability:  -PKR ${data.summary.pending_agent_commissions.toLocaleString().padStart(9)}`);
   console.log(`  ------------------------------------------------------------`);
-  console.log(`  Net Pending Inflow to Firm:   PKR 17,500`);
+  console.log(`  Net Pending Inflow to Firm:   PKR ${data.summary.net_pending_income_known.toLocaleString().padStart(9)}`);
 
   printHeader('PARTNER CAPITAL & SETTLEMENT LEDGER');
   for (const [key, p] of Object.entries(data.partner_balances)) {

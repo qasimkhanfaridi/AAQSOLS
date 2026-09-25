@@ -29,22 +29,22 @@
     ]
   },
   "summary": {
-    "total_revenue_collected": 42000,
-    "total_office_capex_spent": 388170,
-    "total_admin_supplies_spent": 82160,
+    "total_revenue_collected": 77000,
+    "total_office_capex_spent": 401670,
+    "total_admin_supplies_spent": 99960,
     "total_domains_opex_spent": 20500,
-    "total_expenses_spent": 490830,
-    "net_operating_cash_deficit": -448830,
-    "pending_receivables_known": 35000,
-    "pending_agent_commissions": 17500,
-    "net_pending_income_known": 17500
+    "total_expenses_spent": 522130,
+    "net_operating_cash_deficit": -445130,
+    "pending_receivables_known": 0,
+    "pending_agent_commissions": 0,
+    "net_pending_income_known": 0
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 275010,
-      "total_received": 42000,
-      "net_out_of_pocket_balance": -233010,
-      "status": "Company owes Qasim PKR 233,010 (Net unrecovered out-of-pocket)"
+      "total_spent": 306310,
+      "total_received": 77000,
+      "net_out_of_pocket_balance": -229310,
+      "status": "Company owes Qasim PKR 229,310 (Net unrecovered out-of-pocket)"
     },
     "asghar": {
       "total_spent": 215820,
@@ -64,13 +64,13 @@
       "id": "arschemicals",
       "name": "ARS Chemicals (A. Rehman & Sons)",
       "repo": "qasimkhanfaridi/a-rehman-sons-website",
-      "status": "Live / Near Complete (SEO & Catalog updated)",
+      "status": "Completed & Fully Paid (100% Collected & Commission Cleared)",
       "contract_value": 65000,
-      "advance_received": 30000,
+      "advance_received": 65000,
       "payment_received_by": "qasim",
-      "pending_balance": 35000,
+      "pending_balance": 0,
       "agent_commission": 17500,
-      "agent_commission_terms": "Payable from remaining 35k once collected",
+      "agent_commission_terms": "Paid / Disbursed to agent by Qasim (PKR 17,500)",
       "domain": {
         "name": "arschemicals (domain registered)",
         "cost": 4100,
@@ -85,7 +85,7 @@
         ]
       },
       "net_projected_profit": 43400,
-      "net_cash_current": 25900
+      "net_cash_current": 43400
     },
     {
       "id": "binirfanfragrances",
@@ -531,6 +531,46 @@
       "payment_method": "Direct",
       "project_id": null,
       "date": "2026-09"
+    },
+    {
+      "id": "EXP-034",
+      "category": "Agent Commission / Project Payout",
+      "title": "ARS Chemicals - Agent Commission Payout",
+      "amount": 17500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": "arschemicals",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-035",
+      "category": "Office Setup / Furniture",
+      "title": "Office Cupboards / Storage Cabinets (Daraz)",
+      "amount": 12500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-036",
+      "category": "Office Setup / Electrical",
+      "title": "Electricity Samaan (Wiring, Lights & Sockets)",
+      "amount": 1000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-037",
+      "category": "Refreshment / Pantry",
+      "title": "Office Biscuits & Refreshments",
+      "amount": 300,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
     }
   ],
   "inflows": [
@@ -555,6 +595,14 @@
       "project_id": "apnichhat",
       "title": "ApniChhat.com - Project Advance",
       "amount": 6000,
+      "received_by": "qasim",
+      "date": "2026-09"
+    },
+    {
+      "id": "REV-004",
+      "project_id": "arschemicals",
+      "title": "ARS Chemicals - Final Payment (Deliverables Completed)",
+      "amount": 35000,
       "received_by": "qasim",
       "date": "2026-09"
     }
