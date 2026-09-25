@@ -142,7 +142,9 @@ function showSummary() {
 
   console.log('\n[+] LIQUID ASSETS & BANK POSITION');
   console.log(`  Company Bank Account Balance: PKR ${data.summary.company_bank_balance.toLocaleString().padStart(9)} (Seed capital)`);
-  console.log(`  Client Revenue Held (Qasim):  PKR ${data.summary.total_revenue_collected.toLocaleString().padStart(9)}`);
+  const qHeld = data.partner_balances.qasim ? data.partner_balances.qasim.total_received : 0;
+  const aHeld = data.partner_balances.asghar ? data.partner_balances.asghar.total_received : 0;
+  console.log(`  Client Cash Held in Hand:     PKR ${data.summary.total_revenue_collected.toLocaleString().padStart(9)} (Qasim: ${qHeld.toLocaleString()}, Asghar: ${aHeld.toLocaleString()})`);
   console.log(`  ------------------------------------------------------------`);
   console.log(`  Total Liquid Company Cash:    PKR ${data.summary.total_liquid_cash.toLocaleString().padStart(9)}`);
 

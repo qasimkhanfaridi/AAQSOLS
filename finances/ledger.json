@@ -29,35 +29,35 @@
     ]
   },
   "summary": {
-    "total_revenue_collected": 77000,
+    "total_revenue_collected": 83000,
     "total_office_capex_spent": 403670,
-    "total_admin_supplies_spent": 99960,
-    "total_domains_opex_spent": 20500,
-    "total_expenses_spent": 524130,
-    "net_operating_cash_deficit": -447130,
+    "total_admin_supplies_spent": 100360,
+    "total_domains_opex_spent": 25300,
+    "total_expenses_spent": 529330,
+    "net_operating_cash_deficit": -446330,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
-    "total_liquid_cash": 87000,
+    "total_liquid_cash": 93000,
     "pending_receivables_known": 0,
     "pending_agent_commissions": 0,
     "net_pending_income_known": 0
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 306310,
+      "total_spent": 306710,
       "capital_injected": 10000,
-      "total_funds_provided": 316310,
+      "total_funds_provided": 316710,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -239310,
-      "status": "Company owes QASIM PKR 239,310"
+      "net_out_of_pocket_balance": -239710,
+      "status": "Company owes QASIM PKR 239,710"
     },
     "asghar": {
-      "total_spent": 217820,
+      "total_spent": 222620,
       "capital_injected": 0,
-      "total_funds_provided": 217820,
-      "total_received": 0,
-      "net_out_of_pocket_balance": -217820,
-      "status": "Company owes ASGHAR PKR 217,820"
+      "total_funds_provided": 222620,
+      "total_received": 6000,
+      "net_out_of_pocket_balance": -216620,
+      "status": "Company owes ASGHAR PKR 216,620"
     },
     "ali": {
       "total_spent": 0,
@@ -148,6 +148,31 @@
         ]
       },
       "net_cash_current": 1900
+    },
+    {
+      "id": "leon_arch",
+      "name": "Leon Arch",
+      "repo": null,
+      "status": "In Onboarding / Development",
+      "contract_value": null,
+      "contract_note": "Initial advance received (Rs. 6,000), total deal terms TBD",
+      "advance_received": 6000,
+      "payment_received_by": "asghar",
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "Leon Arch Domain & Hosting",
+        "cost": 4800,
+        "paid_by": "asghar",
+        "renewal_date": null
+      },
+      "account": {
+        "email": null,
+        "services": [
+          "Domain & Hosting Purchased"
+        ]
+      },
+      "net_cash_current": 1200
     },
     {
       "id": "aaqsols_internal",
@@ -590,6 +615,26 @@
       "payment_method": "Direct",
       "project_id": null,
       "date": "2026-09"
+    },
+    {
+      "id": "EXP-039",
+      "category": "Project Domains & Hosting",
+      "title": "Leon Arch - Domain & Hosting Purchase",
+      "amount": 4800,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": "leon_arch",
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-040",
+      "category": "Refreshment / Pantry",
+      "title": "Office Biscuits & Refreshments",
+      "amount": 400,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
     }
   ],
   "inflows": [
@@ -623,6 +668,14 @@
       "title": "ARS Chemicals - Final Payment (Deliverables Completed)",
       "amount": 35000,
       "received_by": "qasim",
+      "date": "2026-09"
+    },
+    {
+      "id": "REV-005",
+      "project_id": "leon_arch",
+      "title": "Leon Arch - Project Advance",
+      "amount": 6000,
+      "received_by": "asghar",
       "date": "2026-09"
     }
   ],
