@@ -30,11 +30,11 @@
   },
   "summary": {
     "total_revenue_collected": 83000,
-    "total_office_capex_spent": 403670,
+    "total_office_capex_spent": 406370,
     "total_admin_supplies_spent": 100360,
     "total_domains_opex_spent": 25300,
-    "total_expenses_spent": 529330,
-    "net_operating_cash_deficit": -446330,
+    "total_expenses_spent": 532030,
+    "net_operating_cash_deficit": -449030,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 93000,
@@ -44,12 +44,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 306710,
+      "total_spent": 309410,
       "capital_injected": 10000,
-      "total_funds_provided": 316710,
+      "total_funds_provided": 319410,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -239710,
-      "status": "Company owes QASIM PKR 239,710"
+      "net_out_of_pocket_balance": -242410,
+      "status": "Company owes QASIM PKR 242,410"
     },
     "asghar": {
       "total_spent": 222620,
@@ -631,6 +631,16 @@
       "category": "Refreshment / Pantry",
       "title": "Office Biscuits & Refreshments",
       "amount": 400,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-041",
+      "category": "Office Setup / IT Hardware",
+      "title": "HDMI Cables & Display Wiring",
+      "amount": 2700,
       "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,

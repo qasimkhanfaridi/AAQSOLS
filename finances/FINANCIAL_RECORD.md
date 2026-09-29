@@ -1,9 +1,9 @@
 # AAQSOLS — Financial Ledger & Project Portfolio Record
 
-**Document Version:** 2.3 (Leon Arch Project Onboarded: 6k Advance & 4.8k Domain/Hosting by Asghar; 400 Biscuits by Qasim)  
+**Document Version:** 2.4 (Logged Rs. 2,700 HDMI Cables & Display Wiring by Qasim)  
 **Currency:** PKR (Pakistani Rupee)  
 **Partners:** Qasim Faridi (Engineering Lead), Asghar, Ali  
-**Last Updated:** September 25, 2026  
+**Last Updated:** September 29, 2026  
 
 ---
 
@@ -14,12 +14,12 @@
 | **Company Bank Account Balance** | **Rs. 10,000** | Liquid cash in corporate account (Initial seed capital deposit by Qasim) |
 | **Client Revenue Held in Hand** | **Rs. 83,000** | Liquid advance/milestone pool (Held: **Qasim: Rs. 77,000**, **Asghar: Rs. 6,000**) |
 | **Total Liquid Company Funds** | **Rs. 93,000** | Bank Balance (10k) + Cash in Hand (83k) |
-| **Office Advance, Furniture & Capex** | **Rs. 403,670** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware (2.7k), Electrician Labor (2.97k: 2k by Asghar + 970 by Qasim), Board (1k) |
+| **Office Advance, Furniture & Capex** | **Rs. 406,370** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware & HDMI cables (5.4k: 2.7k Asghar + 2.7k Qasim), Electrician Labor (2.97k: 2k Asghar + 970 Qasim), Board (1k) |
 | **Admin, Legal, Commission & Meals** | **Rs. 100,360**| ARS Agent Commission (17.5k), SECP Registration (12k), Mats/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Writing Pads (5.6k), Team Pizza 1 & 2 (6.9k), Cups (3.4k), Stationery & Files (13.8k), Water Bottles (2.5k), Stamp (2k), SIM (2k), Biscuits (700) |
 | **Domains & Digital Infrastructure** | **Rs. 25,300** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), Leon Arch domain/hosting (4.8k), ApniChhat (4.1k) |
-| **Total Company Expenses Incurred** | **Rs. 529,330** | Total startup seed capital spent across 40 entries |
-| **Startup Operational Deficit** | **-Rs. 446,330** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 529,330 expenses) |
-| **Total Partner Debt Owed by Company** | **Rs. 456,330** | Qasim (Rs. 239,710) + Asghar (Rs. 216,620) |
+| **Total Company Expenses Incurred** | **Rs. 532,030** | Total startup seed capital spent across 41 entries |
+| **Startup Operational Deficit** | **-Rs. 449,030** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 532,030 expenses) |
+| **Total Partner Debt Owed by Company** | **Rs. 459,030** | Qasim (Rs. 242,410) + Asghar (Rs. 216,620) |
 | **Known Pending Receivables** | **Rs. 0** | ARS Chemicals balance collected in full |
 
 ---
@@ -30,20 +30,20 @@
 +-----------------------------------------------------------------------------------------------------------------------+
 | Partner | Expenses Spent Out-of-Pocket | Bank Capital Deposit | Total Funds Provided | Client Cash Held | Net Position |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| QASIM   | Rs. 306,710 (22 items)       | Rs. 10,000 (CAP-001) | Rs. 316,710          | Rs. 77,000       | Company owes QASIM: Rs. 239,710  |
+| QASIM   | Rs. 309,410 (23 items)       | Rs. 10,000 (CAP-001) | Rs. 319,410          | Rs. 77,000       | Company owes QASIM: Rs. 242,410  |
 | ASGHAR  | Rs. 222,620 (18 items)       | Rs. 0                | Rs. 222,620          | Rs. 6,000        | Company owes ASGHAR:Rs. 216,620  |
 | ALI     | Rs. 0       (Pending info)   | Rs. 0                | Rs. 0                | Rs. 0            | Balanced / Awaiting records      |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| TOTAL   | Rs. 529,330                  | Rs. 10,000           | Rs. 539,330          | Rs. 83,000       | Total Partner Debt: Rs. 456,330  |
+| TOTAL   | Rs. 532,030                  | Rs. 10,000           | Rs. 542,030          | Rs. 83,000       | Total Partner Debt: Rs. 459,030  |
 +-----------------------------------------------------------------------------------------------------------------------+
 ```
 
 ### A. Qasim Faridi (You)
-* **Expenses Paid Out-of-Pocket:** Rs. 306,710 (22 records)
+* **Expenses Paid Out-of-Pocket:** Rs. 309,410 (23 records)
 * **Capital Injected into Company Bank Account:** Rs. 10,000 (`CAP-001`)
-* **Total Capital & Funds Provided:** Rs. 316,710
+* **Total Capital & Funds Provided:** Rs. 319,410
 * **Client Cash Received & Held:** Rs. 77,000 (ARS: 65k + Bin Irfan: 6k + ApniChhat: 6k)
-* **Net Out-of-Pocket Remaining:** **Rs. 239,710** (Company owes Qasim)
+* **Net Out-of-Pocket Remaining:** **Rs. 242,410** (Company owes Qasim)
 * *Itemized Payments by Qasim:*
   1. Al-Basit Furniture (Advance): Rs. 79,000
   2. Water Dispenser & Tea Kettle: Rs. 49,500
@@ -61,12 +61,13 @@
   14. Chairs Transport Charges: Rs. 3,500
   15. Akhtar stationery: Rs. 2,800
   16. Stationery, Stapler, Files & Folders: Rs. 2,800
-  17. Stationery purchase: Rs. 2,600
-  18. Water Bottles (Dispenser): Rs. 2,500
-  19. Electricity Samaan (Wiring & Sockets 2): Rs. 1,000
-  20. Electrical Work / Electrician Labor: Rs. 970
-  21. **Office Biscuits & Refreshments 2:** **Rs. 400** *(New)*
-  22. Office Biscuits & Refreshments 1: Rs. 300
+  17. **HDMI Cables & Display Wiring:** **Rs. 2,700** *(New)*
+  18. Stationery purchase: Rs. 2,600
+  19. Water Bottles (Dispenser): Rs. 2,500
+  20. Electricity Samaan (Wiring & Sockets 2): Rs. 1,000
+  21. Electrical Work / Electrician Labor: Rs. 970
+  22. Office Biscuits & Refreshments 2: Rs. 400
+  23. Office Biscuits & Refreshments 1: Rs. 300
 
 ### B. Asghar
 * **Expenses Paid Out-of-Pocket:** Rs. 222,620 (18 records)
@@ -81,7 +82,7 @@
   4. Domains etc. AAQSOLS (Corporate): Rs. 8,200
   5. Domains (Bin Irfan & ARS Chemicals): Rs. 8,200
   6. Visiting Cards / Business Cards: Rs. 8,000
-  7. **Leon Arch - Domain & Hosting Purchase:** **Rs. 4,800** *(New)*
+  7. Leon Arch - Domain & Hosting Purchase: Rs. 4,800
   8. ApniChhat.com Domain: Rs. 4,100
   9. Office Pizza / Team Lunch 1: Rs. 4,100
   10. Table Transport & Delivery: Rs. 3,600
@@ -102,8 +103,8 @@
 
 > [!NOTE]
 > **Complete Mathematical Reconciliation:**  
-> 1. Company owes Qasim (**Rs. 239,710**) + Company owes Asghar (**Rs. 216,620**) = **Rs. 456,330 (Total Partner Liability)**.  
-> 2. Total Partner Debt (**Rs. 456,330**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 446,330**, which exactly equals the current company startup expenses deficit.
+> 1. Company owes Qasim (**Rs. 242,410**) + Company owes Asghar (**Rs. 216,620**) = **Rs. 459,030 (Total Partner Liability)**.  
+> 2. Total Partner Debt (**Rs. 459,030**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 449,030**, which exactly equals the current company startup expenses deficit.
 
 ---
 
@@ -116,7 +117,7 @@
 
 ---
 
-## 4. Detailed Expense Ledger (Company Kharcha - 40 Records)
+## 4. Detailed Expense Ledger (Company Kharcha - 41 Records)
 
 | ID | Date | Category | Description | Amount (PKR) | Paid By | Method | Project / Allocation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -160,7 +161,8 @@
 | `EXP-038` | Sep 2026 | Office Setup | Electrician Labor / Electrical Work | Rs. 2,000 | Asghar | Direct | Office Electrical |
 | `EXP-039` | Sep 2026 | Project Hosting | Leon Arch - Domain & Hosting Purchase | Rs. 4,800 | Asghar | Direct | Leon Arch |
 | `EXP-040` | Sep 2026 | Refreshment | Office Biscuits & Refreshments 2 | Rs. 400 | Qasim | Direct | Team Refreshment |
-| **TOTAL** | | | | **Rs. 529,330** | | | |
+| `EXP-041` | Sep 2026 | Office Setup / IT Hardware | HDMI Cables & Display Wiring | Rs. 2,700 | Qasim | Direct | Office Workstations & Setup |
+| **TOTAL** | | | | **Rs. 532,030** | | | |
 
 ---
 
