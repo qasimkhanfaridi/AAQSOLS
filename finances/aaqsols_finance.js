@@ -44,7 +44,7 @@ function recalculateLedger(data) {
     const cat = (exp.category || '').toLowerCase();
     if (cat.includes('domain')) {
       domainsOpex += amt;
-    } else if (cat.includes('supplies') || cat.includes('legal') || cat.includes('cards') || cat.includes('branding') || cat.includes('comm') || cat.includes('util') || cat.includes('internet') || cat.includes('grocery') || cat.includes('food') || cat.includes('refreshment') || cat.includes('kitchen') || cat.includes('meal') || cat.includes('commission') || cat.includes('payout')) {
+    } else if (cat.includes('supplies') || cat.includes('legal') || cat.includes('cards') || cat.includes('branding') || cat.includes('comm') || cat.includes('util') || cat.includes('internet') || cat.includes('grocery') || cat.includes('food') || cat.includes('refreshment') || cat.includes('kitchen') || cat.includes('meal') || cat.includes('commission') || cat.includes('payout') || cat.includes('travel') || cat.includes('fuel') || cat.includes('petrol')) {
       adminSupplies += amt;
     } else {
       officeCapex += amt;

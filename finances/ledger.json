@@ -31,10 +31,10 @@
   "summary": {
     "total_revenue_collected": 83000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 100360,
+    "total_admin_supplies_spent": 105160,
     "total_domains_opex_spent": 25300,
-    "total_expenses_spent": 532030,
-    "net_operating_cash_deficit": -449030,
+    "total_expenses_spent": 536830,
+    "net_operating_cash_deficit": -453830,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 93000,
@@ -44,12 +44,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 309410,
+      "total_spent": 314210,
       "capital_injected": 10000,
-      "total_funds_provided": 319410,
+      "total_funds_provided": 324210,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -242410,
-      "status": "Company owes QASIM PKR 242,410"
+      "net_out_of_pocket_balance": -247210,
+      "status": "Company owes QASIM PKR 247,210"
     },
     "asghar": {
       "total_spent": 222620,
@@ -641,6 +641,36 @@
       "category": "Office Setup / IT Hardware",
       "title": "HDMI Cables & Display Wiring",
       "amount": 2700,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-042",
+      "category": "Communications / Telecom",
+      "title": "Telecall / Mobile Calling Packages",
+      "amount": 1500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-043",
+      "category": "Refreshment / Pantry",
+      "title": "Office Biscuits & Refreshments 3",
+      "amount": 300,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-09"
+    },
+    {
+      "id": "EXP-044",
+      "category": "Travel / Fuel Allowance",
+      "title": "Staff Fuel / Petrol to Fani (3x 1,000)",
+      "amount": 3000,
       "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,
