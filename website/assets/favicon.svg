@@ -1,13 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b9eff"/>
-      <stop offset="100%" stop-color="#1b6dff"/>
+    <linearGradient id="aaq-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#0c1222"/>
-  <polygon points="32,10 48,19 48,37 32,46 16,37 16,19" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M22 37 L32 18 L42 37" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M26 31 H38" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
-  <path d="M37 18 L42 37" fill="none" stroke="url(#g)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Background Badge with Rounded Corners -->
+  <rect width="64" height="64" rx="15" fill="#0b1120"/>
+  
+  <!-- Outer Hexagon Icon Mark (No Text) -->
+  <polygon points="32,8 52,19.5 52,42.5 32,54 12,42.5 12,19.5" 
+           fill="none" 
+           stroke="#ffffff" 
+           stroke-width="3.2" 
+           stroke-linejoin="round"/>
+           
+  <!-- Stylized Monogram 'A' Core Structure -->
+  <path d="M21 43 L32 18 L43 43" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="4.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <!-- Crossbar -->
+  <path d="M25 35 H39" 
+        stroke="#ffffff" 
+        stroke-width="4.2" 
+        stroke-linecap="round"/>
+        
+  <!-- Vibrant Electric Blue Accent on the Forward Leading Edge -->
+  <path d="M37 18 L43 43" 
+        fill="none" 
+        stroke="url(#aaq-glow)" 
+        stroke-width="4.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
 </svg>
