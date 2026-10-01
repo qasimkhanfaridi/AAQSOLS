@@ -1,9 +1,9 @@
 # AAQSOLS — Financial Ledger & Project Portfolio Record
 
-**Document Version:** 2.5 (Logged Rs. 1,500 Telecall, Rs. 300 Biscuits 3, Rs. 3,000 Staff Fuel to Fani by Qasim)  
+**Document Version:** 2.6 (Logged Rs. 450 Office Biscuits by Asghar)  
 **Currency:** PKR (Pakistani Rupee)  
 **Partners:** Qasim Faridi (Engineering Lead), Asghar, Ali  
-**Last Updated:** September 30, 2026  
+**Last Updated:** October 01, 2026  
 
 ---
 
@@ -15,11 +15,11 @@
 | **Client Revenue Held in Hand** | **Rs. 83,000** | Liquid advance/milestone pool (Held: **Qasim: Rs. 77,000**, **Asghar: Rs. 6,000**) |
 | **Total Liquid Company Funds** | **Rs. 93,000** | Bank Balance (10k) + Cash in Hand (83k) |
 | **Office Advance, Furniture & Capex** | **Rs. 406,370** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware & HDMI cables (5.4k: 2.7k Asghar + 2.7k Qasim), Electrician Labor (2.97k: 2k Asghar + 970 Qasim), Board (1k) |
-| **Admin, Legal, Commission, Travel & Meals** | **Rs. 105,160**| ARS Agent Commission (17.5k), SECP Registration (12k), Mats/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Writing Pads (5.6k), Team Pizza 1 & 2 (6.9k), Staff Fuel to Fani (3k), Cups (3.4k), Stationery & Files (13.8k), Water Bottles (2.5k), Stamp (2k), SIM (2k), Telecall (1.5k), Biscuits (1k) |
+| **Admin, Legal, Commission, Travel & Meals** | **Rs. 105,610**| ARS Agent Commission (17.5k), SECP Registration (12k), Mats/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Writing Pads (5.6k), Team Pizza 1 & 2 (6.9k), Staff Fuel to Fani (3k), Cups (3.4k), Stationery & Files (13.8k), Water Bottles (2.5k), Stamp (2k), SIM (2k), Telecall (1.5k), Biscuits (1,450: 1k Qasim + 450 Asghar) |
 | **Domains & Digital Infrastructure** | **Rs. 25,300** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), Leon Arch domain/hosting (4.8k), ApniChhat (4.1k) |
-| **Total Company Expenses Incurred** | **Rs. 536,830** | Total startup seed capital spent across 44 entries |
-| **Startup Operational Deficit** | **-Rs. 453,830** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 536,830 expenses) |
-| **Total Partner Debt Owed by Company** | **Rs. 463,830** | Qasim (Rs. 247,210) + Asghar (Rs. 216,620) |
+| **Total Company Expenses Incurred** | **Rs. 537,280** | Total startup seed capital spent across 45 entries |
+| **Startup Operational Deficit** | **-Rs. 454,280** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 537,280 expenses) |
+| **Total Partner Debt Owed by Company** | **Rs. 464,280** | Qasim (Rs. 247,210) + Asghar (Rs. 217,070) |
 | **Known Pending Receivables** | **Rs. 0** | ARS Chemicals balance collected in full |
 
 ---
@@ -31,10 +31,10 @@
 | Partner | Expenses Spent Out-of-Pocket | Bank Capital Deposit | Total Funds Provided | Client Cash Held | Net Position |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
 | QASIM   | Rs. 314,210 (26 items)       | Rs. 10,000 (CAP-001) | Rs. 324,210          | Rs. 77,000       | Company owes QASIM: Rs. 247,210  |
-| ASGHAR  | Rs. 222,620 (18 items)       | Rs. 0                | Rs. 222,620          | Rs. 6,000        | Company owes ASGHAR:Rs. 216,620  |
+| ASGHAR  | Rs. 223,070 (19 items)       | Rs. 0                | Rs. 223,070          | Rs. 6,000        | Company owes ASGHAR:Rs. 217,070  |
 | ALI     | Rs. 0       (Pending info)   | Rs. 0                | Rs. 0                | Rs. 0            | Balanced / Awaiting records      |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| TOTAL   | Rs. 536,830                  | Rs. 10,000           | Rs. 546,830          | Rs. 83,000       | Total Partner Debt: Rs. 463,830  |
+| TOTAL   | Rs. 537,280                  | Rs. 10,000           | Rs. 547,280          | Rs. 83,000       | Total Partner Debt: Rs. 464,280  |
 +-----------------------------------------------------------------------------------------------------------------------+
 ```
 
@@ -59,25 +59,25 @@
   12. Office Internet Connection: Rs. 6,700
   13. Writing pads / letterheads: Rs. 5,600
   14. Chairs Transport Charges: Rs. 3,500
-  15. **Staff Fuel / Petrol to Fani (3x 1,000):** **Rs. 3,000** *(New)*
+  15. Staff Fuel / Petrol to Fani (3x 1,000): Rs. 3,000
   16. Akhtar stationery: Rs. 2,800
   17. Stationery, Stapler, Files & Folders: Rs. 2,800
   18. HDMI Cables & Display Wiring: Rs. 2,700
   19. Stationery purchase: Rs. 2,600
   20. Water Bottles (Dispenser): Rs. 2,500
-  21. **Telecall / Mobile Calling Packages:** **Rs. 1,500** *(New)*
+  21. Telecall / Mobile Calling Packages: Rs. 1,500
   22. Electricity Samaan (Wiring & Sockets 2): Rs. 1,000
   23. Electrical Work / Electrician Labor: Rs. 970
   24. Office Biscuits & Refreshments 2: Rs. 400
-  25. **Office Biscuits & Refreshments 3:** **Rs. 300** *(New)*
+  25. Office Biscuits & Refreshments 3: Rs. 300
   26. Office Biscuits & Refreshments 1: Rs. 300
 
 ### B. Asghar
-* **Expenses Paid Out-of-Pocket:** Rs. 222,620 (18 records)
+* **Expenses Paid Out-of-Pocket:** Rs. 223,070 (19 records)
 * **Bank Capital Deposit:** Rs. 0
-* **Total Capital Provided:** Rs. 222,620
+* **Total Capital Provided:** Rs. 223,070
 * **Client Cash Received & Held:** **Rs. 6,000** *(Leon Arch Advance)*
-* **Net Out-of-Pocket Remaining:** **Rs. 216,620** (Company owes Asghar)
+* **Net Out-of-Pocket Remaining:** **Rs. 217,070** (Company owes Asghar)
 * *Itemized Payments by Asghar:*
   1. Office Advance (Rent / Security Deposit): Rs. 100,000
   2. Office Chairs: Rs. 50,000
@@ -97,6 +97,7 @@
   16. Stamp paper, Agreement & Letterhead: Rs. 2,000
   17. Company SIM Card: Rs. 2,000
   18. Board / Accessories: Rs. 1,000
+  19. **Office Biscuits & Refreshments (Asghar):** **Rs. 450** *(New)*
 
 ### C. Ali
 * **Total Spent Out-of-Pocket:** Rs. 0 *(Pending record input)*
@@ -106,8 +107,8 @@
 
 > [!NOTE]
 > **Complete Mathematical Reconciliation:**  
-> 1. Company owes Qasim (**Rs. 247,210**) + Company owes Asghar (**Rs. 216,620**) = **Rs. 463,830 (Total Partner Liability)**.  
-> 2. Total Partner Debt (**Rs. 463,830**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 453,830**, which exactly equals the current company startup expenses deficit.
+> 1. Company owes Qasim (**Rs. 247,210**) + Company owes Asghar (**Rs. 217,070**) = **Rs. 464,280 (Total Partner Liability)**.  
+> 2. Total Partner Debt (**Rs. 464,280**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 454,280**, which exactly equals the current company startup expenses deficit.
 
 ---
 
@@ -120,7 +121,7 @@
 
 ---
 
-## 4. Detailed Expense Ledger (Company Kharcha - 44 Records)
+## 4. Detailed Expense Ledger (Company Kharcha - 45 Records)
 
 | ID | Date | Category | Description | Amount (PKR) | Paid By | Method | Project / Allocation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -168,7 +169,8 @@
 | `EXP-042` | Sep 2026 | Communications / Telecom | Telecall / Mobile Calling Packages | Rs. 1,500 | Qasim | Direct | Office Telecom & Calling |
 | `EXP-043` | Sep 2026 | Refreshment | Office Biscuits & Refreshments 3 | Rs. 300 | Qasim | Direct | Team Refreshment |
 | `EXP-044` | Sep 2026 | Travel / Fuel Allowance | Staff Fuel / Petrol to Fani (3x 1,000) | Rs. 3,000 | Qasim | Direct | Staff Logistics & Travel |
-| **TOTAL** | | | | **Rs. 536,830** | | | |
+| `EXP-045` | Oct 2026 | Refreshment / Pantry | Office Biscuits & Refreshments (Asghar) | Rs. 450 | Asghar | Direct | Team Refreshment |
+| **TOTAL** | | | | **Rs. 537,280** | | | |
 
 ---
 
