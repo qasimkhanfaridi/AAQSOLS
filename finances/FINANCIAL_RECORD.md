@@ -1,9 +1,9 @@
 # AAQSOLS — Financial Ledger & Project Portfolio Record
 
-**Document Version:** 2.6 (Logged Rs. 450 Office Biscuits by Asghar)  
+**Document Version:** 2.7 (Logged Rs. 4,520 JS Auto Domain Purchase by Asghar)  
 **Currency:** PKR (Pakistani Rupee)  
 **Partners:** Qasim Faridi (Engineering Lead), Asghar, Ali  
-**Last Updated:** October 01, 2026  
+**Last Updated:** October 02, 2026  
 
 ---
 
@@ -16,10 +16,10 @@
 | **Total Liquid Company Funds** | **Rs. 93,000** | Bank Balance (10k) + Cash in Hand (83k) |
 | **Office Advance, Furniture & Capex** | **Rs. 406,370** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware & HDMI cables (5.4k: 2.7k Asghar + 2.7k Qasim), Electrician Labor (2.97k: 2k Asghar + 970 Qasim), Board (1k) |
 | **Admin, Legal, Commission, Travel & Meals** | **Rs. 105,610**| ARS Agent Commission (17.5k), SECP Registration (12k), Mats/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (6.7k), Writing Pads (5.6k), Team Pizza 1 & 2 (6.9k), Staff Fuel to Fani (3k), Cups (3.4k), Stationery & Files (13.8k), Water Bottles (2.5k), Stamp (2k), SIM (2k), Telecall (1.5k), Biscuits (1,450: 1k Qasim + 450 Asghar) |
-| **Domains & Digital Infrastructure** | **Rs. 25,300** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), Leon Arch domain/hosting (4.8k), ApniChhat (4.1k) |
-| **Total Company Expenses Incurred** | **Rs. 537,280** | Total startup seed capital spent across 45 entries |
-| **Startup Operational Deficit** | **-Rs. 454,280** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 537,280 expenses) |
-| **Total Partner Debt Owed by Company** | **Rs. 464,280** | Qasim (Rs. 247,210) + Asghar (Rs. 217,070) |
+| **Domains & Digital Infrastructure** | **Rs. 29,820** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), Leon Arch domain/hosting (4.8k), **JS Auto domain (4,520)**, ApniChhat (4.1k) |
+| **Total Company Expenses Incurred** | **Rs. 541,800** | Total startup seed capital spent across 46 entries |
+| **Startup Operational Deficit** | **-Rs. 458,800** | Net unrecovered expenses (Rs. 83,000 client revenue - Rs. 541,800 expenses) |
+| **Total Partner Debt Owed by Company** | **Rs. 468,800** | Qasim (Rs. 247,210) + Asghar (Rs. 221,590) |
 | **Known Pending Receivables** | **Rs. 0** | ARS Chemicals balance collected in full |
 
 ---
@@ -31,10 +31,10 @@
 | Partner | Expenses Spent Out-of-Pocket | Bank Capital Deposit | Total Funds Provided | Client Cash Held | Net Position |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
 | QASIM   | Rs. 314,210 (26 items)       | Rs. 10,000 (CAP-001) | Rs. 324,210          | Rs. 77,000       | Company owes QASIM: Rs. 247,210  |
-| ASGHAR  | Rs. 223,070 (19 items)       | Rs. 0                | Rs. 223,070          | Rs. 6,000        | Company owes ASGHAR:Rs. 217,070  |
+| ASGHAR  | Rs. 227,590 (20 items)       | Rs. 0                | Rs. 227,590          | Rs. 6,000        | Company owes ASGHAR:Rs. 221,590  |
 | ALI     | Rs. 0       (Pending info)   | Rs. 0                | Rs. 0                | Rs. 0            | Balanced / Awaiting records      |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| TOTAL   | Rs. 537,280                  | Rs. 10,000           | Rs. 547,280          | Rs. 83,000       | Total Partner Debt: Rs. 464,280  |
+| TOTAL   | Rs. 541,800                  | Rs. 10,000           | Rs. 551,800          | Rs. 83,000       | Total Partner Debt: Rs. 468,800  |
 +-----------------------------------------------------------------------------------------------------------------------+
 ```
 
@@ -73,11 +73,11 @@
   26. Office Biscuits & Refreshments 1: Rs. 300
 
 ### B. Asghar
-* **Expenses Paid Out-of-Pocket:** Rs. 223,070 (19 records)
+* **Expenses Paid Out-of-Pocket:** Rs. 227,590 (20 records)
 * **Bank Capital Deposit:** Rs. 0
-* **Total Capital Provided:** Rs. 223,070
+* **Total Capital Provided:** Rs. 227,590
 * **Client Cash Received & Held:** **Rs. 6,000** *(Leon Arch Advance)*
-* **Net Out-of-Pocket Remaining:** **Rs. 217,070** (Company owes Asghar)
+* **Net Out-of-Pocket Remaining:** **Rs. 221,590** (Company owes Asghar)
 * *Itemized Payments by Asghar:*
   1. Office Advance (Rent / Security Deposit): Rs. 100,000
   2. Office Chairs: Rs. 50,000
@@ -86,18 +86,19 @@
   5. Domains (Bin Irfan & ARS Chemicals): Rs. 8,200
   6. Visiting Cards / Business Cards: Rs. 8,000
   7. Leon Arch - Domain & Hosting Purchase: Rs. 4,800
-  8. ApniChhat.com Domain: Rs. 4,100
-  9. Office Pizza / Team Lunch 1: Rs. 4,100
-  10. Table Transport & Delivery: Rs. 3,600
-  11. Office Cups & Kitchenware: Rs. 3,420
-  12. Power Extensions: Rs. 3,400
-  13. Office Pizza / Team Lunch 2: Rs. 2,800
-  14. Office Hardware & Fixtures: Rs. 2,700
-  15. Electrician Labor / Electrical Work: Rs. 2,000
-  16. Stamp paper, Agreement & Letterhead: Rs. 2,000
-  17. Company SIM Card: Rs. 2,000
-  18. Board / Accessories: Rs. 1,000
-  19. **Office Biscuits & Refreshments (Asghar):** **Rs. 450** *(New)*
+  8. **JS Auto - Domain Purchase:** **Rs. 4,520** *(New)*
+  9. ApniChhat.com Domain: Rs. 4,100
+  10. Office Pizza / Team Lunch 1: Rs. 4,100
+  11. Table Transport & Delivery: Rs. 3,600
+  12. Office Cups & Kitchenware: Rs. 3,420
+  13. Power Extensions: Rs. 3,400
+  14. Office Pizza / Team Lunch 2: Rs. 2,800
+  15. Office Hardware & Fixtures: Rs. 2,700
+  16. Electrician Labor / Electrical Work: Rs. 2,000
+  17. Stamp paper, Agreement & Letterhead: Rs. 2,000
+  18. Company SIM Card: Rs. 2,000
+  19. Board / Accessories: Rs. 1,000
+  20. Office Biscuits & Refreshments (Asghar): Rs. 450
 
 ### C. Ali
 * **Total Spent Out-of-Pocket:** Rs. 0 *(Pending record input)*
@@ -107,8 +108,8 @@
 
 > [!NOTE]
 > **Complete Mathematical Reconciliation:**  
-> 1. Company owes Qasim (**Rs. 247,210**) + Company owes Asghar (**Rs. 217,070**) = **Rs. 464,280 (Total Partner Liability)**.  
-> 2. Total Partner Debt (**Rs. 464,280**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 454,280**, which exactly equals the current company startup expenses deficit.
+> 1. Company owes Qasim (**Rs. 247,210**) + Company owes Asghar (**Rs. 221,590**) = **Rs. 468,800 (Total Partner Liability)**.  
+> 2. Total Partner Debt (**Rs. 468,800**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 458,800**, which exactly equals the current company startup expenses deficit.
 
 ---
 
@@ -121,7 +122,7 @@
 
 ---
 
-## 4. Detailed Expense Ledger (Company Kharcha - 45 Records)
+## 4. Detailed Expense Ledger (Company Kharcha - 46 Records)
 
 | ID | Date | Category | Description | Amount (PKR) | Paid By | Method | Project / Allocation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -170,7 +171,8 @@
 | `EXP-043` | Sep 2026 | Refreshment | Office Biscuits & Refreshments 3 | Rs. 300 | Qasim | Direct | Team Refreshment |
 | `EXP-044` | Sep 2026 | Travel / Fuel Allowance | Staff Fuel / Petrol to Fani (3x 1,000) | Rs. 3,000 | Qasim | Direct | Staff Logistics & Travel |
 | `EXP-045` | Oct 2026 | Refreshment / Pantry | Office Biscuits & Refreshments (Asghar) | Rs. 450 | Asghar | Direct | Team Refreshment |
-| **TOTAL** | | | | **Rs. 537,280** | | | |
+| `EXP-046` | Oct 2026 | Project Domains | JS Auto - Domain Purchase | Rs. 4,520 | Asghar | Direct | JS Auto |
+| **TOTAL** | | | | **Rs. 541,800** | | | |
 
 ---
 
@@ -191,13 +193,14 @@
 
 1. **ARS Chemicals (A. Rehman & Sons):** Completed & Settled (PKR 65k collected, 17.5k commission paid, 4.1k domain, **Rs. 43,400 net profit**).
 2. **Leon Arch:** In Onboarding / Development (PKR 6,000 advance received by Asghar, PKR 4,800 domain & hosting purchased by Asghar, **Rs. 1,200 net current cash surplus**).
-3. **Bin Irfan Fragrances:** Live Storefront (PKR 6,000 received, PKR 4,100 domain).
-4. **ApniChhat.com:** In Setup (PKR 6,000 received, PKR 4,100 domain).
-5. **AAQSOLS Corporate:** Active Corporate Setup (PKR 8,200 domain/hosting).
-6. **Rehman Travels:** Almost Completed.
-7. **Hasnain Auto Accessories:** Almost Completed.
-8. **PulseCore HMS / Heart Clinic:** In Process.
-9. **MediPro:** Developed / Showcase.
+3. **JS Auto:** In Onboarding / Setup (PKR 4,520 domain purchased by Asghar, contract & scope in progress, **-Rs. 4,520 net current cash position**).
+4. **Bin Irfan Fragrances:** Live Storefront (PKR 6,000 received, PKR 4,100 domain).
+5. **ApniChhat.com:** In Setup (PKR 6,000 received, PKR 4,100 domain).
+6. **AAQSOLS Corporate:** Active Corporate Setup (PKR 8,200 domain/hosting).
+7. **Rehman Travels:** Almost Completed.
+8. **Hasnain Auto Accessories:** Almost Completed.
+9. **PulseCore HMS / Heart Clinic:** In Process.
+10. **MediPro:** Developed / Showcase.
 
 ---
 

@@ -32,9 +32,9 @@
     "total_revenue_collected": 83000,
     "total_office_capex_spent": 406370,
     "total_admin_supplies_spent": 105610,
-    "total_domains_opex_spent": 25300,
-    "total_expenses_spent": 537280,
-    "net_operating_cash_deficit": -454280,
+    "total_domains_opex_spent": 29820,
+    "total_expenses_spent": 541800,
+    "net_operating_cash_deficit": -458800,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 93000,
@@ -52,12 +52,12 @@
       "status": "Company owes QASIM PKR 247,210"
     },
     "asghar": {
-      "total_spent": 223070,
+      "total_spent": 227590,
       "capital_injected": 0,
-      "total_funds_provided": 223070,
+      "total_funds_provided": 227590,
       "total_received": 6000,
-      "net_out_of_pocket_balance": -217070,
-      "status": "Company owes ASGHAR PKR 217,070"
+      "net_out_of_pocket_balance": -221590,
+      "status": "Company owes ASGHAR PKR 221,590"
     },
     "ali": {
       "total_spent": 0,
@@ -173,6 +173,31 @@
         ]
       },
       "net_cash_current": 1200
+    },
+    {
+      "id": "jsauto",
+      "name": "JS Auto",
+      "repo": null,
+      "status": "In Onboarding / Setup",
+      "contract_value": null,
+      "contract_note": "Domain registered; contract & pricing scoping in progress",
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "JS Auto Domain",
+        "cost": 4520,
+        "paid_by": "asghar",
+        "renewal_date": null
+      },
+      "account": {
+        "email": null,
+        "services": [
+          "Domain Registered"
+        ]
+      },
+      "net_cash_current": -4520
     },
     {
       "id": "aaqsols_internal",
@@ -684,6 +709,16 @@
       "paid_by": "asghar",
       "payment_method": "Direct",
       "project_id": null,
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-046",
+      "category": "Project Domains",
+      "title": "JS Auto - Domain Purchase",
+      "amount": 4520,
+      "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": "jsauto",
       "date": "2026-10"
     }
   ],
