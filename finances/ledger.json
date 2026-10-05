@@ -31,10 +31,10 @@
   "summary": {
     "total_revenue_collected": 83000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 105610,
+    "total_admin_supplies_spent": 107110,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 541800,
-    "net_operating_cash_deficit": -458800,
+    "total_expenses_spent": 543300,
+    "net_operating_cash_deficit": -460300,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 93000,
@@ -44,12 +44,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 314210,
+      "total_spent": 315710,
       "capital_injected": 10000,
-      "total_funds_provided": 324210,
+      "total_funds_provided": 325710,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -247210,
-      "status": "Company owes QASIM PKR 247,210"
+      "net_out_of_pocket_balance": -248710,
+      "status": "Company owes QASIM PKR 248,710"
     },
     "asghar": {
       "total_spent": 227590,
@@ -674,7 +674,7 @@
     {
       "id": "EXP-042",
       "category": "Communications / Telecom",
-      "title": "Telecall / Mobile Calling Packages",
+      "title": "Telecall / Cold Calling - Calling Balance & Credit",
       "amount": 1500,
       "paid_by": "qasim",
       "payment_method": "Direct",
@@ -719,6 +719,16 @@
       "paid_by": "asghar",
       "payment_method": "Direct",
       "project_id": "jsauto",
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-047",
+      "category": "Communications / Telecom",
+      "title": "Telecall / Cold Calling - Phone Number Purchase & Setup",
+      "amount": 1500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
       "date": "2026-10"
     }
   ],
