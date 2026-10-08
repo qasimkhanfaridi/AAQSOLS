@@ -31,10 +31,10 @@
   "summary": {
     "total_revenue_collected": 83000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 107110,
+    "total_admin_supplies_spent": 108610,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 543300,
-    "net_operating_cash_deficit": -460300,
+    "total_expenses_spent": 544800,
+    "net_operating_cash_deficit": -461800,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 93000,
@@ -44,12 +44,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 315710,
+      "total_spent": 317210,
       "capital_injected": 10000,
-      "total_funds_provided": 325710,
+      "total_funds_provided": 327210,
       "total_received": 77000,
-      "net_out_of_pocket_balance": -248710,
-      "status": "Company owes QASIM PKR 248,710"
+      "net_out_of_pocket_balance": -250210,
+      "status": "Company owes QASIM PKR 250,210"
     },
     "asghar": {
       "total_spent": 227590,
@@ -194,10 +194,11 @@
       "account": {
         "email": null,
         "services": [
-          "Domain Registered"
+          "Domain Registered",
+          "Data Entry Onboarding (3 Days Visit)"
         ]
       },
-      "net_cash_current": -4520
+      "net_cash_current": -6020
     },
     {
       "id": "aaqsols_internal",
@@ -729,6 +730,16 @@
       "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-048",
+      "category": "Travel / Fuel Allowance",
+      "title": "Staff Fuel / Petrol to Fani (JS Auto Data Entry - 3 Days)",
+      "amount": 1500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": "jsauto",
       "date": "2026-10"
     }
   ],
