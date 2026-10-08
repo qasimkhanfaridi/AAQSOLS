@@ -11,7 +11,8 @@ Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pa
 ### INVOICE DETAILS
 * **Invoice Reference:** `AAQ-INV-2026-001`
 * **Issue Date:** October 08, 2026
-* **Payment Due:** On Receipt / Prior to Asset Handover
+* **Service Period:** **2 Years (24 Months: October 2026 – October 2028)**
+* **Payment Due:** On Receipt / Prior to Credential Handover
 * **Payment Status:** Due / Pending Remittance
 * **Currency:** PKR (Pakistani Rupee)
 
@@ -20,7 +21,7 @@ Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pa
 * **Attention:** Accounts & Commercial Management
 * **Business:** Automotive Dealership & Services
 * **Location:** Rawalpindi / Islamabad, Pakistan
-* **Project Reference:** JS Auto — Web Platform & Digital Infrastructure
+* **Project Reference:** JS Auto — Commercial Domain & DNS Infrastructure (2-Year Term)
 
 ---
 
@@ -28,12 +29,12 @@ Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pa
 
 | # | Item Description | Period | Amount (PKR) |
 | :-: | :--- | :-: | -: |
-| **01** | **Commercial Domain Name Registration & DNS Architecture**<br>Official domain allocation for JS Auto, DNS routing, Cloudflare nameserver integration, SSL encryption certificate configuration, and annual registrar license (1-Year Term). | 1 Year | Rs. 7,500 |
-| **02** | **Cloud Web Server & Business Email Infrastructure Setup**<br>High-availability cloud environment deployment, web server configuration, enterprise security rules, automated backups, and corporate business email routing setup. | 1 Year | Rs. 9,500 |
-| **03** | **Technical Onboarding, Database Schema & Initial Data Entry Setup**<br>Technical requirements mapping, vehicle catalog inventory architecture, and on-site engineering team deployment for vehicle inventory classification and catalog digitisation (3-day data entry sprint). | Inception | Rs. 10,000 |
-| | **SUBTOTAL** | | **PKR 27,000** |
-| | **Sales Tax / PST (0% Export / IT Enablement)** | | **PKR 0** |
+| **01** | **Commercial Domain Name Registration & Brand Identity Infrastructure**<br>• Official 2-Year domain registration & registry lock for JS Auto (2026–2028)<br>• WHOIS privacy protection & brand identity shield (2 Years)<br>• High-speed Anycast DNS routing, nameserver mapping & DDoS mitigation<br>• Managed SSL/TLS security encryption certificate (2 Years)<br>• Corporate domain ownership assignment and DNS delegation | **2 Years**<br>*(24 Months)* | Rs. 23,478 |
+| | **SUBTOTAL (Base Domain Fee)** | | **PKR 23,478** |
+| | **Sales Tax on Services (ICT / PRA @ 15%)** *(or Inclusive under local IT rules)* | | **PKR 3,522** |
 | | **TOTAL PAYABLE AMOUNT** | | **PKR 27,000** |
+
+*(Alternatively, if treated as flat All-Inclusive commercial billing: Base PKR 27,000 inclusive of all applicable Provincial/ICT taxes and registry levies).*
 
 **Amount in Words:** *Pakistani Rupees Twenty-Seven Thousand Only*
 
@@ -41,14 +42,14 @@ Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pa
 
 ### OFFICIAL BANK TRANSFER DETAILS (FOR DIRECT REMITTANCE & BANK PROOF)
 
-Please remit payment via Online Banking (IBFT), Raast, or Pay Order / Wire Transfer to the official company bank account:
+Please remit payment via Online Banking (IBFT), Raast, or Pay Order / Wire Transfer directly to the official company bank account:
 
 * **Account Title:** `AAQSOLS` *(Corporate Entity)*
 * **Bank Name:** `[Your Bank Name — e.g., Meezan Bank Limited / HBL / Bank Alfalah]`
 * **Branch:** `Islamabad Branch`
 * **Account Number:** `[Insert Company Account Number]`
 * **IBAN:** `PK________________________`
-* **Purpose Code / Remarks:** `Software & IT Services (JS Auto)`
+* **Purpose Code / Remarks:** `Domain & IT Services (JS Auto)`
 
 > [!NOTE]  
 > **Bank Verification & Compliance:**  
@@ -56,10 +57,11 @@ Please remit payment via Online Banking (IBFT), Raast, or Pay Order / Wire Trans
 
 ---
 
-### TERMS & CONDITIONS
-1. Domain registration credentials, DNS administration, and cloud deployment rights are formally assigned upon receipt of invoice settlement.
-2. Payments received into the AAQSOLS corporate account are acknowledged with an official payment voucher and reconciled in corporate accounting.
-3. Subsequent development phases, portal feature delivery, and custom modules will be billed under the agreed project milestone schedule.
+### TERMS & REGULATORY CONDITIONS
+1. **Multi-Year Validity:** This invoice covers 24 full months of active registry maintenance and DNS routing (Oct 2026 – Oct 2028).
+2. **Ownership & Access:** Administrative domain ownership, nameserver authority, and SSL certificates are assigned to the client upon settlement.
+3. **Tax Compliance:** Amounts received into the AAQSOLS corporate account are acknowledged with an official payment voucher and reconciled under SECP corporate accounting guidelines.
+4. **Renewal Cycle:** The next renewal cycle will be initiated in September/October 2028 with 30 days advance notice.
 
 ---
 
