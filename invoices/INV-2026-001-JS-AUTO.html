@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice AAQ-INV-2026-001 - JS Auto | AAQSOLS</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    [contenteditable="true"] {
+      outline: none;
+      transition: background-color 0.2s;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+
+    [contenteditable="true"]:hover {
+      background-color: rgba(16, 185, 129, 0.08);
+      box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.3);
+    }
+
+    [contenteditable="true"]:focus {
+      background-color: rgba(16, 185, 129, 0.12);
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 10mm 12mm 10mm 12mm;
+      }
+      body {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .invoice-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      [contenteditable="true"]:hover, [contenteditable="true"]:focus {
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+      .page-break-inside-avoid {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen py-8 px-4">
+
+  <!-- Floating Action Bar (Hidden in Print) -->
+  <div class="no-print max-w-4xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-3 bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+        AAQ
+      </div>
+      <div>
+        <h2 class="text-sm font-bold text-slate-800">AAQSOLS Official Invoice Generator</h2>
+        <p class="text-xs text-slate-500">Edit fields directly on page, then click Print or Save PDF</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="copyWhatsAppSummary()" class="px-3.5 py-2 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition flex items-center gap-1.5 cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+        <span id="copy-btn-text">Copy WhatsApp Text</span>
+      </button>
+      <button onclick="window.print()" class="px-4 py-2 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow hover:bg-emerald-700 transition flex items-center gap-1.5 cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Print / Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- A4 Invoice Sheet -->
+  <div class="invoice-card max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-8 md:p-12 shadow-sm space-y-7">
+    
+    <!-- Top Header: Logo & Company Corporate Details -->
+    <div class="flex flex-col sm:flex-row justify-between items-start gap-6 border-b border-slate-200 pb-7">
+      <div class="space-y-2">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white font-extrabold text-2xl shadow-md">
+            AAQ
+          </div>
+          <div>
+            <h1 class="text-2xl font-extrabold tracking-tight text-slate-900 leading-none">AAQSOLS</h1>
+            <p class="text-xs uppercase tracking-wider font-semibold text-emerald-600 mt-1">Software & Digital Solutions</p>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 max-w-xs leading-relaxed pt-1">
+          Registered with Securities & Exchange Commission of Pakistan (SECP)<br>
+          Gulburg Paradise, Business Square, Plot 72-77, Gulberg Greens, Islamabad, Pakistan
+        </p>
+        <div class="text-xs text-slate-500 space-x-3 pt-0.5">
+          <span><strong>Web:</strong> www.aaqsols.com</span>
+          <span><strong>Email:</strong> billing@aaqsols.com</span>
+          <span><strong>Phone:</strong> +92 304 0200070</span>
+        </div>
+      </div>
+
+      <div class="text-left sm:text-right space-y-1.5 self-stretch sm:self-auto bg-slate-50 sm:bg-transparent p-4 sm:p-0 rounded-xl border sm:border-0 border-slate-100">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-200">
+          Commercial Invoice
+        </span>
+        <div class="pt-2">
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block">Invoice Reference</span>
+          <span class="text-lg font-mono font-bold text-slate-900" contenteditable="true">AAQ-INV-2026-001</span>
+        </div>
+        <div>
+          <span class="text-xs text-slate-400">Issue Date:</span>
+          <span class="text-xs font-semibold text-slate-700 ml-1" contenteditable="true">October 08, 2026</span>
+        </div>
+        <div>
+          <span class="text-xs text-slate-400">Payment Status:</span>
+          <span class="text-xs font-bold text-amber-600 ml-1" contenteditable="true">Payment Due Upon Receipt</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Details & Project Meta -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-5 rounded-xl bg-slate-50/80 border border-slate-100">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1.5">Billed To (Client):</span>
+        <h3 class="text-base font-bold text-slate-900" contenteditable="true">JS Auto</h3>
+        <p class="text-xs text-slate-600 mt-1 leading-relaxed" contenteditable="true">
+          Automotive Dealership & Auto Services<br>
+          Attn: Accounts & Commercial Management<br>
+          Rawalpindi / Islamabad, Pakistan
+        </p>
+      </div>
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1.5">Project Scope & Allocation:</span>
+        <h4 class="text-sm font-bold text-slate-800" contenteditable="true">JS Auto — Digital Platform & Domain Infrastructure</h4>
+        <p class="text-xs text-slate-600 mt-1 leading-relaxed" contenteditable="true">
+          <strong>Service Type:</strong> Commercial Domain Acquisition, Cloud Hosting Setup & Initial Data Architecture<br>
+          <strong>Account Remittance:</strong> Direct Company Bank Wire / IBFT (PKR)
+        </p>
+      </div>
+    </div>
+
+    <!-- Itemized Services Table -->
+    <div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-slate-800 text-xs font-bold uppercase tracking-wider text-slate-700">
+              <th class="py-3 px-3 w-12 text-center">#</th>
+              <th class="py-3 px-4">Item & Scope Description</th>
+              <th class="py-3 px-3 text-center w-20">Period</th>
+              <th class="py-3 px-4 text-right w-36">Amount (PKR)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-sm">
+            <tr class="align-top">
+              <td class="py-3.5 px-3 text-center text-xs font-mono text-slate-400">01</td>
+              <td class="py-3.5 px-4">
+                <span class="font-bold text-slate-900 block" contenteditable="true">Commercial Domain Name Registration & DNS Architecture</span>
+                <span class="text-xs text-slate-500 block mt-1 leading-relaxed" contenteditable="true">
+                  Registration and allocation of official web domain identity for JS Auto, DNS routing, Cloudflare nameserver integration, SSL encryption certificate configuration, and annual registrar license (1-Year Term).
+                </span>
+              </td>
+              <td class="py-3.5 px-3 text-center text-xs text-slate-600 font-medium" contenteditable="true">1 Year</td>
+              <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900" contenteditable="true">7,500</td>
+            </tr>
+
+            <tr class="align-top">
+              <td class="py-3.5 px-3 text-center text-xs font-mono text-slate-400">02</td>
+              <td class="py-3.5 px-4">
+                <span class="font-bold text-slate-900 block" contenteditable="true">Cloud Web Server & Business Email Infrastructure Setup</span>
+                <span class="text-xs text-slate-500 block mt-1 leading-relaxed" contenteditable="true">
+                  Provisioning of high-availability cloud hosting environment, production server deployment, enterprise security rules, automated backups, and corporate business email routing setup.
+                </span>
+              </td>
+              <td class="py-3.5 px-3 text-center text-xs text-slate-600 font-medium" contenteditable="true">1 Year</td>
+              <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900" contenteditable="true">9,500</td>
+            </tr>
+
+            <tr class="align-top">
+              <td class="py-3.5 px-3 text-center text-xs font-mono text-slate-400">03</td>
+              <td class="py-3.5 px-4">
+                <span class="font-bold text-slate-900 block" contenteditable="true">Technical Onboarding, Database Schema & Initial Data Entry Setup</span>
+                <span class="text-xs text-slate-500 block mt-1 leading-relaxed" contenteditable="true">
+                  Technical requirements mapping, vehicle catalog inventory architecture, and on-site engineering team deployment for initial vehicle inventory classification and catalog digitisation (3-day data entry sprint).
+                </span>
+              </td>
+              <td class="py-3.5 px-3 text-center text-xs text-slate-600 font-medium" contenteditable="true">Initial</td>
+              <td class="py-3.5 px-4 text-right font-mono font-bold text-slate-900" contenteditable="true">10,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Totals Summary Block -->
+      <div class="border-t-2 border-slate-800 pt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div class="text-xs text-slate-500 leading-relaxed">
+          <span class="font-bold text-slate-800 block">Amount in Words:</span>
+          <span class="italic text-slate-700" contenteditable="true">Pakistani Rupees Twenty-Seven Thousand Only</span>
+        </div>
+
+        <div class="w-full sm:w-64 space-y-1.5 text-sm">
+          <div class="flex justify-between text-slate-600 text-xs">
+            <span>Subtotal:</span>
+            <span class="font-mono font-semibold" contenteditable="true">PKR 27,000</span>
+          </div>
+          <div class="flex justify-between text-slate-500 text-xs">
+            <span>Sales Tax / PST (0% Export / IT):</span>
+            <span class="font-mono" contenteditable="true">PKR 0</span>
+          </div>
+          <div class="flex justify-between text-base font-extrabold text-slate-900 pt-2 border-t border-slate-200">
+            <span>Total Payable:</span>
+            <span class="font-mono text-emerald-600 text-lg" contenteditable="true">PKR 27,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Corporate Bank Account Details (Specifically formatted for Bank & Client Verification) -->
+    <div class="page-break-inside-avoid border-2 border-emerald-600/30 rounded-xl p-5 bg-emerald-50/30 space-y-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-600/20 pb-3">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+            Official Bank Account Transfer Instructions (Pakistan)
+          </span>
+          <p class="text-xs text-slate-600 mt-0.5">Please make transfer/IBFT payable to our registered corporate account:</p>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-600 text-white font-bold tracking-wide uppercase">
+          Company Account
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs pt-1">
+        <div>
+          <span class="text-slate-400 block font-semibold uppercase tracking-wider">Account Title</span>
+          <span class="text-sm font-bold text-slate-900 block mt-0.5" contenteditable="true">AAQSOLS</span>
+          <span class="text-[11px] text-slate-500">Corporate Entity</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-semibold uppercase tracking-wider">Bank Name</span>
+          <span class="text-sm font-bold text-slate-900 block mt-0.5" contenteditable="true">[Bank Name - e.g. Meezan Bank / HBL]</span>
+          <span class="text-[11px] text-slate-500" contenteditable="true">Islamabad Branch</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-semibold uppercase tracking-wider">Account Number</span>
+          <span class="text-sm font-mono font-bold text-slate-900 block mt-0.5" contenteditable="true">[Account Number Here]</span>
+          <span class="text-[11px] text-slate-500">Local Transfer / Raast</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block font-semibold uppercase tracking-wider">IBAN Number</span>
+          <span class="text-sm font-mono font-bold text-slate-900 block mt-0.5" contenteditable="true">PK________________________</span>
+          <span class="text-[11px] text-slate-500">IBFT / RTGS Wire</span>
+        </div>
+      </div>
+
+      <div class="pt-2 text-xs text-slate-500 border-t border-emerald-600/10 flex flex-wrap justify-between items-center gap-2">
+        <span><strong>Purpose Code / Remarks:</strong> Software / Web Development Services (JS Auto)</span>
+        <span class="italic text-[11px]">Note: Share transaction receipt to billing@aaqsols.com or WhatsApp for prompt ledger credit.</span>
+      </div>
+    </div>
+
+    <!-- Terms, Conditions & Authorized Signatory Block -->
+    <div class="page-break-inside-avoid pt-2 border-t border-slate-200 grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+      <div class="md:col-span-2 space-y-1.5 text-xs text-slate-500">
+        <h5 class="font-bold text-slate-700 uppercase tracking-wider">Terms & Notes:</h5>
+        <ul class="list-disc pl-4 space-y-0.5 leading-relaxed">
+          <li>This invoice represents technical setup, annual domain licensing, cloud provisioning, and initial onboarding.</li>
+          <li>All domain credentials, nameserver rights, and cloud ownership belong to the client upon settlement.</li>
+          <li>Payments received into company account are officially recorded and reconciled under SECP corporate filing.</li>
+          <li>Subsequent portal milestones and commercial deliverables will be billed per milestone contract schedule.</li>
+        </ul>
+      </div>
+
+      <!-- Signature & Stamp Block -->
+      <div class="text-right space-y-2 border-t md:border-t-0 md:border-l border-slate-200 md:pl-6 pt-4 md:pt-0">
+        <div class="h-16 flex items-center justify-end">
+          <!-- Digital Seal Emblem -->
+          <div class="border-2 border-dashed border-emerald-600/40 rounded-xl px-4 py-2 text-center bg-emerald-50/30">
+            <span class="block text-[10px] font-bold tracking-widest uppercase text-emerald-800">AAQSOLS</span>
+            <span class="block text-[8px] font-mono text-emerald-700">CORPORATE SEAL</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-900 block" contenteditable="true">Qasim Faridi</span>
+          <span class="text-[11px] text-slate-500 block" contenteditable="true">Lead Engineer & Founding Partner</span>
+          <span class="text-[11px] text-emerald-600 font-semibold block">AAQSOLS (Private) Limited</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-100 pt-4 text-center text-[11px] text-slate-400">
+      AAQSOLS • Head Office: Gulberg Greens, Islamabad, Pakistan • info@aaqsols.com • +92 304 0200070
+    </div>
+
+  </div>
+
+  <script>
+    function copyWhatsAppSummary() {
+      const text = `*INVOICE: AAQSOLS — JS Auto*
+Invoice Ref: AAQ-INV-2026-001
+Date: October 08, 2026
+
+*Deliverables & Scope:*
+1. Commercial Domain Registration & DNS Setup (1 Year): PKR 7,500
+2. Cloud Hosting & Business Email Setup (1 Year): PKR 9,500
+3. Technical Architecture & Initial Data Entry Sprint: PKR 10,000
+
+*Total Amount Due:* PKR 27,000
+
+*Bank Transfer Details:*
+Account Title: AAQSOLS
+Bank: [Your Bank Name - e.g. Meezan Bank / HBL]
+Account No: [Your Account Number]
+IBAN: [Your IBAN]
+
+_Please transfer to the official company bank account and share the receipt for prompt confirmation._
+AAQSOLS (Private) Limited | Islamabad`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const btnText = document.getElementById('copy-btn-text');
+        btnText.innerText = 'Copied to Clipboard!';
+        setTimeout(() => {
+          btnText.innerText = 'Copy WhatsApp Text';
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
