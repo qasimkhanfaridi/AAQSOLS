@@ -81,6 +81,10 @@
         </div>
       </div>
       <div class="flex items-center gap-2">
+        <a href="REC-2026-001-JS-AUTO.html" class="px-3.5 py-2 text-xs font-semibold rounded-lg bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 transition flex items-center gap-1.5 cursor-pointer">
+          <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          View Paid Receipt
+        </a>
         <button onclick="copyWhatsAppSummary()" class="px-3.5 py-2 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition flex items-center gap-1.5 cursor-pointer">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
           <span id="copy-btn-text">Copy WhatsApp Text</span>
@@ -114,13 +118,23 @@
     <div class="flex flex-col sm:flex-row justify-between items-start gap-6 border-b border-slate-200 pb-7">
       <div class="space-y-2">
         <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white font-extrabold text-2xl shadow-md">
-            AAQ
-          </div>
-          <div>
-            <h1 class="text-2xl font-extrabold tracking-tight text-slate-900 leading-none">AAQSOLS</h1>
-            <p class="text-xs uppercase tracking-wider font-semibold text-emerald-600 mt-1">Software & Digital Infrastructure</p>
-          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" class="h-12 w-auto" role="img" aria-label="AAQSOLS">
+            <defs>
+              <linearGradient id="aaq-accent-light" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b9eff"/>
+                <stop offset="100%" stop-color="#1b6dff"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(8 6)">
+              <polygon points="28,2 50,14 50,38 28,50 6,38 6,14" fill="none" stroke="#0c1222" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M16 38 L28 14 L40 38" fill="none" stroke="#0c1222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 30 H35" stroke="#0c1222" stroke-width="3.2" stroke-linecap="round"/>
+              <path d="M34 14 L40 38" fill="none" stroke="url(#aaq-accent-light)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <text x="72" y="36" fill="#0c1222" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="6">AA</text>
+            <text x="118" y="36" fill="url(#aaq-accent-light)" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800">Q</text>
+            <text x="136" y="36" fill="#0c1222" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="6">SOLS</text>
+          </svg>
         </div>
         <p class="text-xs text-slate-500 max-w-xs leading-relaxed pt-1">
           Registered with Securities & Exchange Commission of Pakistan (SECP)<br>
