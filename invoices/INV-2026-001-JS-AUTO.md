@@ -3,7 +3,7 @@
 **AAQSOLS (PRIVATE) LIMITED**  
 *Software Development & Enterprise Digital Engineering*  
 Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pakistan  
-**Web:** [www.aaqsols.com](https://www.aaqsols.com) | **Email:** billing@aaqsols.com | **Phone:** +92 304 0200070  
+**Web:** [www.aaqsols.com](https://www.aaqsols.com) | **Phone / WhatsApp:** +92 304 0200070  
 *SECP Registered Entity — Islamabad, Pakistan*
 
 ---
@@ -50,6 +50,7 @@ Please remit payment via Online Banking (IBFT), Raast, or Pay Order / Wire Trans
 * **Account Number:** `04000200005673`
 * **Transfer Method:** Direct Transfer / IBFT / Raast
 * **Purpose Code / Remarks:** `Domain & IT Services (JS Auto)`
+* **Remittance Proof:** Share transaction slip/screenshot via WhatsApp to `+92 304 0200070` for instant credit verification.
 
 > [!NOTE]  
 > **Bank Verification & Compliance:**  
