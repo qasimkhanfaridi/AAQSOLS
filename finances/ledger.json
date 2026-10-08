@@ -26,7 +26,14 @@
         "role": "Partner",
         "status": "Active"
       }
-    ]
+    ],
+    "bank_account": {
+      "bank_name": "Askari Bank Limited",
+      "account_title": "AAQSOLS PRIVATE LIMITED",
+      "account_number": "04000200005673",
+      "branch_code": "0400",
+      "branch": "Islamabad / Rawalpindi"
+    }
   },
   "summary": {
     "total_revenue_collected": 83000,

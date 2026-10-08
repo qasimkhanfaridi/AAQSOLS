@@ -44,11 +44,11 @@ Gulburg Paradise, Business Square, Plot No. 72-77, Gulberg Greens, Islamabad, Pa
 
 Please remit payment via Online Banking (IBFT), Raast, or Pay Order / Wire Transfer directly to the official company bank account:
 
-* **Account Title:** `AAQSOLS` *(Corporate Entity)*
-* **Bank Name:** `[Your Bank Name — e.g., Meezan Bank Limited / HBL / Bank Alfalah]`
-* **Branch:** `Islamabad Branch`
-* **Account Number:** `[Insert Company Account Number]`
-* **IBAN:** `PK________________________`
+* **Account Title:** `AAQSOLS PRIVATE LIMITED` *(Official Corporate Account)*
+* **Bank Name:** `Askari Bank Limited`
+* **Branch:** `0400 (Islamabad / Rawalpindi)`
+* **Account Number:** `04000200005673`
+* **Transfer Method:** Direct Transfer / IBFT / Raast
 * **Purpose Code / Remarks:** `Domain & IT Services (JS Auto)`
 
 > [!NOTE]  

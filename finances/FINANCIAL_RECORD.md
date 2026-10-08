@@ -11,7 +11,7 @@
 
 | Metric | Amount (PKR) | Notes |
 | :--- | :--- | :--- |
-| **Company Bank Account Balance** | **Rs. 10,000** | Liquid cash in corporate account (Initial seed capital deposit by Qasim) |
+| **Company Bank Account Balance** | **Rs. 10,000** | Liquid cash in corporate account (**Askari Bank: 04000200005673**, Title: AAQSOLS PRIVATE LIMITED) |
 | **Client Revenue Held in Hand** | **Rs. 83,000** | Liquid advance/milestone pool (Held: **Qasim: Rs. 77,000**, **Asghar: Rs. 6,000**) |
 | **Total Liquid Company Funds** | **Rs. 93,000** | Bank Balance (10k) + Cash in Hand (83k) |
 | **Office Advance, Furniture & Capex** | **Rs. 406,370** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware & HDMI cables (5.4k: 2.7k Asghar + 2.7k Qasim), Electrician Labor (2.97k: 2k Asghar + 970 Qasim), Board (1k) |
@@ -115,11 +115,16 @@
 
 ---
 
-## 3. Partner Capital Injections (Bank Deposits)
+## 3. Corporate Bank Account & Partner Capital Injections
+
+* **Bank Name:** Askari Bank Limited
+* **Account Title:** **AAQSOLS PRIVATE LIMITED**
+* **Account Number:** `04000200005673`
+* **Branch:** 0400 (Islamabad / Rawalpindi)
 
 | ID | Date | Partner | Amount (PKR) | Destination Account | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CAP-001` | Sep 2026 | Qasim Faridi | **Rs. 10,000** | Company Bank Account | Initial account opening deposit / working capital injection |
+| `CAP-001` | Sep 2026 | Qasim Faridi | **Rs. 10,000** | Askari Bank (`...5673`) | Initial account opening deposit / working capital injection |
 | **TOTAL** | | | **Rs. 10,000** | | |
 
 ---
