@@ -36,27 +36,27 @@
     }
   },
   "summary": {
-    "total_revenue_collected": 83000,
+    "total_revenue_collected": 89000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 120110,
+    "total_admin_supplies_spent": 122230,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 556300,
-    "net_operating_cash_deficit": -473300,
+    "total_expenses_spent": 558420,
+    "net_operating_cash_deficit": -469420,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
-    "total_liquid_cash": 93000,
+    "total_liquid_cash": 99000,
     "pending_receivables_known": 0,
     "pending_agent_commissions": 0,
     "net_pending_income_known": 0
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 317210,
+      "total_spent": 319330,
       "capital_injected": 10000,
-      "total_funds_provided": 327210,
-      "total_received": 77000,
-      "net_out_of_pocket_balance": -250210,
-      "status": "Company owes QASIM PKR 250,210"
+      "total_funds_provided": 329330,
+      "total_received": 83000,
+      "net_out_of_pocket_balance": -246330,
+      "status": "Company owes QASIM PKR 246,330"
     },
     "asghar": {
       "total_spent": 239090,
@@ -81,8 +81,8 @@
       "name": "ARS Chemicals (A. Rehman & Sons)",
       "repo": "qasimkhanfaridi/a-rehman-sons-website",
       "status": "Completed & Fully Paid (100% Collected & Commission Cleared)",
-      "contract_value": 65000,
-      "advance_received": 65000,
+      "contract_value": 71000,
+      "advance_received": 71000,
       "payment_received_by": "qasim",
       "pending_balance": 0,
       "agent_commission": 17500,
@@ -97,11 +97,12 @@
         "email": "arschemicals1@gmail.com",
         "services": [
           "Domain Registrar",
-          "Website Admin / Hosting"
+          "Website Admin / Hosting",
+          "Corporate Email Setup & Mailboxes"
         ]
       },
-      "net_projected_profit": 43400,
-      "net_cash_current": 43400
+      "net_projected_profit": 49400,
+      "net_cash_current": 49400
     },
     {
       "id": "binirfanfragrances",
@@ -759,6 +760,26 @@
       "payment_method": "Direct",
       "project_id": "apnichhat",
       "date": "2026-10"
+    },
+    {
+      "id": "EXP-050",
+      "category": "Utilities / Internet",
+      "title": "Office Internet Monthly Fee",
+      "amount": 1120,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-051",
+      "category": "Refreshment / Pantry",
+      "title": "Office Sugar & Water Bottles",
+      "amount": 1000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-10"
     }
   ],
   "inflows": [
@@ -801,6 +822,14 @@
       "amount": 6000,
       "received_by": "asghar",
       "date": "2026-09"
+    },
+    {
+      "id": "REV-006",
+      "project_id": "arschemicals",
+      "title": "ARS Chemicals - Corporate Email Setup & Mailboxes",
+      "amount": 6000,
+      "received_by": "qasim",
+      "date": "2026-10"
     }
   ],
   "capital_contributions": [
