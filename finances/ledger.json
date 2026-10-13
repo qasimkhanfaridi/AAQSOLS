@@ -38,10 +38,10 @@
   "summary": {
     "total_revenue_collected": 89000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 122230,
+    "total_admin_supplies_spent": 123230,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 558420,
-    "net_operating_cash_deficit": -469420,
+    "total_expenses_spent": 559420,
+    "net_operating_cash_deficit": -470420,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 99000,
@@ -51,12 +51,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 319330,
+      "total_spent": 320330,
       "capital_injected": 10000,
-      "total_funds_provided": 329330,
+      "total_funds_provided": 330330,
       "total_received": 83000,
-      "net_out_of_pocket_balance": -246330,
-      "status": "Company owes QASIM PKR 246,330"
+      "net_out_of_pocket_balance": -247330,
+      "status": "Company owes QASIM PKR 247,330"
     },
     "asghar": {
       "total_spent": 239090,
@@ -775,6 +775,16 @@
       "id": "EXP-051",
       "category": "Refreshment / Pantry",
       "title": "Office Sugar & Water Bottles",
+      "amount": 1000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-052",
+      "category": "Travel / Fuel Allowance",
+      "title": "Staff Fuel / Petrol to Fani (Marketing)",
       "amount": 1000,
       "paid_by": "qasim",
       "payment_method": "Direct",
