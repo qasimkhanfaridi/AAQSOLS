@@ -38,10 +38,10 @@
   "summary": {
     "total_revenue_collected": 116000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 124630,
+    "total_admin_supplies_spent": 126130,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 560820,
-    "net_operating_cash_deficit": -444820,
+    "total_expenses_spent": 562320,
+    "net_operating_cash_deficit": -446320,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 126000,
@@ -51,12 +51,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 320330,
+      "total_spent": 321830,
       "capital_injected": 10000,
-      "total_funds_provided": 330330,
+      "total_funds_provided": 331830,
       "total_received": 110000,
-      "net_out_of_pocket_balance": -220330,
-      "status": "Company owes QASIM PKR 220,330"
+      "net_out_of_pocket_balance": -221830,
+      "status": "Company owes QASIM PKR 221,830"
     },
     "asghar": {
       "total_spent": 240490,
@@ -799,6 +799,16 @@
       "title": "Office Milk Powder & Biscuits",
       "amount": 1400,
       "paid_by": "asghar",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-10"
+    },
+    {
+      "id": "EXP-054",
+      "category": "Communications / Telecom",
+      "title": "Telecall / Cold Calling - Calling Balance & Credit 2",
+      "amount": 1500,
+      "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,
       "date": "2026-10"
