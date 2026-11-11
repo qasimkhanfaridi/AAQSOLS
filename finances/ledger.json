@@ -38,10 +38,10 @@
   "summary": {
     "total_revenue_collected": 116000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 126130,
+    "total_admin_supplies_spent": 131130,
     "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 562320,
-    "net_operating_cash_deficit": -446320,
+    "total_expenses_spent": 567320,
+    "net_operating_cash_deficit": -451320,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 126000,
@@ -51,12 +51,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 321830,
+      "total_spent": 326830,
       "capital_injected": 10000,
-      "total_funds_provided": 331830,
+      "total_funds_provided": 336830,
       "total_received": 110000,
-      "net_out_of_pocket_balance": -221830,
-      "status": "Company owes QASIM PKR 221,830"
+      "net_out_of_pocket_balance": -226830,
+      "status": "Company owes QASIM PKR 226,830"
     },
     "asghar": {
       "total_spent": 240490,
@@ -812,6 +812,16 @@
       "payment_method": "Direct",
       "project_id": null,
       "date": "2026-10"
+    },
+    {
+      "id": "EXP-055",
+      "category": "Utilities / Internet",
+      "title": "Office Internet Charges (Nov 2026)",
+      "amount": 5000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-11"
     }
   ],
   "inflows": [
