@@ -38,10 +38,10 @@
   "summary": {
     "total_revenue_collected": 116000,
     "total_office_capex_spent": 406370,
-    "total_admin_supplies_spent": 131130,
-    "total_domains_opex_spent": 29820,
-    "total_expenses_spent": 567320,
-    "net_operating_cash_deficit": -451320,
+    "total_admin_supplies_spent": 135630,
+    "total_domains_opex_spent": 34620,
+    "total_expenses_spent": 576620,
+    "net_operating_cash_deficit": -460620,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
     "total_liquid_cash": 126000,
@@ -51,12 +51,12 @@
   },
   "partner_balances": {
     "qasim": {
-      "total_spent": 326830,
+      "total_spent": 336130,
       "capital_injected": 10000,
-      "total_funds_provided": 336830,
+      "total_funds_provided": 346130,
       "total_received": 110000,
-      "net_out_of_pocket_balance": -226830,
-      "status": "Company owes QASIM PKR 226,830"
+      "net_out_of_pocket_balance": -236130,
+      "status": "Company owes QASIM PKR 236,130"
     },
     "asghar": {
       "total_spent": 240490,
@@ -283,6 +283,31 @@
       "pending_balance": 0,
       "agent_commission": 0,
       "notes": "B2B pharmacy ordering & distributor ops (Pakistan pilot)"
+    },
+    {
+      "id": "car_interior",
+      "name": "Car Interior",
+      "repo": null,
+      "status": "Domain Registered / Company Investment",
+      "contract_value": null,
+      "contract_note": "Domain invested by AAQSOLS",
+      "advance_received": 0,
+      "payment_received_by": null,
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "domain": {
+        "name": "Car Interior Domain",
+        "cost": 4800,
+        "paid_by": "qasim",
+        "renewal_date": null
+      },
+      "account": {
+        "email": null,
+        "services": [
+          "Domain Registered (Company Investment)"
+        ]
+      },
+      "net_cash_current": -4800
     }
   ],
   "expenses": [
@@ -821,6 +846,36 @@
       "paid_by": "qasim",
       "payment_method": "Direct",
       "project_id": null,
+      "date": "2026-11"
+    },
+    {
+      "id": "EXP-056",
+      "category": "Refreshment / Pantry",
+      "title": "Office Tea & Biscuits (3 Days x 1,000)",
+      "amount": 3000,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-11"
+    },
+    {
+      "id": "EXP-057",
+      "category": "Refreshment / Food",
+      "title": "Office Tea & Paratha",
+      "amount": 1500,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": null,
+      "date": "2026-11"
+    },
+    {
+      "id": "EXP-058",
+      "category": "Project Domains",
+      "title": "Car Interior - Domain Purchase (Company Investment)",
+      "amount": 4800,
+      "paid_by": "qasim",
+      "payment_method": "Direct",
+      "project_id": "car_interior",
       "date": "2026-11"
     }
   ],
