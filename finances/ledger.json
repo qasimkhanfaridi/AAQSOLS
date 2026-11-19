@@ -36,15 +36,15 @@
     }
   },
   "summary": {
-    "total_revenue_collected": 116000,
+    "total_revenue_collected": 136000,
     "total_office_capex_spent": 406370,
     "total_admin_supplies_spent": 135630,
     "total_domains_opex_spent": 34620,
     "total_expenses_spent": 576620,
-    "net_operating_cash_deficit": -460620,
+    "net_operating_cash_deficit": -440620,
     "total_capital_injected": 10000,
     "company_bank_balance": 10000,
-    "total_liquid_cash": 126000,
+    "total_liquid_cash": 146000,
     "pending_receivables_known": 0,
     "pending_agent_commissions": 0,
     "net_pending_income_known": 0
@@ -54,9 +54,9 @@
       "total_spent": 336130,
       "capital_injected": 10000,
       "total_funds_provided": 346130,
-      "total_received": 110000,
-      "net_out_of_pocket_balance": -236130,
-      "status": "Company owes QASIM PKR 236,130"
+      "total_received": 130000,
+      "net_out_of_pocket_balance": -216130,
+      "status": "Company owes QASIM PKR 216,130"
     },
     "asghar": {
       "total_spent": 240490,
@@ -308,6 +308,20 @@
         ]
       },
       "net_cash_current": -4800
+    },
+    {
+      "id": "qari_sahab",
+      "name": "Qari Sahab (Ref: Ch. Usman)",
+      "repo": null,
+      "status": "Advance Received / Onboarding",
+      "contract_value": null,
+      "contract_note": "Initial advance received (PKR 20,000), total deal terms TBD. Client referred by Choudhry Usman.",
+      "advance_received": 20000,
+      "payment_received_by": "qasim",
+      "pending_balance": 0,
+      "agent_commission": 0,
+      "notes": "Client referred by Choudhry Usman. Advance received by Qasim.",
+      "net_cash_current": 20000
     }
   ],
   "expenses": [
@@ -935,6 +949,14 @@
       "amount": 27000,
       "received_by": "qasim",
       "date": "2026-10"
+    },
+    {
+      "id": "REV-008",
+      "project_id": "qari_sahab",
+      "title": "Qari Sahab - Project Advance (Ref: Ch. Usman)",
+      "amount": 20000,
+      "received_by": "qasim",
+      "date": "2026-11"
     }
   ],
   "capital_contributions": [

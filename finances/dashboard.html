@@ -37,8 +37,8 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Liquid Cash</span>
-        <div class="text-2xl font-bold text-emerald-500 mt-1">Rs. 126,000</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Askari Bank (04000200005673): Rs. 10k | Qasim: Rs. 110k | Asghar: Rs. 6k</p>
+        <div class="text-2xl font-bold text-emerald-500 mt-1">Rs. 146,000</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Askari Bank (04000200005673): Rs. 10k | Qasim: Rs. 130k | Asghar: Rs. 6k</p>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
@@ -55,8 +55,8 @@
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
         <span class="text-xs uppercase tracking-wider text-[var(--muted-foreground)] font-semibold">Total Partner Debt</span>
-        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 470,620</div>
-        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (236.1k) + Asghar (234.5k)</p>
+        <div class="text-2xl font-bold text-indigo-500 mt-1">Rs. 450,620</div>
+        <p class="text-xs text-[var(--muted-foreground)] mt-1">Owed: Qasim (216.1k) + Asghar (234.5k)</p>
       </div>
     </div>
 
@@ -66,7 +66,7 @@
         Partner Settlement Ledger
       </button>
       <button onclick="switchTab('projects')" id="tab-projects" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
-        Projects & Contracts (10)
+        Projects & Contracts (11)
       </button>
       <button onclick="switchTab('expenses')" id="tab-expenses" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
         Expenses Ledger (58 items)
@@ -106,15 +106,15 @@
               </div>
               <div class="flex justify-between text-[var(--muted-foreground)]">
                 <span>Client Advances Held:</span>
-                <span class="font-semibold text-amber-500">Rs. 110,000</span>
+                <span class="font-semibold text-amber-500">Rs. 130,000</span>
               </div>
               <div class="pt-2 border-t border-[var(--border)] flex justify-between items-center font-bold">
                 <span>Company Reimbursement Due:</span>
-                <span class="text-indigo-400 text-base">Rs. 236,130</span>
+                <span class="text-indigo-400 text-base">Rs. 216,130</span>
               </div>
             </div>
             <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-              Paid 36 office expenses (336.1k) + deposited Rs. 10,000 seed working capital in company bank account (Askari Bank 04000200005673). Holds Rs. 110,000 client revenue pool (ARS 71k, JS Auto 27k, Bin Irfan 6k, Apni Chhat 6k). Net company debt to Qasim is Rs. 236,130.
+              Paid 36 office expenses (336.1k) + deposited Rs. 10,000 seed working capital in company bank account (Askari Bank 04000200005673). Holds Rs. 130,000 client revenue pool (ARS 71k, JS Auto 27k, Qari Sahab 20k, Bin Irfan 6k, Apni Chhat 6k). Net company debt to Qasim is Rs. 216,130.
             </p>
           </div>
 
@@ -172,13 +172,13 @@
         <!-- Settlement Action Plan Box -->
         <div class="mt-5 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <div>
-            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Partner Funds Provided: Rs. 586,620 | Liquid Company Cash: Rs. 126,000</h3>
+            <h3 class="font-bold text-sm text-[var(--foreground)]">Total Partner Funds Provided: Rs. 586,620 | Liquid Company Cash: Rs. 146,000</h3>
             <p class="text-xs text-[var(--muted-foreground)]">
-              Total partner debt owed by firm: Rs. 470,620. Subtracting Rs. 10,000 company bank balance (Askari Bank) leaves Rs. 460,620 exact net startup operational deficit.
+              Total partner debt owed by firm: Rs. 450,620. Subtracting Rs. 10,000 company bank balance (Askari Bank) leaves Rs. 440,620 exact net startup operational deficit.
             </p>
           </div>
           <div class="text-xs font-mono bg-[var(--card)] px-3 py-1.5 rounded-lg border border-[var(--border)]">
-            Exact Reconciliation: 236,130 (Qasim) + 234,490 (Asghar) = Rs. 470,620
+            Exact Reconciliation: 216,130 (Qasim) + 234,490 (Asghar) = Rs. 450,620
           </div>
         </div>
       </div>
@@ -413,6 +413,16 @@
               <p class="text-xs text-[var(--muted-foreground)] mt-1">Domain Investment: Rs. 4,800 (Paid by Qasim)</p>
               <p class="text-xs text-[var(--foreground)] mt-2">Company-invested automotive interior domain & web property.</p>
               <span class="inline-block mt-2 text-xs font-semibold text-rose-500">Current Cash Margin: -Rs. 4,800</span>
+            </div>
+
+            <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)]/30">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Qari Sahab</h4>
+                <span class="px-2 py-0.5 text-xs rounded bg-emerald-500/10 text-emerald-500 font-medium">Advance Received</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1">Client Referred by Choudhry Usman</p>
+              <p class="text-xs text-[var(--foreground)] mt-2">Initial advance collected by Qasim. Project discovery and scope definition in progress.</p>
+              <span class="inline-block mt-2 text-xs font-semibold text-emerald-500">Advance Received: Rs. 20,000 (Qasim)</span>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
 # AAQSOLS — Financial Ledger & Project Portfolio Record
 
-**Document Version:** 3.6 (Logged Rs. 4,800 Car Interior Domain + Rs. 3,000 Tea/Biscuits + Rs. 1,500 Tea/Paratha by Qasim)  
+**Document Version:** 3.7 (Logged Rs. 20,000 Advance from Qari Sahab [Ref: Ch. Usman] by Qasim)  
 **Currency:** PKR (Pakistani Rupee)  
 **Partners:** Qasim Faridi (Engineering Lead), Asghar, Ali  
-**Last Updated:** November 18, 2026  
+**Last Updated:** November 19, 2026  
 
 ---
 
@@ -12,14 +12,14 @@
 | Metric | Amount (PKR) | Notes |
 | :--- | :--- | :--- |
 | **Company Bank Account Balance** | **Rs. 10,000** | Liquid cash in corporate account (**Askari Bank: 04000200005673**, Title: AAQSOLS PRIVATE LIMITED) |
-| **Client Revenue Held in Hand** | **Rs. 116,000** | Liquid advance/milestone pool (Held: **Qasim: Rs. 110,000**, **Asghar: Rs. 6,000**) |
-| **Total Liquid Company Funds** | **Rs. 126,000** | Bank Balance (10k) + Cash in Hand (116k) |
+| **Client Revenue Held in Hand** | **Rs. 136,000** | Liquid advance/milestone pool (Held: **Qasim: Rs. 130,000**, **Asghar: Rs. 6,000**) |
+| **Total Liquid Company Funds** | **Rs. 146,000** | Bank Balance (10k) + Cash in Hand (136k) |
 | **Office Advance, Furniture & Capex** | **Rs. 406,370** | Advance (100k), Basit Furniture (79k), Chairs (50k), Tables Balance (48k), Dispenser/Kettle (49.5k), Daraz Cupboards (12.5k), Electricity Wiring & Samaan (21k), Whiteboard (11.5k), Frost Paper (8k), Card fee (7k), Table & Chair Transport (7.1k), Extensions (3.4k), Hardware & HDMI cables (5.4k: 2.7k Asghar + 2.7k Qasim), Electrician Labor (2.97k: 2k Asghar + 970 Qasim), Board (1k) |
 | **Admin, Legal, Commission, Travel & Meals** | **Rs. 135,630**| ARS Agent Commission (17.5k), SECP Registration (12k), Apni Chhat SECP Challan (11.5k), Mats/Plates (12.5k), Grocery (12.3k), Cards (8k), Internet (12.82k: 6.7k install + 1.12k Oct + 5k Nov), Writing Pads (5.6k), Team Pizza 1 & 2 (6.9k), Staff Fuel to Fani (5.5k: 3k general + 1.5k JS Auto + 1k marketing), Cups (3.4k), Stationery & Files (13.8k), Water Bottles & Sugar (3.5k: 2.5k water + 1k sugar/water), Stamp (2k), SIM (2k), Telecall / Cold Calling (4.5k: 1.5k number + 2x 1.5k calling balance), Tea, Biscuits, Paratha & Milk Powder (7,350: 1k Qasim biscuits + 450 Asghar biscuits + 1.4k Asghar milk/biscuits + 3k Qasim tea/biscuits + 1.5k Qasim tea/paratha) |
 | **Domains & Digital Infrastructure** | **Rs. 34,620** | AAQSOLS setup (8.2k), ARS & Bin Irfan (8.2k), Leon Arch domain/hosting (4.8k), Car Interior domain (4.8k), JS Auto domain (4,520), ApniChhat (4.1k) |
 | **Total Company Expenses Incurred** | **Rs. 576,620** | Total startup seed capital spent across 58 entries |
-| **Startup Operational Deficit** | **-Rs. 460,620** | Net unrecovered expenses (Rs. 116,000 client revenue - Rs. 576,620 expenses) |
-| **Total Partner Debt Owed by Company** | **Rs. 470,620** | Qasim (Rs. 236,130) + Asghar (Rs. 234,490) |
+| **Startup Operational Deficit** | **-Rs. 440,620** | Net unrecovered expenses (Rs. 136,000 client revenue - Rs. 576,620 expenses) |
+| **Total Partner Debt Owed by Company** | **Rs. 450,620** | Qasim (Rs. 216,130) + Asghar (Rs. 234,490) |
 | **Known Pending Receivables** | **Rs. 0** | ARS Chemicals & JS Auto 2-year domain settled in full |
 
 ---
@@ -30,11 +30,11 @@
 +-----------------------------------------------------------------------------------------------------------------------+
 | Partner | Expenses Spent Out-of-Pocket | Bank Capital Deposit | Total Funds Provided | Client Cash Held | Net Position |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| QASIM   | Rs. 336,130 (36 items)       | Rs. 10,000 (CAP-001) | Rs. 346,130          | Rs. 110,000      | Company owes QASIM: Rs. 236,130  |
+| QASIM   | Rs. 336,130 (36 items)       | Rs. 10,000 (CAP-001) | Rs. 346,130          | Rs. 130,000      | Company owes QASIM: Rs. 216,130  |
 | ASGHAR  | Rs. 240,490 (22 items)       | Rs. 0                | Rs. 240,490          | Rs. 6,000        | Company owes ASGHAR:Rs. 234,490  |
 | ALI     | Rs. 0       (Pending info)   | Rs. 0                | Rs. 0                | Rs. 0            | Balanced / Awaiting records      |
 +---------+------------------------------+----------------------+----------------------+------------------+--------------+
-| TOTAL   | Rs. 576,620                  | Rs. 10,000           | Rs. 586,620          | Rs. 116,000      | Total Partner Debt: Rs. 470,620  |
+| TOTAL   | Rs. 576,620                  | Rs. 10,000           | Rs. 586,620          | Rs. 136,000      | Total Partner Debt: Rs. 450,620  |
 +-----------------------------------------------------------------------------------------------------------------------+
 ```
 
@@ -42,8 +42,8 @@
 * **Expenses Paid Out-of-Pocket:** Rs. 336,130 (36 records)
 * **Capital Injected into Company Bank Account:** Rs. 10,000 (`CAP-001`)
 * **Total Capital & Funds Provided:** Rs. 346,130
-* **Client Cash Received & Held:** Rs. 110,000 (ARS: 71k + JS Auto: 27k + Bin Irfan: 6k + ApniChhat: 6k)
-* **Net Out-of-Pocket Remaining:** **Rs. 236,130** (Company owes Qasim)
+* **Client Cash Received & Held:** Rs. 130,000 (ARS: 71k + JS Auto: 27k + Qari Sahab: 20k + Bin Irfan: 6k + ApniChhat: 6k)
+* **Net Out-of-Pocket Remaining:** **Rs. 216,130** (Company owes Qasim)
 * *Itemized Payments by Qasim:*
   1. Al-Basit Furniture (Advance): Rs. 79,000
   2. Water Dispenser & Tea Kettle: Rs. 49,500
@@ -59,10 +59,10 @@
   12. Office Internet Connection: Rs. 6,700
   13. Writing pads / letterheads: Rs. 5,600
   14. Office Internet Charges (Nov 2026): Rs. 5,000
-  15. **Car Interior - Domain Purchase (Company Investment):** **Rs. 4,800** *(New)*
+  15. Car Interior - Domain Purchase (Company Investment): Rs. 4,800
   16. Chairs Transport Charges: Rs. 3,500
   17. Staff Fuel / Petrol to Fani (3x 1,000): Rs. 3,000
-  18. **Office Tea & Biscuits (3 Days x 1,000):** **Rs. 3,000** *(New)*
+  18. Office Tea & Biscuits (3 Days x 1,000): Rs. 3,000
   19. Akhtar stationery: Rs. 2,800
   20. Stationery, Stapler, Files & Folders: Rs. 2,800
   21. HDMI Cables & Display Wiring: Rs. 2,700
@@ -72,7 +72,7 @@
   25. Telecall / Cold Calling - Phone Number Purchase & Setup: Rs. 1,500
   26. Staff Fuel / Petrol to Fani (JS Auto Data Entry - 3 Days): Rs. 1,500
   27. Telecall / Cold Calling - Calling Balance & Credit 2: Rs. 1,500
-  28. **Office Tea & Paratha:** **Rs. 1,500** *(New)*
+  28. Office Tea & Paratha: Rs. 1,500
   29. Office Internet Monthly Fee: Rs. 1,120
   30. Electricity Samaan (Wiring & Sockets 2): Rs. 1,000
   31. Office Sugar & Water Bottles: Rs. 1,000
@@ -120,8 +120,8 @@
 
 > [!NOTE]
 > **Complete Mathematical Reconciliation:**  
-> 1. Company owes Qasim (**Rs. 236,130**) + Company owes Asghar (**Rs. 234,490**) = **Rs. 470,620 (Total Partner Liability)**.  
-> 2. Total Partner Debt (**Rs. 470,620**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 460,620**, which exactly equals the current company startup expenses deficit.
+> 1. Company owes Qasim (**Rs. 216,130**) + Company owes Asghar (**Rs. 234,490**) = **Rs. 450,620 (Total Partner Liability)**.  
+> 2. Total Partner Debt (**Rs. 450,620**) - Company Bank Account Asset (**Rs. 10,000**) = **Rs. 440,620**, which exactly equals the current company startup expenses deficit.
 
 ---
 
@@ -205,7 +205,7 @@
 
 ---
 
-## 5. Client Cash Inflows (Advances & Receipts - 7 Records)
+## 5. Client Cash Inflows (Advances & Receipts - 8 Records)
 
 | ID | Date | Project | Description | Amount (PKR) | Received By | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -216,7 +216,8 @@
 | `REV-005` | Sep 2026 | Leon Arch | Project Advance | **Rs. 6,000** | **Asghar** | Initial advance received |
 | `REV-006` | Oct 2026 | ARS Chemicals | Corporate Email Setup & Mailboxes | **Rs. 6,000** | **Qasim** | Additional email service scope cleared |
 | `REV-007` | Oct 2026 | JS Auto | 2-Year Domain Commercial Settlement | **Rs. 27,000** | **Qasim** | Settled in full (INV-2026-001) |
-| **TOTAL** | | | | **Rs. 116,000** | | **Qasim: Rs. 110k \| Asghar: Rs. 6k** |
+| `REV-008` | Nov 2026 | Qari Sahab (Ref: Ch. Usman) | Project Advance | **Rs. 20,000** | **Qasim** | Initial advance received; client referred by Ch. Usman |
+| **TOTAL** | | | | **Rs. 136,000** | | **Qasim: Rs. 130k \| Asghar: Rs. 6k** |
 
 ---
 
@@ -233,6 +234,7 @@
 9. **PulseCore HMS / Heart Clinic:** In Process.
 10. **MediPro:** Developed / Showcase.
 11. **Car Interior:** Domain Registered / Company Investment (PKR 4,800 domain invested by Qasim, **-Rs. 4,800 net current cash position**).
+12. **Qari Sahab (Ref: Choudhry Usman):** In Onboarding / Advance Received (PKR 20,000 advance received by Qasim, **+Rs. 20,000 net current cash position**).
 
 ---
 
